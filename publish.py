@@ -50,7 +50,7 @@ def asset_name(sha1, filename):
 def main():
     build_launcher = "--launcher" in sys.argv
     repo = json.loads(run(GH, "repo", "view", "--json", "nameWithOwner", capture=True))["nameWithOwner"]
-    raw = f"https://raw.githubusercontent.com/{repo}/main/pack/files/"
+    raw = "@RAW@"  # replaced by a commit-pinned URL below (raw "main" is CDN-cached for minutes)
     dl = f"https://github.com/{repo}/releases/download/{FILES_TAG}/"
     entries, uploads = [], {}
 
@@ -118,6 +118,15 @@ def main():
         if os.path.isfile(old):
             with open(old, encoding="utf-8") as f:
                 launcher_version = json.load(f).get("launcher_version", 1)
+
+    # commit the files first, then point the manifest at that exact commit
+    run("git", "add", "-A", "pack/files")
+    if subprocess.run(["git", "diff", "--cached", "--quiet"], cwd=HERE).returncode != 0:
+        run("git", "commit", "-m", "Update pack files")
+        run("git", "push")
+    commit = run("git", "rev-parse", "HEAD", capture=True).strip()
+    for e in entries:
+        e["url"] = e["url"].replace("@RAW@", f"https://raw.githubusercontent.com/{repo}/{commit}/pack/files/")
 
     manifest = {"minecraft": MINECRAFT, "forge": FORGE, "server": SERVER,
                 "launcher_version": launcher_version, "files": entries}
