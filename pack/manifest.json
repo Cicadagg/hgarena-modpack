@@ -17,6 +17,12 @@
    "url": "https://github.com/Cicadagg/hgarena-modpack/releases/download/files/0b0a3ff3b2-BetterThirdPerson-Forge-1.20-1.9.0.jar"
   },
   {
+   "path": "mods/CustomSkinLoader_Universal-15.1.jar",
+   "sha1": "324e6921ecd576e44875981466e7f22170b6541a",
+   "size": 222917,
+   "url": "https://github.com/Cicadagg/hgarena-modpack/releases/download/files/324e6921ec-CustomSkinLoader_Universal-15.1.jar"
+  },
+  {
    "path": "mods/Dungeon Now Loading-forge-1.20.1-2.2.jar",
    "sha1": "6cb812d282be790ebb9314a5b6e6c610ce19d44a",
    "size": 85065508,
