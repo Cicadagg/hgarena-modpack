@@ -1,0 +1,66 @@
+
+[gachaa_screen]
+	#Items matched by this list trigger the gacha animation and take priority over the blacklist.
+	#Separate compound conditions with ; and compare rarity with <1, =1, >1, <=1, or >=1.
+	#Match item tags with #minecraft:block and exclude tags with !#.
+	#Use vanilla item command syntax and exclude items with !.
+	whitelist_filter_list = []
+	#Items matched by this list do not trigger the gacha animation.
+	#Separate compound conditions with ; and compare rarity with <1, =1, >1, <=1, or >=1.
+	#Match item tags with #minecraft:block and exclude tags with !#.
+	#Use vanilla item command syntax and exclude items with !.
+	blacklist_filter_list = []
+	merge_item = true
+	#Sort rewards by rarity when enabled.
+	rarity_sorting = true
+	reward_sound_effects = true
+	#Only play the highest-rarity reward sound when multiple rewards appear together.
+	reward_sound_effects_optimize = true
+	#Open the gacha screen for FTB Quest rewards even when the quest does not enable it.
+	ftb_quests_gachaa = true
+	#Use this type when the gacha screen type is not defined.
+	default_gachaas_type = "gachaaddiction:slot_machine"
+
+	[gachaa_screen.slot_machine]
+		#Range: 0.0 ~ 1.0
+		exit_speed = 0.1
+		#Range: 0.0 ~ 5.0
+		exit_max_scale = 0.6
+		pass_sound_effects = true
+		#Only play the passing sound from one reel at a time.
+		pass_sound_effects_optimize = false
+
+		[gachaa_screen.slot_machine.item]
+			#Range: 0.1 ~ 10.0
+			items_per_second = 5.0
+			#Range: 18.0 ~ 100.0
+			item_spacing = 18.0
+			#Range: 1 ~ 20
+			visible_count = 5
+			#Range: 1 ~ 10
+			slot_size = 5
+			#Range: 0.0 ~ 1.0
+			min_alpha = 0.0
+			#Range: 0.0 ~ 1.0
+			max_alpha = 1.0
+
+		[gachaa_screen.slot_machine.decel_zone]
+			#Range: 0.0 ~ 100.0
+			decel_zone = 4.0
+			#Range: 0.0 ~ 1.0
+			min_speed = 0.05
+			#Range: 0.0 ~ 10.0
+			decel_zone_variance_min = 0.5
+			#Range: 0.0 ~ 10.0
+			decel_zone_variance_max = 1.5
+
+		[gachaa_screen.slot_machine.speed]
+			#Range: 0.0 ~ 10.0
+			speed_variance_min = 0.5
+			#Range: 0.0 ~ 10.0
+			speed_variance_max = 1.5
+			#Range: 0.0 ~ 10.0
+			min_speed_variance_min = 0.5
+			#Range: 0.0 ~ 10.0
+			min_speed_variance_max = 1.5
+

@@ -1,0 +1,36 @@
+#=========[ Ancient Remnants Common Config ]=========
+# Please prefer editing the config through the in-game 
+# configuration screen (available via the mods list),
+# as it includes many hints and quality-of-life improvements.
+#====================================================
+#Range: > 0
+hunter_monolith_placement_spacing = 100
+#Range: > 0
+hunter_monolith_placement_separation = 20
+hunter_monolith_biomes = ["minecraft:badlands"]
+#Range: > 0
+warrior_monolith_placement_spacing = 100
+#Range: > 0
+warrior_monolith_placement_separation = 20
+warrior_monolith_biomes = ["minecraft:ice_spikes"]
+#Range: > 0
+sentinel_monolith_placement_spacing = 100
+#Range: > 0
+sentinel_monolith_placement_separation = 20
+sentinel_monolith_biomes = ["minecraft:deep_frozen_ocean"]
+#Range: > 0
+cherry_monument_placement_spacing = 100
+#Range: > 0
+cherry_monument_placement_separation = 20
+cherry_monument_biomes = ["minecraft:cherry_grove"]
+#Range: > 0
+oakwood_monument_placement_spacing = 100
+#Range: > 0
+oakwood_monument_placement_separation = 20
+oakwood_monument_biomes = ["#minecraft:is_forest"]
+#Range: > 0
+coniferous_monument_placement_spacing = 100
+#Range: > 0
+coniferous_monument_placement_separation = 20
+coniferous_monument_biomes = ["#minecraft:is_taiga"]
+

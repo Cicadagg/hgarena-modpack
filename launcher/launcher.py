@@ -130,15 +130,15 @@ class Launcher:
             self.ui(self.play_btn.configure, {"state": "normal"})
 
     def retry(self, what, fn, *a, **kw):
-        for attempt in range(1, 6):
+        for attempt in range(1, 11):
             try:
                 return fn(*a, **kw)
             except Exception:
-                if attempt == 5:
+                if attempt == 10:
                     raise
                 traceback.print_exc()
-                self.set_status(f"{what}: сбой сети, попытка {attempt + 1}/5...")
-                time.sleep(3 * attempt)
+                self.set_status(f"{what}: сбой сети, попытка {attempt + 1}/10...")
+                time.sleep(min(3 * attempt, 15))
 
     def callback(self):
         return {"setStatus": self.set_status, "setProgress": self.set_progress, "setMax": self.set_max}

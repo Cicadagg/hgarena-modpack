@@ -1,0 +1,311 @@
+{
+  "entries": {
+    "relics_rpgs:jewel_figurine_ruby": {
+      "durability": 0,
+      "attributes": [
+        {
+          "attribute": "minecraft:generic.attack_damage",
+          "value": 0.05,
+          "operation": "MULTIPLY_BASE"
+        }
+      ]
+    },
+    "relics_rpgs:jewel_figurine_topaz": {
+      "durability": 0,
+      "attributes": [
+        {
+          "attribute": "spell_power:arcane",
+          "value": 0.05,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "spell_power:fire",
+          "value": 0.05,
+          "operation": "MULTIPLY_BASE"
+        }
+      ]
+    },
+    "relics_rpgs:jewel_figurine_citrine": {
+      "durability": 0,
+      "attributes": [
+        {
+          "attribute": "spell_power:healing",
+          "value": 0.05,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "spell_power:lightning",
+          "value": 0.05,
+          "operation": "MULTIPLY_BASE"
+        }
+      ]
+    },
+    "relics_rpgs:jewel_figurine_jade": {
+      "durability": 0,
+      "conditional_attributes": {
+        "required_mod": "ranged_weapon_api",
+        "attributes": [
+          {
+            "attribute": "ranged_weapon:damage",
+            "value": 0.05,
+            "operation": "MULTIPLY_BASE"
+          }
+        ]
+      },
+      "attributes": []
+    },
+    "relics_rpgs:jewel_figurine_sapphire": {
+      "durability": 0,
+      "attributes": [
+        {
+          "attribute": "minecraft:generic.max_health",
+          "value": 2.0,
+          "operation": "ADDITION"
+        }
+      ]
+    },
+    "relics_rpgs:jewel_figurine_tanzanite": {
+      "durability": 0,
+      "attributes": [
+        {
+          "attribute": "spell_power:frost",
+          "value": 0.05,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "spell_power:soul",
+          "value": 0.05,
+          "operation": "MULTIPLY_BASE"
+        }
+      ]
+    },
+    "relics_rpgs:lesser_roll": {
+      "durability": 0,
+      "conditional_attributes": {
+        "required_mod": "combat_roll",
+        "attributes": [
+          {
+            "attribute": "combat_roll:count",
+            "value": 1.0,
+            "operation": "ADDITION"
+          }
+        ]
+      },
+      "attributes": [
+        {
+          "attribute": "minecraft:generic.movement_speed",
+          "value": 0.1,
+          "operation": "MULTIPLY_BASE"
+        }
+      ]
+    },
+    "relics_rpgs:lesser_evasion": {
+      "durability": 0,
+      "attributes": [
+        {
+          "attribute": "spell_engine:evasion_chance",
+          "value": 0.03,
+          "operation": "MULTIPLY_BASE"
+        }
+      ]
+    },
+    "relics_rpgs:lesser_melee_crit_chance": {
+      "durability": 0,
+      "conditional_attributes": {
+        "required_mod": "critical_strike",
+        "attributes": [
+          {
+            "attribute": "critical_strike:chance",
+            "value": 0.05,
+            "operation": "MULTIPLY_BASE"
+          }
+        ]
+      },
+      "attributes": [
+        {
+          "attribute": "minecraft:generic.attack_damage",
+          "value": 0.05,
+          "operation": "MULTIPLY_BASE"
+        }
+      ]
+    },
+    "relics_rpgs:lesser_melee_crit_damage": {
+      "durability": 0,
+      "conditional_attributes": {
+        "required_mod": "critical_strike",
+        "attributes": [
+          {
+            "attribute": "critical_strike:damage",
+            "value": 0.1,
+            "operation": "MULTIPLY_BASE"
+          }
+        ]
+      },
+      "attributes": [
+        {
+          "attribute": "minecraft:generic.attack_damage",
+          "value": 0.05,
+          "operation": "MULTIPLY_BASE"
+        }
+      ]
+    },
+    "relics_rpgs:lesser_use_damage": {
+      "durability": 0,
+      "attributes": []
+    },
+    "relics_rpgs:lesser_use_dex": {
+      "durability": 0,
+      "attributes": []
+    },
+    "relics_rpgs:lesser_use_ranged": {
+      "durability": 0,
+      "attributes": []
+    },
+    "relics_rpgs:lesser_use_health": {
+      "durability": 0,
+      "attributes": []
+    },
+    "relics_rpgs:lesser_use_spell_power": {
+      "durability": 0,
+      "attributes": []
+    },
+    "relics_rpgs:lesser_use_spell_haste": {
+      "durability": 0,
+      "attributes": []
+    },
+    "relics_rpgs:lesser_proc_spell_crit": {
+      "durability": 0,
+      "attributes": []
+    },
+    "relics_rpgs:lesser_proc_crit_damage": {
+      "durability": 0,
+      "attributes": []
+    },
+    "relics_rpgs:lesser_proc_arcane_fire": {
+      "durability": 0,
+      "attributes": []
+    },
+    "relics_rpgs:lesser_proc_frost_healing": {
+      "durability": 0,
+      "attributes": []
+    },
+    "relics_rpgs:medium_proc_attack_damage": {
+      "durability": 0,
+      "attributes": []
+    },
+    "relics_rpgs:medium_proc_attack_speed": {
+      "durability": 0,
+      "attributes": []
+    },
+    "relics_rpgs:medium_proc_ranged_damage": {
+      "durability": 0,
+      "attributes": []
+    },
+    "relics_rpgs:medium_proc_defense": {
+      "durability": 0,
+      "attributes": []
+    },
+    "relics_rpgs:medium_proc_evasion": {
+      "durability": 0,
+      "attributes": []
+    },
+    "relics_rpgs:medium_proc_spell_power": {
+      "durability": 0,
+      "attributes": []
+    },
+    "relics_rpgs:medium_proc_spell_haste": {
+      "durability": 0,
+      "attributes": []
+    },
+    "relics_rpgs:medium_proc_arcane_power": {
+      "durability": 0,
+      "attributes": []
+    },
+    "relics_rpgs:medium_proc_fire_power": {
+      "durability": 0,
+      "attributes": []
+    },
+    "relics_rpgs:medium_proc_frost_power": {
+      "durability": 0,
+      "attributes": []
+    },
+    "relics_rpgs:medium_proc_healing_power": {
+      "durability": 0,
+      "attributes": []
+    },
+    "relics_rpgs:greater_perk_roll_damage": {
+      "durability": 0,
+      "attributes": []
+    },
+    "relics_rpgs:greater_healing_taken": {
+      "durability": 0,
+      "attributes": [
+        {
+          "attribute": "spell_engine:healing_taken",
+          "value": 0.1,
+          "operation": "MULTIPLY_BASE"
+        }
+      ]
+    },
+    "relics_rpgs:greater_perk_melee_stun": {
+      "durability": 0,
+      "attributes": []
+    },
+    "relics_rpgs:greater_perk_ranged_levitate": {
+      "durability": 0,
+      "attributes": []
+    },
+    "relics_rpgs:greater_perk_spell_stun": {
+      "durability": 0,
+      "attributes": []
+    },
+    "relics_rpgs:greater_perk_defense_block": {
+      "durability": 0,
+      "attributes": []
+    },
+    "relics_rpgs:greater_perk_evasion_attack": {
+      "durability": 0,
+      "attributes": []
+    },
+    "relics_rpgs:greater_perk_shield_reset": {
+      "durability": 0,
+      "attributes": []
+    },
+    "relics_rpgs:greater_perk_heal_cleanse": {
+      "durability": 0,
+      "attributes": []
+    },
+    "relics_rpgs:greater_proc_physical_trance": {
+      "durability": 0,
+      "attributes": []
+    },
+    "relics_rpgs:greater_proc_spell_trance": {
+      "durability": 0,
+      "attributes": []
+    },
+    "relics_rpgs:greater_perk_heal_danger": {
+      "durability": 0,
+      "attributes": []
+    },
+    "relics_rpgs:greater_proc_defense_danger": {
+      "durability": 0,
+      "attributes": []
+    },
+    "relics_rpgs:superior_use_area_attack_damage": {
+      "durability": 0,
+      "attributes": []
+    },
+    "relics_rpgs:superior_use_area_defense_health": {
+      "durability": 0,
+      "attributes": []
+    },
+    "relics_rpgs:superior_use_zone_spell_power": {
+      "durability": 0,
+      "attributes": []
+    },
+    "relics_rpgs:superior_use_zone_healing_taken": {
+      "durability": 0,
+      "attributes": []
+    }
+  }
+}

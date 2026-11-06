@@ -14,6 +14,7 @@ import re
 import shutil
 import subprocess
 import sys
+import time
 from urllib.parse import quote
 
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -43,7 +44,7 @@ def sha1_file(path):
 
 
 def asset_name(sha1, filename):
-    return sha1[:10] + "-" + re.sub(r"[^A-Za-z0-9._+-]", "_", filename)
+    return sha1[:10] + "-" + re.sub(r"[^A-Za-z0-9._-]", "_", filename)
 
 
 def main():
@@ -97,7 +98,14 @@ def main():
             staged = os.path.join(HERE, "build", "upload", name)
             os.makedirs(os.path.dirname(staged), exist_ok=True)
             shutil.copy2(path, staged)
-            run(GH, "release", "upload", FILES_TAG, staged)
+            for attempt in range(5):  # uploads sometimes drop on a flaky connection
+                try:
+                    run(GH, "release", "upload", FILES_TAG, staged, "--clobber")
+                    break
+                except subprocess.CalledProcessError:
+                    if attempt == 4:
+                        raise
+                    time.sleep(5)
             os.remove(staged)
     for name in existing - set(uploads):
         run(GH, "release", "delete-asset", FILES_TAG, name, "--yes")

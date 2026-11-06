@@ -1,0 +1,123 @@
+{
+	// Multiplies the base enchantment capacity and all gains by this value. 1.0 is recommended.
+	"capacity_multiplier": 1.0,
+	// Default relic capacity of an item, recommended is 2 but 1 could provide for more interesting gameplay.
+	"base_relic_capacity": 2,
+	// XP is by default disabled in Ascendant Arcana, but can be optionally enabled and is fully supported if you do so.
+	"disable_xp": false,
+	// If XP is enabled, should enchantments require XP to obtain?
+	"recipes_use_xp": true,
+	// Hiding the XP bar can sometimes cause issues with other mods that modify the HUD, this mitigates those issues.
+	"hide_xp_bar": false,
+	// Levels are linear if enabled. This adjusts the XP required to level up each time. Setting this to 0 disables it.
+	"xp_per_level": 0,
+	/* The mining speed multiplier applied to all mining tools. This should include modded tools as well. Vanilla
+	   values would be 1.0F. The default 2.75F is selected so that the 50% Ascendant Haste relic bonus is slightly
+	   better than Efficiency 5 on a Netherite Pickaxe.
+	*/
+	"mining_speed_multiplier": 2.75,
+	// Some vanilla mobs drop relics on death, like Witches, Wither Skeletons, and bosses. Recommended.
+	"add_relics_to_entities": true,
+	// Relics are automatically added to ANY chest loot table containing an enchanted book. Recommended.
+	"add_relics_to_chests": true,
+	// Add restorine to any chests containing amethyst shards or diamonds
+	"add_restorine_to_chests": true,
+	// Add unique boss drops, like the Warden Heart. Disabling this will make some enchantments unobtainable.
+	"add_boss_drops": true,
+	/* While this is enabled all infusion type recipes will be ignored, relic infusion cannot be done at the
+	   Smithing Table, and the Infusion Smithing Template item will not be registered.
+	*/
+	"anvil_relics": false,
+	// The minimum amount of power (bookshelves and enchanted books within range of an enchanting table) to enchant.
+	"minimum_enchanting_power": 0,
+	// The minimum amount of power required to enchant uncommon enchantments.
+	"uncommon_enchanting_power": 22,
+	// The minimum amount of power required to enchant rare enchantments.
+	"rare_enchanting_power": 55,
+	// The minimum amount of power required to enchant very rare enchantments.
+	"very_rare_enchanting_power": 100,
+	// Enchanted Books can only have one enchantment on them. Otherwise, they use the regular capacity system.
+	"single_enchantment_books": true,
+	// Enchanted Books placed in Chiseled Bookshelves near an Enchanting Table will remove the scrap cost for that enchantment.
+	"books_remove_scrap_cost": false,
+	/* The amount of tiers having an Enchanted Book in a Chiseled Bookshelf bypasses.
+	   
+	   For example, if this is set to 1 and you have a Miasma book in a nearby bookshelf you could now
+	   enchant Miasma at Rare tier instead of Very Rare. If this is set to 4, books would completely
+	   remove the power tier requirement at the enchanting table. Setting this to 0 disables this feature.
+	*/
+	"books_tier_bypass": 1,
+	/* The maximum horizontal range for bookshelf detection for Enchantment Tables. Unlike vanilla, non-bookshelf
+	   blocks do not detract from this maximum. The lowest this value can be set is 2.
+	*/
+	"bookshelf_detection_width": 5,
+	/* The maximum vertical range for bookshelf detection for Enchantment Tables. Unlike vanilla, non-bookshelf
+	   blocks do not detract from this maximum. The lowest this value can be set is 1.
+	*/
+	"bookshelf_detection_height": 2,
+	/* Ascendant Arcana disables many vanilla enchantments because they stress the capacity system too much with
+	   'required' enchantments. Enchantments are generally meant to be more interesting and meaningfully impactful
+	   but this list is configurable so you can enable or disable whatever you want.
+	   
+	   Do note that most enchantments on this list by default DO NOT come with recipes, so in order to see them in
+	   the Enchanting Table you must create your own enchantment recipes for them with a datapack.
+	*/
+	"disabled_enchantments": [
+		"minecraft:protection",
+		"minecraft:sharpness",
+		"minecraft:efficiency",
+		"minecraft:quick_charge",
+		"minecraft:power",
+		"minecraft:bane_of_arthropods",
+		"minecraft:blast_protection",
+		"minecraft:projectile_protection",
+		"minecraft:fire_protection",
+		"minecraft:smite",
+		"minecraft:impaling",
+		"minecraft:mending",
+		"minecraft:unbreaking",
+		"majruszsenchantments:misanthropy",
+		"majruszsenchantments:gold_fuelled",
+		"majruszsenchantments:smelter",
+		"majruszsenchantments:magic_protection",
+		"majruszsenchantments:dodge",
+		"majruszsenchantments:enlightenment",
+		"majruszsenchantments:immortality"
+	],
+	// Items which have their base relic capacity value overwritten.
+	"base_relic_capacity_overrides": {
+		"minecraft:crossbow": 1
+	},
+	/* Items which have their base enchantment capacity overwritten. The default enchantment capacity of an item
+	   is determined by the vanilla enchantability stat of the item's material. For example, Diamond is 10 and
+	   Netherite is 15. Items with an enchantability of 1 have their capacity increased to 10 by default.
+	*/
+	"base_enchantment_capacity_overrides": {
+		"minecraft:shield": 15,
+		"minecraft:crossbow": 20,
+		"minecraft:enchanted_book": 12,
+		"minecraft:bow": 20,
+		"minecraft:trident": 15
+	},
+	// Enchantments which have their base rarity overwritten. Common is 1, Uncommon is 2, Rare is 3, Very Rare is 4. This might not work on modded enchantments.
+	"overwritten_rarities": {
+		"minecraft:knockback": 1,
+		"minecraft:sweeping": 1,
+		"minecraft:thorns": 2,
+		"minecraft:looting": 4,
+		"minecraft:flame": 2,
+		"minecraft:feather_falling": 1,
+		"minecraft:lure": 1,
+		"veinmining:vein_mining": 1,
+		"minecraft:soul_speed": 3,
+		"minecraft:aqua_affinity": 2,
+		"minecraft:respiration": 1,
+		"minecraft:fire_aspect": 2,
+		"minecraft:swift_sneak": 3,
+		"minecraft:frost_walker": 2,
+		"minecraft:infinity": 3,
+		"minecraft:punch": 1,
+		"minecraft:fortune": 4,
+		"minecraft:channeling": 2
+	}
+}
