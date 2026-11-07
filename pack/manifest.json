@@ -32,10 +32,10 @@
    "url": "https://github.com/Cicadagg/hgarena-modpack/releases/download/files/26f615fd35-FarmersDelight-1.20.1-1.3.4.jar"
   },
   {
-   "path": "mods/L_Enders_Cataclysm-3.31.jar",
-   "sha1": "4f1165cb39521292e826b471b4808bb89f0f4f3f",
-   "size": 73916104,
-   "url": "https://github.com/Cicadagg/hgarena-modpack/releases/download/files/4f1165cb39-L_Enders_Cataclysm-3.31.jar"
+   "path": "mods/L_Enders_Cataclysm-3.16.jar",
+   "sha1": "25d84c486a817ba54362ea1f4b82b6d3802cc074",
+   "size": 127993805,
+   "url": "https://github.com/Cicadagg/hgarena-modpack/releases/download/files/25d84c486a-L_Enders_Cataclysm-3.16.jar"
   },
   {
    "path": "mods/Patchouli-1.20.1-85-FORGE.jar",
@@ -481,14 +481,14 @@
    "path": "options.txt",
    "sha1": "30f09690421e0c2147fce2b724b2b6f719692678",
    "size": 7053,
-   "url": "https://raw.githubusercontent.com/Cicadagg/hgarena-modpack/5511da37a617e92881344f1af1e2d04ed62ff68a/pack/files/options.txt",
+   "url": "https://raw.githubusercontent.com/Cicadagg/hgarena-modpack/3f9f6e15f8f76ffd4a3ab6b7a8bfccac612d52ab/pack/files/options.txt",
    "once": true
   },
   {
    "path": "servers.dat",
    "sha1": "68555b9f7c27c4641ddf38fd9bb72fc23a651c96",
    "size": 81,
-   "url": "https://raw.githubusercontent.com/Cicadagg/hgarena-modpack/5511da37a617e92881344f1af1e2d04ed62ff68a/pack/files/servers.dat"
+   "url": "https://raw.githubusercontent.com/Cicadagg/hgarena-modpack/3f9f6e15f8f76ffd4a3ab6b7a8bfccac612d52ab/pack/files/servers.dat"
   }
  ]
 }
