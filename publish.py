@@ -15,6 +15,7 @@ import shutil
 import subprocess
 import sys
 import time
+import zipfile
 from urllib.parse import quote
 
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -64,9 +65,10 @@ def main():
             uploads[name] = p
             entries.append({"path": "mods/" + fn, "sha1": s, "size": os.path.getsize(p), "url": dl + name})
 
-    # configs and once-files -> repo
+    # configs -> one zip asset (one request instead of ~170); a copy stays in the repo for history
     if os.path.isdir(PACK_FILES):
         shutil.rmtree(PACK_FILES)
+    config_files = []
     for root, dirs, files in os.walk(os.path.join(SOURCE, "config")):
         for fn in files:
             if fn.endswith(".bak") or fn.endswith(".tmp"):
@@ -76,7 +78,22 @@ def main():
             dst = os.path.join(PACK_FILES, rel)
             os.makedirs(os.path.dirname(dst), exist_ok=True)
             shutil.copy2(full, dst)
-            entries.append({"path": rel, "sha1": sha1_file(full), "size": os.path.getsize(full), "url": raw + quote(rel)})
+            config_files.append((rel, full))
+    zip_path = os.path.join(HERE, "build", "configs.zip")
+    os.makedirs(os.path.dirname(zip_path), exist_ok=True)
+    with zipfile.ZipFile(zip_path, "w", zipfile.ZIP_DEFLATED, compresslevel=9) as z:
+        for rel, full in sorted(config_files):
+            # fixed timestamp: same configs -> same zip -> same SHA1, so no re-upload or re-download
+            info = zipfile.ZipInfo(rel[len("config/"):], date_time=(2000, 1, 1, 0, 0, 0))
+            info.compress_type = zipfile.ZIP_DEFLATED
+            info.external_attr = 0o644 << 16
+            with open(full, "rb") as f:
+                z.writestr(info, f.read())
+    s = sha1_file(zip_path)
+    name = asset_name(s, "configs.zip")
+    uploads[name] = zip_path
+    entries.append({"path": "config", "sha1": s, "size": os.path.getsize(zip_path), "url": dl + name,
+                    "unzip": True, "merge": True})
     for rel in ONCE_FILES:
         full = os.path.join(SOURCE, rel)
         if os.path.isfile(full):
@@ -110,14 +127,15 @@ def main():
     for name in existing - set(uploads):
         run(GH, "release", "delete-asset", FILES_TAG, name, "--yes")
 
-    launcher_version = 1
+    # launcher_* fields let the launcher update itself
+    launcher = {"launcher_version": 1}
     if build_launcher:
-        launcher_version = build_and_release(repo)
+        launcher = build_and_release(repo)
     else:
         old = os.path.join(HERE, "pack", "manifest.json")
         if os.path.isfile(old):
             with open(old, encoding="utf-8") as f:
-                launcher_version = json.load(f).get("launcher_version", 1)
+                launcher = {k: v for k, v in json.load(f).items() if k.startswith("launcher_")}
 
     # commit the files first, then point the manifest at that exact commit
     run("git", "add", "-A", "pack/files")
@@ -128,8 +146,7 @@ def main():
     for e in entries:
         e["url"] = e["url"].replace("@RAW@", f"https://raw.githubusercontent.com/{repo}/{commit}/pack/files/")
 
-    manifest = {"minecraft": MINECRAFT, "forge": FORGE, "server": SERVER,
-                "launcher_version": launcher_version, "files": entries}
+    manifest = {"minecraft": MINECRAFT, "forge": FORGE, "server": SERVER, **launcher, "files": entries}
     with open(os.path.join(HERE, "pack", "manifest.json"), "w", encoding="utf-8") as f:
         json.dump(manifest, f, ensure_ascii=False, indent=1)
 
@@ -160,7 +177,8 @@ def build_and_release(repo):
     else:
         run(GH, "release", "create", tag, exe, "--latest", "--title", f"Лаунчер v{version}",
             "--notes", "Скачайте HGArenaLauncher.exe, запустите, введите ник и нажмите «Играть».")
-    return version
+    return {"launcher_version": version, "launcher_sha1": sha1_file(exe), "launcher_size": os.path.getsize(exe),
+            "launcher_url": f"https://github.com/{repo}/releases/download/{tag}/HGArenaLauncher.exe"}
 
 
 if __name__ == "__main__":
