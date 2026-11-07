@@ -19,7 +19,7 @@ import requests
 import minecraft_launcher_lib as mll
 from minecraft_launcher_lib._helper import get_library_path, parse_rule_list
 
-LAUNCHER_VERSION = 3
+LAUNCHER_VERSION = 4
 WORKERS = 8  # parallel connections: one GitHub connection is slow, several fill the channel
 PART = 8 << 20  # big files are split into 8 MB ranges downloaded in parallel and resumed on drops
 REPO = "__REPO__"  # owner/name, filled in by publish.py before building
@@ -31,6 +31,7 @@ STATE_PATH = os.path.join(GAME_DIR, "launcher-state.json")
 NO_WINDOW = 0x08000000 if os.name == "nt" else 0
 # minecraft-launcher-lib downloads without a timeout; a hung connection would freeze forever
 socket.setdefaulttimeout(30)
+CHECK_EVERY_MS = 10 * 60 * 1000  # how often the open launcher looks for a new modpack version
 
 
 def load_json(path, default):
@@ -80,17 +81,31 @@ class Launcher:
         ttk.Label(frm, text="Память, ГБ:").grid(column=0, row=2, sticky="w")
         self.ram_var = tk.IntVar(value=int(self.settings.get("ram", 8)))
         ttk.Spinbox(frm, from_=4, to=32, textvariable=self.ram_var, width=6).grid(column=1, row=2, sticky="w", pady=2)
-        self.repair_var = tk.BooleanVar(value=False)
-        ttk.Checkbutton(frm, text="Проверить все файлы", variable=self.repair_var).grid(column=1, row=3, columnspan=2, sticky="w")
-
-        self.play_btn = ttk.Button(frm, text="Играть", command=self.on_play)
+        self.play_btn = ttk.Button(frm, text="Играть", command=lambda: self.start("play"))
         self.play_btn.grid(column=0, row=4, columnspan=3, sticky="we", pady=(10, 4), ipady=6)
-        self.progress = ttk.Progressbar(frm, length=320, mode="determinate")
-        self.progress.grid(column=0, row=5, columnspan=3, pady=4)
+        row = ttk.Frame(frm)
+        row.grid(column=0, row=5, columnspan=3, sticky="we")
+        for i in range(3):
+            row.columnconfigure(i, weight=1)
+        self.update_btn = ttk.Button(row, text="Обновить моды", command=lambda: self.start("update"))
+        self.update_btn.grid(column=0, row=0, sticky="we", padx=(0, 2))
+        self.restart_btn = ttk.Button(row, text="Перезапустить игру", command=lambda: self.start("restart"))
+        self.restart_btn.grid(column=1, row=0, sticky="we", padx=2)
+        self.repair_btn = ttk.Button(row, text="Проверить файлы", command=lambda: self.start("repair"))
+        self.repair_btn.grid(column=2, row=0, sticky="we", padx=(2, 0))
+        self.buttons = [self.play_btn, self.update_btn, self.restart_btn, self.repair_btn]
+
+        self.progress = ttk.Progressbar(frm, length=360, mode="determinate")
+        self.progress.grid(column=0, row=6, columnspan=3, pady=(8, 4))
         self.status = tk.StringVar(value="Готов")
-        ttk.Label(frm, textvariable=self.status, width=48).grid(column=0, row=6, columnspan=3, sticky="w")
-        ttk.Button(frm, text="Папка игры", command=self.open_folder).grid(column=0, row=7, sticky="w", pady=(8, 0))
-        ttk.Label(frm, text=f"v{LAUNCHER_VERSION}", foreground="gray").grid(column=2, row=7, sticky="e", pady=(8, 0))
+        ttk.Label(frm, textvariable=self.status, width=54).grid(column=0, row=7, columnspan=3, sticky="w")
+        self.update_info = tk.StringVar(value="Проверка обновлений...")
+        self.update_label = ttk.Label(frm, textvariable=self.update_info, wraplength=360, foreground="gray")
+        self.update_label.grid(column=0, row=8, columnspan=3, sticky="w")
+        ttk.Button(frm, text="Папка игры", command=self.open_folder).grid(column=0, row=9, sticky="w", pady=(8, 0))
+        ttk.Label(frm, text=f"v{LAUNCHER_VERSION}", foreground="gray").grid(column=2, row=9, sticky="e", pady=(8, 0))
+        self.busy = False
+        root.after(300, self.check_updates)
 
     # thread-safe UI helpers
     def ui(self, fn, *a):
@@ -109,19 +124,52 @@ class Launcher:
         os.makedirs(GAME_DIR, exist_ok=True)
         os.startfile(GAME_DIR)
 
-    def on_play(self):
-        name = self.name_var.get().strip()
-        if not (3 <= len(name) <= 16) or not all(c.isalnum() or c == "_" for c in name) or not name.isascii():
-            messagebox.showerror("Ник", "Ник: 3-16 символов, латиница, цифры и _")
-            return
-        self.settings.update(name=name, ram=int(self.ram_var.get()))
-        save_json(SETTINGS_PATH, self.settings)
-        self.play_btn.configure(state="disabled")
-        threading.Thread(target=self.run, args=(name, int(self.ram_var.get()), self.repair_var.get()), daemon=True).start()
+    def on_play(self):  # --autoplay after a self-update
+        self.start("play")
 
-    def run(self, name, ram, repair):
+    def start(self, mode):
+        """mode: play (update + start), update (only update), restart (close the game, update, start),
+        repair (check every file by its checksum, then start)."""
+        if self.busy:
+            return
+        name = self.name_var.get().strip()
+        if mode != "update":
+            if not (3 <= len(name) <= 16) or not all(c.isalnum() or c == "_" for c in name) or not name.isascii():
+                messagebox.showerror("Ник", "Ник: 3-16 символов, латиница, цифры и _")
+                return
+            self.settings.update(name=name, ram=int(self.ram_var.get()))
+            save_json(SETTINGS_PATH, self.settings)
+        running = self.game_running()
+        if running and mode == "restart":
+            pass
+        elif running and mode in ("play", "repair"):
+            if not messagebox.askyesno("Игра уже запущена", "Игра уже запущена. Закрыть её, обновить моды и запустить заново?"):
+                return
+            mode = "restart" if mode == "play" else mode
+        elif running and mode == "update":
+            if not messagebox.askyesno("Игра запущена", "Пока игра запущена, моды не обновить. Закрыть игру и обновить?"):
+                return
+        elif not running and mode == "restart":
+            mode = "play"
+        self.busy = True
+        for b in self.buttons:
+            b.configure(state="disabled")
+        threading.Thread(target=self.run, args=(mode, name, int(self.ram_var.get())), daemon=True).start()
+
+    def run(self, mode, name, ram):
         try:
-            self.prepare_and_launch(name, ram, repair)
+            if self.game_running():
+                self.set_status("Закрываю игру...")
+                self.stop_game()
+            manifest = self.prepare(repair=mode == "repair", after_update="--update" if mode == "update" else "--autoplay")
+            if manifest is None:
+                return  # the launcher is restarting itself
+            self.ui(self.show_update_info, 0, 0)
+            if mode == "update":
+                self.set_status("Моды обновлены. Можно играть.")
+                self.set_progress(0)
+            else:
+                self.launch(manifest, name, ram)
         except Exception as e:
             traceback.print_exc()
             log = os.path.join(GAME_DIR, "launcher-error.log")
@@ -131,7 +179,63 @@ class Launcher:
             self.set_status("Ошибка, подробности в launcher-error.log")
             self.ui(messagebox.showerror, "Ошибка", f"{e}\n\nЛог: {log}")
         finally:
-            self.ui(self.play_btn.configure, {"state": "normal"})
+            self.ui(self.unlock)
+
+    def unlock(self):
+        self.busy = False
+        for b in self.buttons:
+            b.configure(state="normal")
+
+    # ---------- the running game ----------
+    def game_running(self):
+        pid = load_json(STATE_PATH, {}).get("game_pid")
+        if not pid:
+            return False
+        try:
+            out = subprocess.run(["tasklist", "/FI", f"PID eq {pid}", "/FO", "CSV", "/NH"], capture_output=True,
+                                 text=True, creationflags=NO_WINDOW, timeout=10).stdout.lower()
+        except Exception:
+            return False
+        return "java" in out  # the pid may have been reused by another program
+
+    def stop_game(self):
+        pid = load_json(STATE_PATH, {}).get("game_pid")
+        if pid and self.game_running():
+            subprocess.run(["taskkill", "/PID", str(pid), "/T", "/F"], capture_output=True, creationflags=NO_WINDOW)
+            for _ in range(50):  # wait until the mod files are no longer locked
+                if not self.game_running():
+                    break
+                time.sleep(0.2)
+            time.sleep(1)
+
+    # ---------- update check ----------
+    def check_updates(self):
+        if not self.busy:
+            threading.Thread(target=self._check_updates, daemon=True).start()
+        self.root.after(CHECK_EVERY_MS, self.check_updates)
+
+    def _check_updates(self):
+        try:
+            manifest = self.fetch_manifest()
+            state = load_json(STATE_PATH, {})
+            todo = [e for e in manifest["files"] if self.needs(e, state.get("files", {}), False)]
+            newer_launcher = manifest.get("launcher_version", 0) > LAUNCHER_VERSION
+            self.ui(self.show_update_info, len(todo) + (1 if newer_launcher else 0), sum(e["size"] for e in todo))
+        except Exception:
+            traceback.print_exc()
+            self.ui(self.update_info.set, "Не удалось проверить обновления (нет сети?)")
+
+    def show_update_info(self, count, size):
+        if count:
+            amount = f"{size / 1048576:.0f} МБ" if size >= 1048576 else f"{max(1, size // 1024)} КБ"
+            text = f"Есть обновление ({amount}). Нажмите «Обновить моды» или «Играть»."
+            if self.game_running():
+                text = f"Есть обновление ({amount}). Нажмите «Перезапустить игру»."
+            self.update_info.set(text)
+            self.update_label.configure(foreground="#c05000")
+        else:
+            self.update_info.set("Моды актуальны")
+            self.update_label.configure(foreground="gray")
 
     def retry(self, what, fn, *a, **kw):
         for attempt in range(1, 11):
@@ -147,13 +251,15 @@ class Launcher:
     def callback(self):
         return {"setStatus": self.set_status, "setProgress": self.set_progress, "setMax": self.set_max}
 
-    def prepare_and_launch(self, name, ram, repair):
+    def prepare(self, repair, after_update):
+        """Installs Minecraft/Forge if needed and syncs the modpack. Returns the manifest,
+        or None when the launcher replaced itself with a new version and restarts."""
         os.makedirs(GAME_DIR, exist_ok=True)
         self.set_status("Загрузка списка файлов...")
         manifest = self.retry("Список файлов", self.fetch_manifest)
         if manifest.get("launcher_version", 0) > LAUNCHER_VERSION:
-            if self.self_update(manifest):
-                return
+            if self.self_update(manifest, after_update):
+                return None
             self.ui(messagebox.showinfo, "Обновление",
                     "Вышла новая версия лаунчера. Скачайте её на странице:\n"
                     f"https://github.com/{REPO}/releases/latest")
@@ -179,7 +285,11 @@ class Launcher:
             save_json(STATE_PATH, state)
 
         self.sync_files(manifest, state, repair)
+        return manifest
 
+    def launch(self, manifest, name, ram):
+        mc, forge = manifest["minecraft"], manifest["forge"]
+        forge_id = f"{mc}-forge-{forge}"
         self.set_status("Запуск игры...")
         options = {
             "username": name,
@@ -195,7 +305,10 @@ class Launcher:
             # connect straight to our server (1.20 Quick Play)
             options["quickPlayMultiplayer"] = manifest["server"]
         cmd = mll.command.get_minecraft_command(forge_id, GAME_DIR, options)
-        subprocess.Popen(cmd, cwd=GAME_DIR, creationflags=NO_WINDOW)
+        game = subprocess.Popen(cmd, cwd=GAME_DIR, creationflags=NO_WINDOW)
+        state = load_json(STATE_PATH, {})
+        state["game_pid"] = game.pid
+        save_json(STATE_PATH, state)
         self.set_status("Игра запущена. Лаунчер можно закрыть.")
         self.set_progress(0)
 
@@ -285,7 +398,7 @@ class Launcher:
         return missing
 
     # ---------- self-update ----------
-    def self_update(self, manifest):
+    def self_update(self, manifest, after_update="--autoplay"):
         """Replace the running exe with the new release and restart it. False if that is not possible."""
         if not getattr(sys, "frozen", False) or not manifest.get("launcher_sha1"):
             return False
@@ -309,7 +422,7 @@ class Launcher:
             return False
         # a fresh PyInstaller process, not a child that reuses our unpacked files
         env = dict(os.environ, PYINSTALLER_RESET_ENVIRONMENT="1")
-        subprocess.Popen([exe, "--autoplay"], env=env, close_fds=True)
+        subprocess.Popen([exe, after_update], env=env, close_fds=True)
         os._exit(0)
 
     # ---------- parallel downloads ----------
@@ -419,21 +532,21 @@ class Launcher:
         finally:
             shutil.rmtree(tmp_dir, ignore_errors=True)
 
+    @staticmethod
+    def needs(e, files, repair):
+        """True if the entry has to be downloaded. Without repair the checksum is trusted from the state file."""
+        target = os.path.join(GAME_DIR, e["path"])
+        if e.get("unzip"):
+            return not (files.get(e["path"]) == e["sha1"] and os.path.isdir(target) and not repair)
+        return not (os.path.isfile(target) and (
+            e.get("once") or (os.path.getsize(target) == e["size"] and
+                              (files.get(e["path"]) == e["sha1"] and not repair or sha1_file(target) == e["sha1"]))))
+
     def sync_files(self, manifest, state, repair):
         files = state.setdefault("files", {})
         entries = manifest["files"]
-        todo = []
         self.set_status("Проверка файлов модпака...")
-        for e in entries:
-            target = os.path.join(GAME_DIR, e["path"])
-            if e.get("unzip"):
-                ok = files.get(e["path"]) == e["sha1"] and os.path.isdir(target) and not repair
-            else:
-                ok = os.path.isfile(target) and (
-                    e.get("once") or (os.path.getsize(target) == e["size"] and
-                                      (files.get(e["path"]) == e["sha1"] and not repair or sha1_file(target) == e["sha1"])))
-            if not ok:
-                todo.append(e)
+        todo = [e for e in entries if self.needs(e, files, repair)]
 
         def install(e, tmp):
             target = os.path.join(GAME_DIR, e["path"])
@@ -475,6 +588,8 @@ def main():
     app = Launcher(root)
     if "--autoplay" in sys.argv and app.name_var.get().strip():
         root.after(500, app.on_play)
+    elif "--update" in sys.argv:
+        root.after(500, lambda: app.start("update"))
     root.mainloop()
 
 

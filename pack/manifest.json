@@ -2,10 +2,10 @@
  "minecraft": "1.20.1",
  "forge": "47.4.28",
  "server": "212.22.85.244:25654",
- "launcher_version": 3,
- "launcher_sha1": "43b2530c5b0968e1fdca4f0e98b931d4f59a2398",
- "launcher_size": 15611269,
- "launcher_url": "https://github.com/Cicadagg/hgarena-modpack/releases/download/launcher-v3/HGArenaLauncher.exe",
+ "launcher_version": 4,
+ "launcher_sha1": "53f5df00e42ea4e82c978293ad70ec65ffbb0853",
+ "launcher_size": 15614037,
+ "launcher_url": "https://github.com/Cicadagg/hgarena-modpack/releases/download/launcher-v4/HGArenaLauncher.exe",
  "files": [
   {
    "path": "mods/AttributeFix-Forge-1.20.1-21.0.5.jar",
@@ -201,9 +201,9 @@
   },
   {
    "path": "mods/hgarena-1.0.0.jar",
-   "sha1": "97478a14c6c62ea684596fea0f86fa4305d4268a",
-   "size": 92307,
-   "url": "https://github.com/Cicadagg/hgarena-modpack/releases/download/files/97478a14c6-hgarena-1.0.0.jar"
+   "sha1": "4845e8dfdef4e347f1b82b3716aafef4438ca381",
+   "size": 130999,
+   "url": "https://github.com/Cicadagg/hgarena-modpack/releases/download/files/4845e8dfde-hgarena-1.0.0.jar"
   },
   {
    "path": "mods/i_wanna_travel-0.4-forge-1.20.1.jar",
@@ -399,9 +399,9 @@
   },
   {
    "path": "config",
-   "sha1": "eafa10398eaa983509c46922890f4760a27b95ed",
-   "size": 353860,
-   "url": "https://github.com/Cicadagg/hgarena-modpack/releases/download/files/eafa10398e-configs.zip",
+   "sha1": "8cef3aebeb018ff84cee75bd88e139ddaa62e1c9",
+   "size": 357724,
+   "url": "https://github.com/Cicadagg/hgarena-modpack/releases/download/files/8cef3aebeb-configs.zip",
    "unzip": true,
    "merge": true
   },
@@ -409,14 +409,14 @@
    "path": "options.txt",
    "sha1": "30f09690421e0c2147fce2b724b2b6f719692678",
    "size": 7053,
-   "url": "https://raw.githubusercontent.com/Cicadagg/hgarena-modpack/e494738486075af66b20136704e65a41bb26e267/pack/files/options.txt",
+   "url": "https://raw.githubusercontent.com/Cicadagg/hgarena-modpack/361f78b10b1c34a89cecb16db5b9903a029bd339/pack/files/options.txt",
    "once": true
   },
   {
    "path": "servers.dat",
    "sha1": "68555b9f7c27c4641ddf38fd9bb72fc23a651c96",
    "size": 81,
-   "url": "https://raw.githubusercontent.com/Cicadagg/hgarena-modpack/e494738486075af66b20136704e65a41bb26e267/pack/files/servers.dat"
+   "url": "https://raw.githubusercontent.com/Cicadagg/hgarena-modpack/361f78b10b1c34a89cecb16db5b9903a029bd339/pack/files/servers.dat"
   }
  ]
 }
