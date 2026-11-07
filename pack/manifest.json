@@ -1,7 +1,7 @@
 {
  "minecraft": "1.20.1",
  "forge": "47.4.28",
- "server": "",
+ "server": "212.22.85.244:25654",
  "launcher_version": 3,
  "launcher_sha1": "43b2530c5b0968e1fdca4f0e98b931d4f59a2398",
  "launcher_size": 15611269,
@@ -409,8 +409,14 @@
    "path": "options.txt",
    "sha1": "30f09690421e0c2147fce2b724b2b6f719692678",
    "size": 7053,
-   "url": "https://raw.githubusercontent.com/Cicadagg/hgarena-modpack/4ac146ee6f38467825a051bf9169088da45aae30/pack/files/options.txt",
+   "url": "https://raw.githubusercontent.com/Cicadagg/hgarena-modpack/e494738486075af66b20136704e65a41bb26e267/pack/files/options.txt",
    "once": true
+  },
+  {
+   "path": "servers.dat",
+   "sha1": "68555b9f7c27c4641ddf38fd9bb72fc23a651c96",
+   "size": 81,
+   "url": "https://raw.githubusercontent.com/Cicadagg/hgarena-modpack/e494738486075af66b20136704e65a41bb26e267/pack/files/servers.dat"
   }
  ]
 }

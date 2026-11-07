@@ -23,7 +23,7 @@ SOURCE = r"C:\Games\Minecraft"
 GH = r"C:\Minecraft-1.20.1-Forge\tools\gh\bin\gh.exe"
 MINECRAFT = "1.20.1"
 FORGE = "47.4.28"
-SERVER = ""  # "host:port" of our server; the launcher connects to it right after start
+SERVER = "212.22.85.244:25654"  # "host:port" of our server; the launcher connects to it right after start
 ONCE_FILES = ["options.txt"]  # copied only if the player has none yet
 FILES_TAG = "files"
 PACK_FILES = os.path.join(HERE, "pack", "files")
@@ -46,6 +46,20 @@ def sha1_file(path):
 
 def asset_name(sha1, filename):
     return sha1[:10] + "-" + re.sub(r"[^A-Za-z0-9._-]", "_", filename)
+
+
+def servers_dat(name, ip):
+    """Uncompressed NBT: {servers: [{name, ip, acceptTextures: 1}]} as Minecraft writes servers.dat."""
+    import struct
+
+    def s(text):
+        b = text.encode("utf-8")
+        return struct.pack(">H", len(b)) + b
+
+    server = (b"\x08" + s("name") + s(name) + b"\x08" + s("ip") + s(ip)
+              + b"\x01" + s("acceptTextures") + b"\x01" + b"\x00")
+    servers = b"\x09" + s("servers") + b"\x0a" + struct.pack(">i", 1) + server
+    return b"\x0a" + s("") + servers + b"\x00"
 
 
 def main():
@@ -100,6 +114,15 @@ def main():
             shutil.copy2(full, os.path.join(PACK_FILES, rel))
             entries.append({"path": rel, "sha1": sha1_file(full), "size": os.path.getsize(full),
                             "url": raw + quote(rel), "once": True})
+
+    # servers.dat with our server, so it is already in the multiplayer list
+    if SERVER:
+        path = os.path.join(PACK_FILES, "servers.dat")
+        os.makedirs(PACK_FILES, exist_ok=True)
+        with open(path, "wb") as f:
+            f.write(servers_dat("HG Arena", SERVER))
+        entries.append({"path": "servers.dat", "sha1": sha1_file(path), "size": os.path.getsize(path),
+                        "url": raw + "servers.dat"})
 
     # release with assets
     try:
