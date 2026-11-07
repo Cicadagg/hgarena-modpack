@@ -135,7 +135,7 @@
   "enableDreamspaceTransitions": true,
   "enableDebugCommands": true,
   "enableDebugLogging": false,
-  "enableMainMenuTheme": true,
+  "enableMainMenuTheme": false,
   "streamerMode": false,
   "hasAcknowledgedMacCompatibilityNotice": false,
   "slipChanceMultiplier": 1.0,
