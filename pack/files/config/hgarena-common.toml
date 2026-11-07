@@ -107,7 +107,7 @@
 	restoreChunksPerTick = 8
 	#Inscription tables (Iron's Spells) placed near the arena center each game, to put spells from scrolls into spell books (0 = none).
 	#Range: 0 ~ 16
-	inscriptionTables = 2
+	inscriptionTables = 0
 	#Distance of the inscription tables from the arena center.
 	#Range: 2 ~ 1000
 	inscriptionTableRadius = 12
