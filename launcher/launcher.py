@@ -19,7 +19,7 @@ import requests
 import minecraft_launcher_lib as mll
 from minecraft_launcher_lib._helper import get_library_path, parse_rule_list
 
-LAUNCHER_VERSION = 4
+LAUNCHER_VERSION = 5
 WORKERS = 8  # parallel connections: one GitHub connection is slow, several fill the channel
 PART = 8 << 20  # big files are split into 8 MB ranges downloaded in parallel and resumed on drops
 REPO = "__REPO__"  # owner/name, filled in by publish.py before building
@@ -314,7 +314,19 @@ class Launcher:
 
     @staticmethod
     def fetch_manifest():
-        r = requests.get(MANIFEST_URL, timeout=30, headers={"Cache-Control": "no-cache"})
+        url = MANIFEST_URL
+        if not os.environ.get("HGARENA_MANIFEST"):
+            # raw.githubusercontent.com serves "main" from a cache for several minutes after a publish, so players
+            # got the old mod and the server refused them. The manifest of the latest commit is never stale.
+            try:
+                c = requests.get(f"https://api.github.com/repos/{REPO}/commits/{BRANCH}", timeout=15,
+                                 headers={"Accept": "application/vnd.github.sha"})
+                sha = c.text.strip()
+                if c.ok and len(sha) == 40 and all(ch in "0123456789abcdef" for ch in sha):
+                    url = f"https://raw.githubusercontent.com/{REPO}/{sha}/pack/manifest.json"
+            except requests.RequestException:
+                pass  # API limit or no access: fall back to the branch URL
+        r = requests.get(url, timeout=30, headers={"Cache-Control": "no-cache"})
         r.raise_for_status()
         return r.json()
 

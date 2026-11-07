@@ -2,10 +2,10 @@
  "minecraft": "1.20.1",
  "forge": "47.4.28",
  "server": "212.22.85.244:25654",
- "launcher_version": 4,
- "launcher_sha1": "cb8ce84eb78e52de5bd93f979248aff8a4ede04f",
- "launcher_size": 15614227,
- "launcher_url": "https://github.com/Cicadagg/hgarena-modpack/releases/download/launcher-v4/HGArenaLauncher.exe",
+ "launcher_version": 5,
+ "launcher_sha1": "f6742fd911d699c3ec2e9b2eefd19fdb5a77464f",
+ "launcher_size": 15613965,
+ "launcher_url": "https://github.com/Cicadagg/hgarena-modpack/releases/download/launcher-v5/HGArenaLauncher.exe",
  "files": [
   {
    "path": "mods/AttributeFix-Forge-1.20.1-21.0.5.jar",
@@ -409,14 +409,14 @@
    "path": "options.txt",
    "sha1": "30f09690421e0c2147fce2b724b2b6f719692678",
    "size": 7053,
-   "url": "https://raw.githubusercontent.com/Cicadagg/hgarena-modpack/1c89a359fcd41af1da99de49e512a4e7a29ab9ef/pack/files/options.txt",
+   "url": "https://raw.githubusercontent.com/Cicadagg/hgarena-modpack/26fa99f0ea9ed38b0685eb8a3854054cb22e5362/pack/files/options.txt",
    "once": true
   },
   {
    "path": "servers.dat",
    "sha1": "68555b9f7c27c4641ddf38fd9bb72fc23a651c96",
    "size": 81,
-   "url": "https://raw.githubusercontent.com/Cicadagg/hgarena-modpack/1c89a359fcd41af1da99de49e512a4e7a29ab9ef/pack/files/servers.dat"
+   "url": "https://raw.githubusercontent.com/Cicadagg/hgarena-modpack/26fa99f0ea9ed38b0685eb8a3854054cb22e5362/pack/files/servers.dat"
   }
  ]
 }
