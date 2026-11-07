@@ -24,6 +24,8 @@
 	#Chance per player and interval that an extra mob appears.
 	#Range: 0.0 ~ 1.0
 	extraSpawnChance = 0.5
+	#These mobs (entity ids) never spawn on their own, and ones saved in the world are removed. /summon and spawn eggs still work.
+	blockedSpawnMobs = ["fightsfrights:pioneer", "fightsfrights:pioneer_head", "fightsfrights:mimic_pioneer"]
 
 [chests]
 	#Every N minutes all arena chests get new random loot and a new wave of random chests appears. 0 = only by command.
@@ -198,4 +200,17 @@
 	#A weapon/armor dream chest is rerolled up to this many times until it holds a weapon or armor piece.
 	#Range: 1 ~ 50
 	gearRolls = 5
+
+[airdrop]
+	#Every N minutes of a game a chest with very good loot drops at a random spot inside the zone; it is shown on the map (0 = off).
+	#Range: 0 ~ 120
+	intervalMinutes = 5
+
+[reveal]
+	#Experience levels a living player pays (map screen button) to see where the other players are (0 = free).
+	#Range: 0 ~ 100
+	costLevels = 2
+	#How long the other players stay visible on the map after paying.
+	#Range: 1 ~ 600
+	showSeconds = 20
 
