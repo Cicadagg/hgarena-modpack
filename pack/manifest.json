@@ -3,8 +3,8 @@
  "forge": "47.4.28",
  "server": "212.22.85.244:25654",
  "launcher_version": 4,
- "launcher_sha1": "53f5df00e42ea4e82c978293ad70ec65ffbb0853",
- "launcher_size": 15614037,
+ "launcher_sha1": "cb8ce84eb78e52de5bd93f979248aff8a4ede04f",
+ "launcher_size": 15614227,
  "launcher_url": "https://github.com/Cicadagg/hgarena-modpack/releases/download/launcher-v4/HGArenaLauncher.exe",
  "files": [
   {
@@ -399,9 +399,9 @@
   },
   {
    "path": "config",
-   "sha1": "8cef3aebeb018ff84cee75bd88e139ddaa62e1c9",
-   "size": 357724,
-   "url": "https://github.com/Cicadagg/hgarena-modpack/releases/download/files/8cef3aebeb-configs.zip",
+   "sha1": "807d10b5f999d07af8cc03b64cb9581b237fbb3d",
+   "size": 354159,
+   "url": "https://github.com/Cicadagg/hgarena-modpack/releases/download/files/807d10b5f9-configs.zip",
    "unzip": true,
    "merge": true
   },
@@ -409,14 +409,14 @@
    "path": "options.txt",
    "sha1": "30f09690421e0c2147fce2b724b2b6f719692678",
    "size": 7053,
-   "url": "https://raw.githubusercontent.com/Cicadagg/hgarena-modpack/361f78b10b1c34a89cecb16db5b9903a029bd339/pack/files/options.txt",
+   "url": "https://raw.githubusercontent.com/Cicadagg/hgarena-modpack/3eaef429739587e8fbb78e210a5645c560711581/pack/files/options.txt",
    "once": true
   },
   {
    "path": "servers.dat",
    "sha1": "68555b9f7c27c4641ddf38fd9bb72fc23a651c96",
    "size": 81,
-   "url": "https://raw.githubusercontent.com/Cicadagg/hgarena-modpack/361f78b10b1c34a89cecb16db5b9903a029bd339/pack/files/servers.dat"
+   "url": "https://raw.githubusercontent.com/Cicadagg/hgarena-modpack/3eaef429739587e8fbb78e210a5645c560711581/pack/files/servers.dat"
   }
  ]
 }
