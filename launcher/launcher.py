@@ -17,8 +17,9 @@ from tkinter import ttk, messagebox
 
 import requests
 import minecraft_launcher_lib as mll
+from minecraft_launcher_lib._helper import get_library_path, parse_rule_list
 
-LAUNCHER_VERSION = 2
+LAUNCHER_VERSION = 3
 WORKERS = 8  # parallel connections: one GitHub connection is slow, several fill the channel
 PART = 8 << 20  # big files are split into 8 MB ranges downloaded in parallel and resumed on drops
 REPO = "__REPO__"  # owner/name, filled in by publish.py before building
@@ -161,14 +162,19 @@ class Launcher:
         forge_id = f"{mc}-forge-{forge}"
         state = load_json(STATE_PATH, {})
 
-        if repair or state.get("installed") != forge_id or not os.path.isfile(
-                os.path.join(GAME_DIR, "versions", forge_id, forge_id + ".json")):
+        # check the files on disk; install only the parts that are actually missing
+        self.set_status("Проверка файлов игры...")
+        missing = {"vanilla": "проверка", "forge": "проверка"} if repair else self.missing_game_files(mc, forge)
+        print("missing game files:", missing)
+        if "vanilla" in missing:
             self.set_status(f"Установка Minecraft {mc}...")
             self.retry("Minecraft", mll.install.install_minecraft_version, mc, GAME_DIR, callback=self.callback())
+        if "forge" in missing:
             java = self.java_path(mc, console=True)
             self.set_status(f"Установка Forge {forge}...")
             self.retry("Forge", mll.mod_loader.get_mod_loader("forge").install,
                        mc, GAME_DIR, loader_version=forge, callback=self.callback(), java=java)
+        if missing:
             state["installed"] = forge_id
             save_json(STATE_PATH, state)
 
@@ -213,6 +219,70 @@ class Launcher:
             if os.path.isfile(javaw):
                 return javaw
         return java
+
+    @staticmethod
+    def missing_game_files(mc, forge):
+        """Fast on-disk check (existence and size, no hashing) of Minecraft, its libraries and assets,
+        and Forge with the files its installer generates. Returns {"vanilla"/"forge": first missing file}."""
+        missing = {}
+        vdir = os.path.join(GAME_DIR, "versions")
+        libs = os.path.join(GAME_DIR, "libraries")
+        forge_id = f"{mc}-forge-{forge}"
+
+        def bad(path, size=None):
+            return not os.path.isfile(path) or (size is not None and os.path.getsize(path) != size)
+
+        def check_libs(part, libraries):
+            for lib in libraries:
+                if "rules" in lib and not parse_rule_list(lib["rules"], {}):
+                    continue  # not for this OS
+                art = lib.get("downloads", {}).get("artifact")
+                if art and art.get("path"):
+                    path, size = os.path.join(libs, art["path"]), art.get("size")
+                else:
+                    path, size = get_library_path(lib["name"], GAME_DIR), None
+                if bad(path, size):
+                    missing.setdefault(part, lib["name"])
+                    return
+
+        vanilla = load_json(os.path.join(vdir, mc, mc + ".json"), None)
+        if not vanilla:
+            return {"vanilla": mc + ".json", "forge": forge_id}
+        try:
+            if bad(os.path.join(vdir, mc, mc + ".jar"), vanilla["downloads"]["client"].get("size")):
+                missing["vanilla"] = mc + ".jar"
+            check_libs("vanilla", vanilla["libraries"])
+            index = load_json(os.path.join(GAME_DIR, "assets", "indexes", vanilla["assetIndex"]["id"] + ".json"), None)
+            if not index:
+                missing.setdefault("vanilla", "assets index")
+            else:
+                for name, obj in index["objects"].items():
+                    h = obj["hash"]
+                    if bad(os.path.join(GAME_DIR, "assets", "objects", h[:2], h), obj.get("size")):
+                        missing.setdefault("vanilla", name)
+                        break
+        except (KeyError, TypeError):
+            missing.setdefault("vanilla", mc + ".json")
+
+        fj = load_json(os.path.join(vdir, forge_id, forge_id + ".json"), None)
+        if not fj:
+            missing["forge"] = forge_id + ".json"
+            return missing
+        try:
+            check_libs("forge", fj["libraries"])
+            game_args = fj["arguments"]["game"]
+            mcp = game_args[game_args.index("--fml.mcpVersion") + 1]
+            for path in (
+                    os.path.join(libs, "net", "minecraftforge", "forge", f"{mc}-{forge}", f"forge-{mc}-{forge}-client.jar"),
+                    os.path.join(libs, "net", "minecraftforge", "forge", f"{mc}-{forge}", f"forge-{mc}-{forge}-universal.jar"),
+                    os.path.join(libs, "net", "minecraft", "client", f"{mc}-{mcp}", f"client-{mc}-{mcp}-srg.jar"),
+                    os.path.join(libs, "net", "minecraft", "client", f"{mc}-{mcp}", f"client-{mc}-{mcp}-extra.jar")):
+                if bad(path):
+                    missing.setdefault("forge", os.path.basename(path))
+                    break
+        except (KeyError, TypeError, ValueError, IndexError):
+            missing.setdefault("forge", forge_id + ".json")
+        return missing
 
     # ---------- self-update ----------
     def self_update(self, manifest):
