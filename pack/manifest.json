@@ -201,9 +201,9 @@
   },
   {
    "path": "mods/hgarena-1.0.0.jar",
-   "sha1": "a6ada5b272f9df07fa0925f7c5e03a449f4d2e95",
-   "size": 206778,
-   "url": "https://github.com/Cicadagg/hgarena-modpack/releases/download/files/a6ada5b272-hgarena-1.0.0.jar"
+   "sha1": "59f490f813908c5fa94932b1c34f29824423dee3",
+   "size": 209330,
+   "url": "https://github.com/Cicadagg/hgarena-modpack/releases/download/files/59f490f813-hgarena-1.0.0.jar"
   },
   {
    "path": "mods/i_wanna_travel-0.4-forge-1.20.1.jar",
@@ -399,9 +399,9 @@
   },
   {
    "path": "config",
-   "sha1": "85130fb821f917bfa6ce79a75fa83949feaaaa64",
-   "size": 358474,
-   "url": "https://github.com/Cicadagg/hgarena-modpack/releases/download/files/85130fb821-configs.zip",
+   "sha1": "a0ceff1daedab411b2e20c7169c28d6f41741352",
+   "size": 358476,
+   "url": "https://github.com/Cicadagg/hgarena-modpack/releases/download/files/a0ceff1dae-configs.zip",
    "unzip": true,
    "merge": true
   },
@@ -409,14 +409,14 @@
    "path": "options.txt",
    "sha1": "30f09690421e0c2147fce2b724b2b6f719692678",
    "size": 7053,
-   "url": "https://raw.githubusercontent.com/Cicadagg/hgarena-modpack/604f1aa3a4d23fb0943b60364f694afef7904d1e/pack/files/options.txt",
+   "url": "https://raw.githubusercontent.com/Cicadagg/hgarena-modpack/2da81fd01e4cedd80394538a2a06d0ccfde6a615/pack/files/options.txt",
    "once": true
   },
   {
    "path": "servers.dat",
    "sha1": "68555b9f7c27c4641ddf38fd9bb72fc23a651c96",
    "size": 81,
-   "url": "https://raw.githubusercontent.com/Cicadagg/hgarena-modpack/604f1aa3a4d23fb0943b60364f694afef7904d1e/pack/files/servers.dat"
+   "url": "https://raw.githubusercontent.com/Cicadagg/hgarena-modpack/2da81fd01e4cedd80394538a2a06d0ccfde6a615/pack/files/servers.dat"
   }
  ]
 }
