@@ -399,9 +399,9 @@
   },
   {
    "path": "config",
-   "sha1": "f9296a0d9be2897d9b8fe20ec2252a2a799e42e7",
-   "size": 353864,
-   "url": "https://github.com/Cicadagg/hgarena-modpack/releases/download/files/f9296a0d9b-configs.zip",
+   "sha1": "eafa10398eaa983509c46922890f4760a27b95ed",
+   "size": 353860,
+   "url": "https://github.com/Cicadagg/hgarena-modpack/releases/download/files/eafa10398e-configs.zip",
    "unzip": true,
    "merge": true
   },
@@ -409,7 +409,7 @@
    "path": "options.txt",
    "sha1": "30f09690421e0c2147fce2b724b2b6f719692678",
    "size": 7053,
-   "url": "https://raw.githubusercontent.com/Cicadagg/hgarena-modpack/261b3e8316ec0954f63e37ad59e670e5404b63d7/pack/files/options.txt",
+   "url": "https://raw.githubusercontent.com/Cicadagg/hgarena-modpack/4ac146ee6f38467825a051bf9169088da45aae30/pack/files/options.txt",
    "once": true
   }
  ]
