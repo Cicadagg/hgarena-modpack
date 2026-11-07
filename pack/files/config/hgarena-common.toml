@@ -42,7 +42,7 @@
 	#Loot tables always available for arena chests.
 	lootTables = ["minecraft:chests/simple_dungeon", "minecraft:chests/abandoned_mineshaft", "minecraft:chests/desert_pyramid", "minecraft:chests/jungle_temple", "minecraft:chests/village/village_weaponsmith", "minecraft:chests/village/village_armorer", "minecraft:chests/village/village_toolsmith", "minecraft:chests/shipwreck_supply", "minecraft:chests/pillager_outpost", "minecraft:chests/ruined_portal", "minecraft:chests/stronghold_corridor", "minecraft:chests/igloo_chest"]
 	#Loot tables (or prefixes ending with *) that are never used.
-	excludedLootTables = ["minecraft:chests/end_city_treasure", "minecraft:chests/ancient_city*", "minecraft:chests/bastion_treasure", "netherman:chests/azazel_barrel", "netherman:chests/azazel_human_barrel"]
+	excludedLootTables = []
 	#At game start chests are placed over the whole arena on a grid with this spacing in blocks.
 	#Range: 8 ~ 1000
 	gridSpacing = 40
@@ -78,7 +78,7 @@
 		#Spell books that can appear, as 'mod:item=weight'.
 		spellBooks = ["irons_spellbooks:copper_spell_book=5", "irons_spellbooks:iron_spell_book=4", "irons_spellbooks:gold_spell_book=3", "irons_spellbooks:diamond_spell_book=2", "irons_spellbooks:netherite_spell_book=1"]
 		#Iron's Spells items whose id contains one of these words are crafting resources and are taken out of arena chests.
-		spellResourceKeywords = ["ink", "essence", "rune", "upgrade_orb", "ingot", "mithril", "arcane_debris", "arcane_salvage", "cloth", "knowledge_fragment", "dragonskin", "frozen_bone", "shard", "divine_pearl", "energized_core", "lightning_bottle", "weapon_parts", "weapon_schematics", "hogskin", "icy_fang", "blood_vial", "bloody_vellum", "pheromones", "venom_vial", "timeless_slurry", "spell_slot_upgrade", "ruined_book", "ice_spider_egg", "furled_map", "logbook", "eldritch_manuscript", "decrepit_key", "bone_key"]
+		spellResourceKeywords = []
 
 [game]
 	#How far from the arena edge the lobby platform is built (blocks, to the south).
