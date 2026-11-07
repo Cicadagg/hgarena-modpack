@@ -11,9 +11,9 @@
 	#Highest Y a random chest or spawn point may be at (keeps them off walls and roofs).
 	#Range: -64 ~ 319
 	maxY = 110
-	#No new mobs spawn (naturally, from spawners, reinforcements, summons by other mobs) while the overworld already has this many. /summon and spawn eggs still work. 0 = no limit.
+	#No new ordinary mobs spawn (naturally, from spawners, reinforcements, summons by other mobs) while the overworld already has this many. Special mobs (location mobs of structures and dragon nests, extra mobs near players) are not counted and not limited. /summon and spawn eggs still work. 0 = no limit.
 	#Range: 0 ~ 10000
-	maxMobs = 100
+	maxMobs = 80
 	#Mobs of these mods (namespaces) never spawn on their own (natural, spawners, structures). /summon and spawn eggs still work.
 	blockedSpawnMods = ["monsterexpansion"]
 	#Extra mobs that appear near players during a game, as 'mod:entity=weight' (empty = off).
@@ -103,6 +103,14 @@
 	#How many chunks are restored per tick after a game (higher = faster, more lag).
 	#Range: 1 ~ 256
 	restoreChunksPerTick = 8
+	#Inscription tables (Iron's Spells) placed near the arena center each game, to put spells from scrolls into spell books (0 = none).
+	#Range: 0 ~ 16
+	inscriptionTables = 2
+	#Distance of the inscription tables from the arena center.
+	#Range: 2 ~ 1000
+	inscriptionTableRadius = 12
+	#Block used as the inscription table.
+	inscriptionTableBlock = "irons_spellbooks:inscription_table"
 
 [zone]
 	#Starting zone (world border) size in blocks. 0 = arena diameter + 10.
@@ -172,4 +180,22 @@
 	#The ground under a location is levelled; this many blocks around it are blended into the terrain.
 	#Range: 0 ~ 32
 	levelMargin = 6
+	#Dragon nests appear this many minutes after the game starts (0 = right at the start).
+	#Range: 0 ~ 1440
+	dragonRoostsDelayMinutes = 15
+
+#DreamShift: chests in the dream locations a player slips into during a game
+[dreamshift]
+	#Fewest chests placed near the player when they arrive in a dream location.
+	#Range: 0 ~ 10
+	chestsMin = 1
+	#Most chests placed near the player when they arrive in a dream location.
+	#Range: 0 ~ 10
+	chestsMax = 2
+	#Chance that a dream chest uses a rare loot table (treasure, boss, vault...); otherwise it gets weapons/armor.
+	#Range: 0.0 ~ 1.0
+	rareTableChance = 0.35
+	#A weapon/armor dream chest is rerolled up to this many times until it holds a weapon or armor piece.
+	#Range: 1 ~ 50
+	gearRolls = 5
 
