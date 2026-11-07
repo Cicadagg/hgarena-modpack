@@ -26,16 +26,16 @@
    "url": "https://github.com/Cicadagg/hgarena-modpack/releases/download/files/324e6921ec-CustomSkinLoader_Universal-15.1.jar"
   },
   {
-   "path": "mods/Dungeon Now Loading-forge-1.20.1-2.2.jar",
-   "sha1": "6cb812d282be790ebb9314a5b6e6c610ce19d44a",
-   "size": 85065508,
-   "url": "https://github.com/Cicadagg/hgarena-modpack/releases/download/files/6cb812d282-Dungeon_Now_Loading-forge-1.20.1-2.2.jar"
-  },
-  {
    "path": "mods/FarmersDelight-1.20.1-1.3.4.jar",
    "sha1": "26f615fd35f652021f5b0f1cba68afa7d578fe15",
    "size": 3311051,
    "url": "https://github.com/Cicadagg/hgarena-modpack/releases/download/files/26f615fd35-FarmersDelight-1.20.1-1.3.4.jar"
+  },
+  {
+   "path": "mods/L_Enders_Cataclysm-3.31.jar",
+   "sha1": "4f1165cb39521292e826b471b4808bb89f0f4f3f",
+   "size": 73916104,
+   "url": "https://github.com/Cicadagg/hgarena-modpack/releases/download/files/4f1165cb39-L_Enders_Cataclysm-3.31.jar"
   },
   {
    "path": "mods/Patchouli-1.20.1-85-FORGE.jar",
@@ -48,6 +48,12 @@
    "sha1": "366e0f0c7ca746fee327392d3569b31aefd34b5a",
    "size": 362339,
    "url": "https://github.com/Cicadagg/hgarena-modpack/releases/download/files/366e0f0c7c-SmartBrainLib-forge-1.20.1-1.15.jar"
+  },
+  {
+   "path": "mods/SpiderOverhaul-0.1.0-Forge-v1.20.jar",
+   "sha1": "e19ebe144b480e3126bd5c0dbf42d3b963a57904",
+   "size": 576589,
+   "url": "https://github.com/Cicadagg/hgarena-modpack/releases/download/files/e19ebe144b-SpiderOverhaul-0.1.0-Forge-v1.20.jar"
   },
   {
    "path": "mods/The_Undergarden-1.20.1-0.8.14.jar",
@@ -66,6 +72,12 @@
    "sha1": "81919356f84eab14258db98924b66c3c38e372b1",
    "size": 47428,
    "url": "https://github.com/Cicadagg/hgarena-modpack/releases/download/files/81919356f8-appleskin-forge-mc1.20.1-2.5.1.jar"
+  },
+  {
+   "path": "mods/apprentice_codex-1.0.1+mc1.20.1.jar",
+   "sha1": "965523717b8d30f946c26ce03bafc9b0768b4b20",
+   "size": 12290282,
+   "url": "https://github.com/Cicadagg/hgarena-modpack/releases/download/files/965523717b-apprentice_codex-1.0.1_mc1.20.1.jar"
   },
   {
    "path": "mods/archers-forge-3.1.4+1.20.1.jar",
@@ -98,6 +110,12 @@
    "url": "https://github.com/Cicadagg/hgarena-modpack/releases/download/files/dd9a79d93d-ascendant_arcana-forge-0.13.5.jar"
   },
   {
+   "path": "mods/azurelib-neo-1.20.1-3.2.7.jar",
+   "sha1": "abef0175d6ff5563accea054096539ec82a57978",
+   "size": 1521915,
+   "url": "https://github.com/Cicadagg/hgarena-modpack/releases/download/files/abef0175d6-azurelib-neo-1.20.1-3.2.7.jar"
+  },
+  {
    "path": "mods/bettercombat-forge-1.9.0+1.20.1.jar",
    "sha1": "ea7e7247132cb3acacadd96b2b6b635c4cc63a74",
    "size": 1054339,
@@ -116,10 +134,28 @@
    "url": "https://github.com/Cicadagg/hgarena-modpack/releases/download/files/78d5ce605e-blueprint-1.20.1-7.1.5.jar"
   },
   {
+   "path": "mods/caelus-forge-3.2.0+1.20.1.jar",
+   "sha1": "d14e8ee892d4d8764f523ad0e89bdcfc061fb007",
+   "size": 40125,
+   "url": "https://github.com/Cicadagg/hgarena-modpack/releases/download/files/d14e8ee892-caelus-forge-3.2.0_1.20.1.jar"
+  },
+  {
+   "path": "mods/cataclysm_spellbooks-1.2.9-1.20.1-all.jar",
+   "sha1": "57fbb161849fca19aa12632944b01ce12760c4c4",
+   "size": 1266452,
+   "url": "https://github.com/Cicadagg/hgarena-modpack/releases/download/files/57fbb16184-cataclysm_spellbooks-1.2.9-1.20.1-all.jar"
+  },
+  {
    "path": "mods/caverns_and_chasms-1.20.1-2.1.3.jar",
    "sha1": "b511714b89d257a89358173fb70f776fb76798ca",
    "size": 38734591,
    "url": "https://github.com/Cicadagg/hgarena-modpack/releases/download/files/b511714b89-caverns_and_chasms-1.20.1-2.1.3.jar"
+  },
+  {
+   "path": "mods/chilib-1.4.0-1.20.1.jar",
+   "sha1": "e2dee886eb24c47b23a25980d9ac3e512c6e8a01",
+   "size": 104319,
+   "url": "https://github.com/Cicadagg/hgarena-modpack/releases/download/files/e2dee886eb-chilib-1.4.0-1.20.1.jar"
   },
   {
    "path": "mods/citadel-2.6.3-1.20.1.jar",
@@ -158,6 +194,12 @@
    "url": "https://github.com/Cicadagg/hgarena-modpack/releases/download/files/452175b95a-curios-forge-5.14.1_1.20.1.jar"
   },
   {
+   "path": "mods/dnmmod-1.1.2-1.20.1-hotfix.jar",
+   "sha1": "2f10c4d3a98222d29e3a4b9d5fae87a897648db0",
+   "size": 7796477,
+   "url": "https://github.com/Cicadagg/hgarena-modpack/releases/download/files/2f10c4d3a9-dnmmod-1.1.2-1.20.1-hotfix.jar"
+  },
+  {
    "path": "mods/dreamshift-0.2.2-hotfix-forge.jar",
    "sha1": "6095a0968bfaaa359f48209b2d4a8fd3c7f6f6cb",
    "size": 336809581,
@@ -174,6 +216,12 @@
    "sha1": "a1ab5f7ebc0b92cf59c884d4a647cad37b6f8b8d",
    "size": 3235284,
    "url": "https://github.com/Cicadagg/hgarena-modpack/releases/download/files/a1ab5f7ebc-fightsfrights_with_HIVE-2.3.0-forge-1.20.1.jar"
+  },
+  {
+   "path": "mods/fletchery_expanded-forge-1.20.1-2.0.0.jar",
+   "sha1": "7b4d0c61a0a729cca3bc06fdca6a2f42a8a025de",
+   "size": 1542807,
+   "url": "https://github.com/Cicadagg/hgarena-modpack/releases/download/files/7b4d0c61a0-fletchery_expanded-forge-1.20.1-2.0.0.jar"
   },
   {
    "path": "mods/fragmentum-5.4.0+1.20.1-forge.jar",
@@ -194,6 +242,18 @@
    "url": "https://github.com/Cicadagg/hgarena-modpack/releases/download/files/50e1407869-geckolib-forge-1.20.1-4.8.4.jar"
   },
   {
+   "path": "mods/gtbcs_spell_lib-2.2.0-1.20.1.jar",
+   "sha1": "753917963574a7087fa10999b7646e2efe5772b2",
+   "size": 293807,
+   "url": "https://github.com/Cicadagg/hgarena-modpack/releases/download/files/7539179635-gtbcs_spell_lib-2.2.0-1.20.1.jar"
+  },
+  {
+   "path": "mods/hazennstuff-watered-down-edition-1.1.2.jar",
+   "sha1": "6c1f91348f92e77e830a569d20733ab13251afe0",
+   "size": 1204816,
+   "url": "https://github.com/Cicadagg/hgarena-modpack/releases/download/files/6c1f91348f-hazennstuff-watered-down-edition-1.1.2.jar"
+  },
+  {
    "path": "mods/hedges_bestiary-1.0.7.jar",
    "sha1": "9f7eff86f2e9a6afaec6fd7e03e665c73fdb36de",
    "size": 5478240,
@@ -201,9 +261,9 @@
   },
   {
    "path": "mods/hgarena-1.0.0.jar",
-   "sha1": "1ba21957dccea8434c065aeeba32bc750272d821",
-   "size": 229117,
-   "url": "https://github.com/Cicadagg/hgarena-modpack/releases/download/files/1ba21957dc-hgarena-1.0.0.jar"
+   "sha1": "36f0c805ec27d3404e0c436d612575cf1ef16b4d",
+   "size": 236226,
+   "url": "https://github.com/Cicadagg/hgarena-modpack/releases/download/files/36f0c805ec-hgarena-1.0.0.jar"
   },
   {
    "path": "mods/i_wanna_travel-0.4-forge-1.20.1.jar",
@@ -266,22 +326,22 @@
    "url": "https://github.com/Cicadagg/hgarena-modpack/releases/download/files/208c2fcd6a-l2library-2.5.5.jar"
   },
   {
-   "path": "mods/lukis-woodland-mansions-v.1.0.jar",
-   "sha1": "b3dd7845f2721c51bad97206c0db3ffd2c09050a",
-   "size": 1455004,
-   "url": "https://github.com/Cicadagg/hgarena-modpack/releases/download/files/b3dd7845f2-lukis-woodland-mansions-v.1.0.jar"
-  },
-  {
-   "path": "mods/monsterexpansion-1.20.1-v0.7.6.jar",
-   "sha1": "8c28505124423307736cc0a3585034ceb3a8a452",
-   "size": 18448166,
-   "url": "https://github.com/Cicadagg/hgarena-modpack/releases/download/files/8c28505124-monsterexpansion-1.20.1-v0.7.6.jar"
+   "path": "mods/lionfishapi-3.0.jar",
+   "sha1": "79d0404f87fa066480b18c844c1e0b1c5f5475f9",
+   "size": 101931,
+   "url": "https://github.com/Cicadagg/hgarena-modpack/releases/download/files/79d0404f87-lionfishapi-3.0.jar"
   },
   {
    "path": "mods/moremobvariants-forge+1.20.1-1.3.0.1.jar",
    "sha1": "0fad563c9d66e421b0b0d4541b33d18516446c58",
    "size": 379988,
    "url": "https://github.com/Cicadagg/hgarena-modpack/releases/download/files/0fad563c9d-moremobvariants-forge_1.20.1-1.3.0.1.jar"
+  },
+  {
+   "path": "mods/mowziesmobs-1.8.2.jar",
+   "sha1": "25ffcd175cc03650e38e60d3cb7b3e038d9d3345",
+   "size": 36033850,
+   "url": "https://github.com/Cicadagg/hgarena-modpack/releases/download/files/25ffcd175c-mowziesmobs-1.8.2.jar"
   },
   {
    "path": "mods/paladins-forge-3.1.3+1.20.1.jar",
@@ -380,6 +440,12 @@
    "url": "https://github.com/Cicadagg/hgarena-modpack/releases/download/files/00ee596546-tarotcards-1.20-1.7.0.jar"
   },
   {
+   "path": "mods/threateningly_mobs-1.1.1-forge-1.20.1.jar",
+   "sha1": "b2f09dd8d11e5caa393b34f778c55f65a51eb965",
+   "size": 10136081,
+   "url": "https://github.com/Cicadagg/hgarena-modpack/releases/download/files/b2f09dd8d1-threateningly_mobs-1.1.1-forge-1.20.1.jar"
+  },
+  {
    "path": "mods/valarian_conquest-4.2.2-forge-1.20.1.jar",
    "sha1": "f91686ec092dbf1bc77356d8cb70e5b8c157d929",
    "size": 11230014,
@@ -390,6 +456,12 @@
    "sha1": "e9893b8244c619423d92cff01c0e3e64294bae8d",
    "size": 1289255,
    "url": "https://github.com/Cicadagg/hgarena-modpack/releases/download/files/e9893b8244-variantsandventures-forge-1.0.29_mc1.20.1.jar"
+  },
+  {
+   "path": "mods/wind_spellbooks-1.20.1-1.0.0.jar",
+   "sha1": "a219c1d13056784add75491e524ff747015d399f",
+   "size": 482113,
+   "url": "https://github.com/Cicadagg/hgarena-modpack/releases/download/files/a219c1d130-wind_spellbooks-1.20.1-1.0.0.jar"
   },
   {
    "path": "mods/yet_another_config_lib_v3-3.6.6+1.20.1-forge.jar",
@@ -409,14 +481,14 @@
    "path": "options.txt",
    "sha1": "30f09690421e0c2147fce2b724b2b6f719692678",
    "size": 7053,
-   "url": "https://raw.githubusercontent.com/Cicadagg/hgarena-modpack/69584b59c13c963588ab442ad13dcf77f9c2eda9/pack/files/options.txt",
+   "url": "https://raw.githubusercontent.com/Cicadagg/hgarena-modpack/5511da37a617e92881344f1af1e2d04ed62ff68a/pack/files/options.txt",
    "once": true
   },
   {
    "path": "servers.dat",
    "sha1": "68555b9f7c27c4641ddf38fd9bb72fc23a651c96",
    "size": 81,
-   "url": "https://raw.githubusercontent.com/Cicadagg/hgarena-modpack/69584b59c13c963588ab442ad13dcf77f9c2eda9/pack/files/servers.dat"
+   "url": "https://raw.githubusercontent.com/Cicadagg/hgarena-modpack/5511da37a617e92881344f1af1e2d04ed62ff68a/pack/files/servers.dat"
   }
  ]
 }
