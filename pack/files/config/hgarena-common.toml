@@ -107,7 +107,7 @@
 	restoreChunksPerTick = 8
 	#Inscription tables (Iron's Spells) placed near the arena center each game, to put spells from scrolls into spell books (0 = none).
 	#Range: 0 ~ 16
-	inscriptionTables = 1
+	inscriptionTables = 0
 	#Distance of the inscription tables from the arena center.
 	#Range: 2 ~ 1000
 	inscriptionTableRadius = 12
@@ -126,7 +126,7 @@
 	shrinkFactor = 0.6
 	#The zone shrinks every N minutes.
 	#Range: 1 ~ 1440
-	shrinkIntervalMinutes = 7
+	shrinkIntervalMinutes = 9
 	#How long one shrink takes.
 	#Range: 1 ~ 3600
 	shrinkDurationSeconds = 90
@@ -184,7 +184,7 @@
 	levelMargin = 6
 	#Dragon nests appear this many minutes after the game starts (0 = right at the start).
 	#Range: 0 ~ 1440
-	dragonRoostsDelayMinutes = 15
+	dragonRoostsDelayMinutes = 12
 
 #DreamShift: chests in the dream locations a player slips into during a game
 [dreamshift]
@@ -204,7 +204,7 @@
 [airdrop]
 	#Every N minutes of a game a chest with very good loot drops at a random spot inside the zone; it is shown on the map (0 = off).
 	#Range: 0 ~ 120
-	intervalMinutes = 5
+	intervalMinutes = 6
 
 [reveal]
 	#Experience levels a living player pays (map screen button) to see where the other players are (0 = free).
