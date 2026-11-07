@@ -17,7 +17,7 @@
 	#Mobs of these mods (namespaces) never spawn on their own (natural, spawners, structures). /summon and spawn eggs still work.
 	blockedSpawnMods = ["monsterexpansion"]
 	#Extra mobs that appear near players during a game, as 'mod:entity=weight' (empty = off).
-	extraSpawns = ["netherman:believer=30", "netherman:believer_villager=15", "netherman:guardian=12", "netherman:manipulator=8", "netherman:ghastly=8", "netherman:bell_guardian=3"]
+	extraSpawns = ["netherman:believer=30", "netherman:believer_villager=15", "netherman:guardian=12", "netherman:manipulator=8", "netherman:bell_guardian=3"]
 	#Every N seconds of a game each living player may get one extra mob nearby.
 	#Range: 1 ~ 3600
 	extraSpawnIntervalSeconds = 45
