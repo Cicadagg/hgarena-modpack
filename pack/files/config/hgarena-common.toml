@@ -42,7 +42,7 @@
 	#Loot tables always available for arena chests.
 	lootTables = ["minecraft:chests/simple_dungeon", "minecraft:chests/abandoned_mineshaft", "minecraft:chests/desert_pyramid", "minecraft:chests/jungle_temple", "minecraft:chests/village/village_weaponsmith", "minecraft:chests/village/village_armorer", "minecraft:chests/village/village_toolsmith", "minecraft:chests/shipwreck_supply", "minecraft:chests/pillager_outpost", "minecraft:chests/ruined_portal", "minecraft:chests/stronghold_corridor", "minecraft:chests/igloo_chest"]
 	#Loot tables (or prefixes ending with *) that are never used.
-	excludedLootTables = ["minecraft:chests/end_city_treasure", "minecraft:chests/ancient_city*", "minecraft:chests/bastion_treasure"]
+	excludedLootTables = ["minecraft:chests/end_city_treasure", "minecraft:chests/ancient_city*", "minecraft:chests/bastion_treasure", "netherman:chests/azazel_barrel", "netherman:chests/azazel_human_barrel"]
 	#At game start chests are placed over the whole arena on a grid with this spacing in blocks.
 	#Range: 8 ~ 1000
 	gridSpacing = 40
@@ -126,7 +126,7 @@
 	shrinkFactor = 0.6
 	#The zone shrinks every N minutes.
 	#Range: 1 ~ 1440
-	shrinkIntervalMinutes = 10
+	shrinkIntervalMinutes = 7
 	#How long one shrink takes.
 	#Range: 1 ~ 3600
 	shrinkDurationSeconds = 90
@@ -155,7 +155,7 @@
 	structures = ["soulsweapons:champions_graves", "block_factorys_bosses:dragon_tower", "valarian_conquest:bandit_camp", "valarian_conquest:bandit_ruins", "valarian_conquest:valarian_outpost", "takesapillage:pillager_camp", "i_wanna_travel:structure_1fontaine", "i_wanna_travel:structure_20ruinetour", "ancient_remnants:oakwood_monument", "ancient_remnants:warrior_monolith", "craft_of_the_wild:stables"]
 	#How many structures are placed each game.
 	#Range: 0 ~ 50
-	structuresPerGame = 4
+	structuresPerGame = 5
 	#At most this many large structures per game.
 	#Range: 0 ~ 50
 	maxLargeStructures = 1
