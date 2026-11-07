@@ -332,10 +332,10 @@
    "url": "https://github.com/Cicadagg/hgarena-modpack/releases/download/files/208c2fcd6a-l2library-2.5.5.jar"
   },
   {
-   "path": "mods/lionfishapi-3.0.jar",
-   "sha1": "79d0404f87fa066480b18c844c1e0b1c5f5475f9",
-   "size": 101931,
-   "url": "https://github.com/Cicadagg/hgarena-modpack/releases/download/files/79d0404f87-lionfishapi-3.0.jar"
+   "path": "mods/lionfishapi-2.8.jar",
+   "sha1": "9571aefe90a3d9690fc847848e41bdcc26be4dd4",
+   "size": 122525,
+   "url": "https://github.com/Cicadagg/hgarena-modpack/releases/download/files/9571aefe90-lionfishapi-2.8.jar"
   },
   {
    "path": "mods/moremobvariants-forge+1.20.1-1.3.0.1.jar",
@@ -487,14 +487,14 @@
    "path": "options.txt",
    "sha1": "30f09690421e0c2147fce2b724b2b6f719692678",
    "size": 7053,
-   "url": "https://raw.githubusercontent.com/Cicadagg/hgarena-modpack/5029a6a8e1ab26d4af01fa591d34cd4ea0fa3911/pack/files/options.txt",
+   "url": "https://raw.githubusercontent.com/Cicadagg/hgarena-modpack/22ee204d36d485aa9dc06ea44e3772f832a018ec/pack/files/options.txt",
    "once": true
   },
   {
    "path": "servers.dat",
    "sha1": "68555b9f7c27c4641ddf38fd9bb72fc23a651c96",
    "size": 81,
-   "url": "https://raw.githubusercontent.com/Cicadagg/hgarena-modpack/5029a6a8e1ab26d4af01fa591d34cd4ea0fa3911/pack/files/servers.dat"
+   "url": "https://raw.githubusercontent.com/Cicadagg/hgarena-modpack/22ee204d36d485aa9dc06ea44e3772f832a018ec/pack/files/servers.dat"
   }
  ]
 }
