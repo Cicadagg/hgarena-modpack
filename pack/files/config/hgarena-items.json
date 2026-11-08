@@ -1244,7 +1244,7 @@
   },
   "block_factorys_bosses:undying_tentacle": {
     "spawn": true,
-    "rarity": 1
+    "rarity": 2
   },
   "block_factorys_bosses:vase": {
     "spawn": false
