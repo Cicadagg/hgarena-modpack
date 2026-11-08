@@ -44,29 +44,24 @@
 	#Maximum extra random chests at once; the oldest ones disappear first (grid chests are not counted).
 	#Range: 0 ~ 2000
 	maxRandomChests = 200
-	#Also use every 'chests/...' loot table from all installed mods.
-	useAllChestLootTables = true
-	#Loot tables always available for arena chests.
-	lootTables = ["minecraft:chests/simple_dungeon", "minecraft:chests/abandoned_mineshaft", "minecraft:chests/desert_pyramid", "minecraft:chests/jungle_temple", "minecraft:chests/village/village_weaponsmith", "minecraft:chests/village/village_armorer", "minecraft:chests/village/village_toolsmith", "minecraft:chests/shipwreck_supply", "minecraft:chests/pillager_outpost", "minecraft:chests/ruined_portal", "minecraft:chests/stronghold_corridor", "minecraft:chests/igloo_chest"]
-	#Loot tables (or prefixes ending with *) that are never used.
-	excludedLootTables = []
 	#At game start chests are placed over the whole arena on a grid with this spacing in blocks.
 	#Range: 8 ~ 1000
 	gridSpacing = 40
 	#No grid chests closer than this to the arena center (keeps the spawn area free).
 	#Range: 0 ~ 5000
 	gridMinDistanceFromCenter = 45
-	#Chance that a grid chest uses a rare loot table (treasure, boss, vault and so on).
+	#Chance that an ordinary arena chest also gets bottles o' enchanting (spawn chests and airdrops always get them).
 	#Range: 0.0 ~ 1.0
-	rareTableChance = 0.05
-	#Loot tables whose id contains one of these words count as rare.
-	rareKeywords = ["treasure", "boss", "vault", "end_city", "ancient", "bastion", "legendary", "epic", "relic", "hoard", "mythic", "artifact", "citadel"]
-	#Chance that an ordinary arena chest is filled from a weapon/armor loot table and rerolled until it holds gear.
-	#Range: 0.0 ~ 1.0
-	gearChestChance = 0.5
-	#How many times such a chest is rerolled until it holds a weapon or armor piece.
-	#Range: 1 ~ 50
-	gearChestRolls = 3
+	xpBottleChance = 0.45
+	#Fewest bottles o' enchanting added to a chest.
+	#Range: 1 ~ 64
+	xpBottleMin = 2
+	#Most bottles o' enchanting added to a chest.
+	#Range: 1 ~ 64
+	xpBottleMax = 6
+	#An arena chest disappears this many seconds after a player opened and closed it (an empty one at once; spawn chests stay). 0 = only when empty.
+	#Range: 0 ~ 3600
+	vanishAfterCloseSeconds = 60
 
 	#Iron's Spells & Spellbooks (only when the mod is installed)
 	[chests.spells]
@@ -84,8 +79,35 @@
 		spellBookMaxSpells = 4
 		#Spell books that can appear, as 'mod:item=weight'.
 		spellBooks = ["irons_spellbooks:copper_spell_book=5", "irons_spellbooks:iron_spell_book=4", "irons_spellbooks:gold_spell_book=3", "irons_spellbooks:diamond_spell_book=2", "irons_spellbooks:netherite_spell_book=1"]
-		#Iron's Spells items whose id contains one of these words are crafting resources and are taken out of arena chests.
+		#Iron's Spells items whose id contains one of these words are taken out of arena chests (empty = keep everything).
 		spellResourceKeywords = []
+		#Spells on scrolls and books in arena chests are at least this many levels below the spell's maximum level (2 = max-2 .. max).
+		#Range: 0 ~ 10
+		spellLevelSpread = 2
+
+	#How chests are filled: every item of a chest gets a rarity by the chances below, then a random item of that
+	#rarity is taken from the items marked in /hgarena items (rarity 1 = weak ... 5 = overpowered).
+	[chests.tiers]
+		#Bosses whose single-item drops (weapons, trinkets, heads...) are boss items.
+		bossEntities = ["block_factorys_bosses:infernal_dragon", "block_factorys_bosses:underworld_knight", "block_factorys_bosses:kraken", "block_factorys_bosses:sandworm", "block_factorys_bosses:yeti", "soulsweapons:draugr_boss", "soulsweapons:accursed_lord_boss", "soulsweapons:moonknight", "soulsweapons:chaos_monarch", "soulsweapons:returning_knight", "soulsweapons:night_prowler", "soulsweapons:day_stalker", "soulsweapons:night_shade", "soulsweapons:frost_giant", "soulsweapons:rime_spectre", "iceandfire:dread_lich", "iceandfire:dread_knight", "iceandfire:hydra", "iceandfire:gorgon", "iceandfire:cyclops", "iceandfire:sea_serpent", "irons_spellbooks:dead_king", "irons_spellbooks:fire_boss", "irons_spellbooks:citadel_keeper", "irons_spellbooks:archevoker", "dungeonnowloading:chaos_spawner", "dungeonnowloading:fairkeeper_boros", "dungeonnowloading:fairkeeper_ouros", "undergarden:forgotten_guardian", "monsterexpansion:ignathos", "monsterexpansion:leivekilth", "monsterexpansion:rakoth", "monsterexpansion:rhyza", "monsterexpansion:skrythe", "minecraft:wither", "minecraft:ender_dragon", "minecraft:warden", "minecraft:elder_guardian"]
+		#Chances (in percent, any total) of rarity 1..5 for each item of an ordinary chest.
+		tierChances = [25, 45, 20, 6, 4]
+		#The same for spawn chests and dream chests that roll the good kind.
+		spawnChestTierChances = [5, 25, 35, 20, 15]
+		#The same for airdrops.
+		airdropTierChances = [0, 15, 35, 30, 20]
+		#Fewest items in an ordinary chest (bottles and spell scrolls count too).
+		#Range: 1 ~ 27
+		chestItemsMin = 3
+		#Most items in an ordinary chest.
+		#Range: 1 ~ 27
+		chestItemsMax = 5
+		#Fewest items in a spawn chest or an airdrop.
+		#Range: 1 ~ 27
+		specialItemsMin = 5
+		#Most items in a spawn chest or an airdrop.
+		#Range: 1 ~ 27
+		specialItemsMax = 8
 
 [game]
 	#How far from the arena edge the lobby platform is built (blocks, to the south).
@@ -112,7 +134,7 @@
 	#How many chunks are restored per tick after a game (higher = faster, more lag).
 	#Range: 1 ~ 256
 	restoreChunksPerTick = 8
-	#Inscription tables (Iron's Spells) placed near the arena center each game, to put spells from scrolls into spell books (0 = none).
+	#Extra inscription tables (Iron's Spells) placed on a ring around the arena center each game (0 = none).
 	#Range: 0 ~ 16
 	inscriptionTables = 0
 	#Distance of the inscription tables from the arena center.
@@ -120,6 +142,24 @@
 	inscriptionTableRadius = 12
 	#Block used as the inscription table.
 	inscriptionTableBlock = "irons_spellbooks:inscription_table"
+	#Spell altar placed each game right next to the enchanting table of the map (near the center). Empty = none.
+	spellAltarBlock = ""
+	#After every game all blocks from this Y up are removed over the arena and around the lobby (leftover buildings and altars in the sky). The lobby platform stays. 0 = off.
+	#Range: 0 ~ 320
+	skyClearFromY = 130
+	#Enchanting tables placed near the arena center each game (0 = none).
+	#Range: 0 ~ 16
+	enchantingTables = 0
+	#Put an anvil right beside every inscription table.
+	anvilNextToTable = true
+	#An anvil and an inscription table always stand next to the map's enchanting table near the center: missing ones are placed and become part of the map (the restore keeps them).
+	workshopAtEnchantingTable = true
+	#Length of the day during a game, in minutes (day and night repeat; 0 + 0 = the normal Minecraft cycle).
+	#Range: 0 ~ 60
+	dayMinutes = 3
+	#Length of the night during a game, in minutes.
+	#Range: 0 ~ 60
+	nightMinutes = 3
 
 [zone]
 	#Starting zone (world border) size in blocks. 0 = arena diameter + 10.
@@ -148,14 +188,6 @@
 	#Experience levels a player pays to unlock a spawn chest (0 = not locked). Spawn chests are filled once at game start and never refilled; once paid, a chest stays open for everyone until the game ends.
 	#Range: 0 ~ 1000
 	requiredLevel = 10
-	#Chance that a spawn chest uses a weapon/armor loot table.
-	#Range: 0.0 ~ 1.0
-	combatTableChance = 0.85
-	#A spawn chest is rerolled up to this many times until it holds a weapon or armor piece.
-	#Range: 1 ~ 50
-	gearRolls = 5
-	#Loot tables whose id contains one of these words count as weapon/armor tables.
-	combatKeywords = ["weapon", "armor", "armour", "armory", "armoury", "smith", "barracks", "arsenal", "knight", "warrior", "soldier", "military", "outpost", "fortress", "nether_bridge", "bastion", "tower", "dungeon", "castle", "citadel", "guard", "battle", "forge", "keep"]
 
 [locations]
 	#Structures from mods that may appear as locations. Every game a few of them are picked at random and fitted onto flat ground.
@@ -192,6 +224,13 @@
 	#Dragon nests appear this many minutes after the game starts (0 = right at the start).
 	#Range: 0 ~ 1440
 	dragonRoostsDelayMinutes = 12
+	#Height correction for structures that worldgen normally buries in the terrain, as 'mod:structure=blocks' (negative = deeper).
+	structureYOffsets = ["soulsweapons:champions_graves=-5"]
+	#Entities (not mobs) that structures leave behind and that are removed at the start and the end of every game, e.g. the floating Elderheart crystals of Ancient Remnants.
+	resetEntities = ["ancient_remnants:elderheart"]
+	#After that, new dragon nests appear again every N minutes (0 = only once).
+	#Range: 0 ~ 1440
+	dragonRoostsRepeatMinutes = 12
 
 #DreamShift: chests in the dream locations a player slips into during a game
 [dreamshift]
@@ -201,17 +240,19 @@
 	#Most chests placed near the player when they arrive in a dream location.
 	#Range: 0 ~ 10
 	chestsMax = 2
-	#Chance that a dream chest uses a rare loot table (treasure, boss, vault...); otherwise it gets weapons/armor.
+	#Chance that a dream chest uses the spawn chest rarity chances; otherwise the ordinary ones.
 	#Range: 0.0 ~ 1.0
 	rareTableChance = 0.35
-	#A weapon/armor dream chest is rerolled up to this many times until it holds a weapon or armor piece.
-	#Range: 1 ~ 50
-	gearRolls = 5
 
 [airdrop]
 	#Every N minutes of a game a chest with very good loot drops at a random spot inside the zone; it is shown on the map (0 = off).
 	#Range: 0 ~ 120
 	intervalMinutes = 6
+	#Build a small altar with a beacon beam under every airdrop so it is seen from afar (removed when the airdrop is emptied).
+	altar = true
+	#The airdrop and its altar disappear this many seconds after a player opened and closed it (0 = only when empty).
+	#Range: 0 ~ 3600
+	vanishAfterCloseSeconds = 20
 
 [reveal]
 	#Experience levels a living player pays (map screen button) to see where the other players are (0 = free).
@@ -220,3 +261,21 @@
 	#How long the other players stay visible on the map after paying.
 	#Range: 1 ~ 600
 	showSeconds = 20
+
+#Natural spawning without biome limits (arena world only). Every mob that can spawn naturally in any
+#overworld biome may spawn anywhere on the map; the mob's own spawn rules (light, ground, water) still apply.
+[anyBiome]
+	#Turn biome-independent spawning on.
+	enabled = true
+	#Mob categories that get the mobs of all overworld biomes: monster, creature, ambient, axolotls,
+	#underground_water_creature, water_creature, water_ambient.
+	categories = ["monster", "creature"]
+	#Spawn weight of mobs from other biomes, in percent of their weight at home (100 = same, 50 = half as often).
+	#Range: 1 ~ 1000
+	weightPercent = 100
+	#Mobs (ids or patterns with *) that keep their biomes. Boss entities and blocked mobs are always left out.
+	excluded = ["mowziesmobs:frostmaw"]
+	#Mobs that are in no biome at all (only in structures, removed by other mods...) and should spawn naturally anyway,
+	#as 'mod:entity=weight' or 'mod:entity=weight,minGroup,maxGroup'. Their category is the mob's own.
+	extraMobs = []
+
