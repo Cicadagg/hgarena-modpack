@@ -158,8 +158,7 @@
     "rarity": 2
   },
   "apprenticecodex:craftsmans_delight": {
-    "spawn": true,
-    "rarity": 1
+    "spawn": false
   },
   "apprenticecodex:creative_spell_dispenser": {
     "spawn": false
@@ -264,8 +263,7 @@
     "rarity": 2
   },
   "apprenticecodex:explorers_codex": {
-    "spawn": true,
-    "rarity": 1
+    "spawn": false
   },
   "apprenticecodex:floatmount_broom": {
     "spawn": true,
@@ -356,8 +354,7 @@
     "rarity": 4
   },
   "apprenticecodex:magi_compressor_gadget": {
-    "spawn": true,
-    "rarity": 3
+    "spawn": false
   },
   "apprenticecodex:magnetic_stability_anchor": {
     "spawn": false
@@ -385,8 +382,7 @@
     "rarity": 3
   },
   "apprenticecodex:mana_soul_transducer": {
-    "spawn": true,
-    "rarity": 3
+    "spawn": false
   },
   "apprenticecodex:mana_stabilizer_module": {
     "spawn": false
@@ -599,8 +595,7 @@
     "spawn": false
   },
   "apprenticecodex:spellcaster_ammo_pouch": {
-    "spawn": true,
-    "rarity": 2
+    "spawn": false
   },
   "apprenticecodex:spellcaster_quiver": {
     "spawn": true,
@@ -1918,8 +1913,7 @@
     "rarity": 5
   },
   "cataclysm:sticky_gloves": {
-    "spawn": true,
-    "rarity": 1
+    "spawn": false
   },
   "cataclysm:stone_pillar": {
     "spawn": false
@@ -4500,8 +4494,7 @@
     "spawn": false
   },
   "dnmmod:component_bag": {
-    "spawn": true,
-    "rarity": 1
+    "spawn": false
   },
   "dnmmod:cryomancer_wand": {
     "spawn": true,
@@ -8363,8 +8356,7 @@
     "rarity": 4
   },
   "irons_spellbooks:emerald_stoneplate_ring": {
-    "spawn": true,
-    "rarity": 3
+    "spawn": false
   },
   "irons_spellbooks:ender_rune": {
     "spawn": false
@@ -9208,8 +9200,7 @@
     "rarity": 1
   },
   "l2hostility:abyssal_thorn": {
-    "spawn": true,
-    "rarity": 1
+    "spawn": false
   },
   "l2hostility:adaptive": {
     "spawn": false
@@ -9269,20 +9260,17 @@
     "spawn": false
   },
   "l2hostility:curse_of_greed": {
-    "spawn": true,
-    "rarity": 1
+    "spawn": false
   },
   "l2hostility:curse_of_lust": {
-    "spawn": true,
-    "rarity": 1
+    "spawn": false
   },
   "l2hostility:curse_of_pride": {
     "spawn": true,
     "rarity": 2
   },
   "l2hostility:curse_of_sloth": {
-    "spawn": true,
-    "rarity": 1
+    "spawn": false
   },
   "l2hostility:curse_of_wrath": {
     "spawn": true,
@@ -9305,8 +9293,7 @@
     "rarity": 1
   },
   "l2hostility:divinity_light": {
-    "spawn": true,
-    "rarity": 1
+    "spawn": false
   },
   "l2hostility:drain": {
     "spawn": false
@@ -9402,8 +9389,7 @@
     "rarity": 5
   },
   "l2hostility:pocket_of_restoration": {
-    "spawn": true,
-    "rarity": 1
+    "spawn": false
   },
   "l2hostility:poison": {
     "spawn": false
@@ -9450,8 +9436,7 @@
     "rarity": 4
   },
   "l2hostility:ring_of_ocean": {
-    "spawn": true,
-    "rarity": 1
+    "spawn": false
   },
   "l2hostility:ring_of_reflection": {
     "spawn": true,
@@ -14730,40 +14715,34 @@
     "rarity": 3
   },
   "tarotcards:the_emperor": {
-    "spawn": true,
-    "rarity": 1
+    "spawn": false
   },
   "tarotcards:the_empress": {
-    "spawn": true,
-    "rarity": 1
+    "spawn": false
   },
   "tarotcards:the_fool": {
     "spawn": true,
     "rarity": 3
   },
   "tarotcards:the_hanged_man": {
-    "spawn": true,
-    "rarity": 1
+    "spawn": false
   },
   "tarotcards:the_hermit": {
     "spawn": true,
     "rarity": 4
   },
   "tarotcards:the_hierophant": {
-    "spawn": true,
-    "rarity": 1
+    "spawn": false
   },
   "tarotcards:the_high_priestess": {
-    "spawn": true,
-    "rarity": 1
+    "spawn": false
   },
   "tarotcards:the_lovers": {
     "spawn": true,
     "rarity": 3
   },
   "tarotcards:the_magician": {
-    "spawn": true,
-    "rarity": 1
+    "spawn": false
   },
   "tarotcards:the_moon": {
     "spawn": true,
@@ -14786,8 +14765,7 @@
     "rarity": 4
   },
   "tarotcards:wheel_of_fortune": {
-    "spawn": true,
-    "rarity": 1
+    "spawn": false
   },
   "threateningly_mobs:advanced_summon_stone": {
     "spawn": false
