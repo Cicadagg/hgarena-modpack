@@ -1,7 +1,7 @@
 {
   "migrate_attributes_base": true,
   "base_spell_power": 1.0,
-  "base_spell_critical_chance_percentage": 5.0,
+  "base_spell_critical_chance_percentage": 0.0,
   "base_spell_critical_damage_percentage": 50.0,
   "spell_power_effect": {
     "bonus_per_stack": 0.1

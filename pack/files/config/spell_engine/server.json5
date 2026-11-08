@@ -20,7 +20,7 @@
 	// Additional cooldown in seconds applied to equipped spell book item, after casting a spell from them, to prevent quick swapping and casting.
 	"spell_book_additional_cooldown": 10.0,
 	// Players can use the Spell Binding Table to create spell books.
-	"spell_book_creation_enabled": true,
+	"spell_book_creation_enabled": false,
 	// Spell book creation level levelCost
 	"spell_book_creation_cost": 1,
 	// Spell book creation level requirement

@@ -70,7 +70,7 @@
     "arsenal:surging": {
       "attributes": [
         {
-          "attribute": "spell_power:critical_chance",
+          "attribute": "gtbcs_spell_lib:spell_crit_chance",
           "value": 0.1,
           "operation": "MULTIPLY_BASE"
         }

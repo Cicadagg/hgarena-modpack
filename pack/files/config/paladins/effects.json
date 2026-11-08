@@ -11,7 +11,12 @@
           "operation": "MULTIPLY_BASE"
         },
         {
-          "attribute": "spell_power:haste",
+          "attribute": "irons_spellbooks:cooldown_reduction",
+          "value": 0.4,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:cast_time_reduction",
           "value": 0.4,
           "operation": "MULTIPLY_BASE"
         },

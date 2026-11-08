@@ -49,32 +49,32 @@
     "relics_rpgs:lesser_spell_power": {
       "attributes": [
         {
-          "attribute": "spell_power:arcane",
+          "attribute": "irons_spellbooks:ender_spell_power",
           "value": 0.1,
           "operation": "MULTIPLY_BASE"
         },
         {
-          "attribute": "spell_power:fire",
+          "attribute": "irons_spellbooks:fire_spell_power",
           "value": 0.1,
           "operation": "MULTIPLY_BASE"
         },
         {
-          "attribute": "spell_power:frost",
+          "attribute": "irons_spellbooks:ice_spell_power",
           "value": 0.1,
           "operation": "MULTIPLY_BASE"
         },
         {
-          "attribute": "spell_power:healing",
+          "attribute": "irons_spellbooks:holy_spell_power",
           "value": 0.1,
           "operation": "MULTIPLY_BASE"
         },
         {
-          "attribute": "spell_power:lightning",
+          "attribute": "irons_spellbooks:lightning_spell_power",
           "value": 0.1,
           "operation": "MULTIPLY_BASE"
         },
         {
-          "attribute": "spell_power:soul",
+          "attribute": "irons_spellbooks:blood_spell_power",
           "value": 0.1,
           "operation": "MULTIPLY_BASE"
         }
@@ -83,7 +83,12 @@
     "relics_rpgs:lesser_spell_haste": {
       "attributes": [
         {
-          "attribute": "spell_power:haste",
+          "attribute": "irons_spellbooks:cooldown_reduction",
+          "value": 0.1,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:cast_time_reduction",
           "value": 0.1,
           "operation": "MULTIPLY_BASE"
         }
@@ -92,7 +97,7 @@
     "relics_rpgs:lesser_spell_crit_chance": {
       "attributes": [
         {
-          "attribute": "spell_power:critical_chance",
+          "attribute": "gtbcs_spell_lib:spell_crit_chance",
           "value": 0.15,
           "operation": "MULTIPLY_BASE"
         }
@@ -101,12 +106,12 @@
     "relics_rpgs:lesser_arcane_fire": {
       "attributes": [
         {
-          "attribute": "spell_power:arcane",
+          "attribute": "irons_spellbooks:ender_spell_power",
           "value": 0.15,
           "operation": "MULTIPLY_BASE"
         },
         {
-          "attribute": "spell_power:fire",
+          "attribute": "irons_spellbooks:fire_spell_power",
           "value": 0.15,
           "operation": "MULTIPLY_BASE"
         }
@@ -115,12 +120,12 @@
     "relics_rpgs:lesser_frost_healing": {
       "attributes": [
         {
-          "attribute": "spell_power:frost",
+          "attribute": "irons_spellbooks:ice_spell_power",
           "value": 0.15,
           "operation": "MULTIPLY_BASE"
         },
         {
-          "attribute": "spell_power:healing",
+          "attribute": "irons_spellbooks:holy_spell_power",
           "value": 0.15,
           "operation": "MULTIPLY_BASE"
         }
@@ -129,7 +134,7 @@
     "relics_rpgs:lesser_spell_crit_damage": {
       "attributes": [
         {
-          "attribute": "spell_power:critical_chance",
+          "attribute": "gtbcs_spell_lib:spell_crit_chance",
           "value": 0.5,
           "operation": "MULTIPLY_BASE"
         }
@@ -202,32 +207,32 @@
     "relics_rpgs:medium_spell_power": {
       "attributes": [
         {
-          "attribute": "spell_power:arcane",
+          "attribute": "irons_spellbooks:ender_spell_power",
           "value": 0.2,
           "operation": "MULTIPLY_BASE"
         },
         {
-          "attribute": "spell_power:fire",
+          "attribute": "irons_spellbooks:fire_spell_power",
           "value": 0.2,
           "operation": "MULTIPLY_BASE"
         },
         {
-          "attribute": "spell_power:frost",
+          "attribute": "irons_spellbooks:ice_spell_power",
           "value": 0.2,
           "operation": "MULTIPLY_BASE"
         },
         {
-          "attribute": "spell_power:healing",
+          "attribute": "irons_spellbooks:holy_spell_power",
           "value": 0.2,
           "operation": "MULTIPLY_BASE"
         },
         {
-          "attribute": "spell_power:lightning",
+          "attribute": "irons_spellbooks:lightning_spell_power",
           "value": 0.2,
           "operation": "MULTIPLY_BASE"
         },
         {
-          "attribute": "spell_power:soul",
+          "attribute": "irons_spellbooks:blood_spell_power",
           "value": 0.2,
           "operation": "MULTIPLY_BASE"
         }
@@ -236,7 +241,12 @@
     "relics_rpgs:medium_spell_haste": {
       "attributes": [
         {
-          "attribute": "spell_power:haste",
+          "attribute": "irons_spellbooks:cooldown_reduction",
+          "value": 0.2,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:cast_time_reduction",
           "value": 0.2,
           "operation": "MULTIPLY_BASE"
         }
@@ -245,7 +255,7 @@
     "relics_rpgs:medium_arcane_power": {
       "attributes": [
         {
-          "attribute": "spell_power:arcane",
+          "attribute": "irons_spellbooks:ender_spell_power",
           "value": 0.2,
           "operation": "MULTIPLY_BASE"
         }
@@ -254,7 +264,7 @@
     "relics_rpgs:medium_fire_power": {
       "attributes": [
         {
-          "attribute": "spell_power:fire",
+          "attribute": "irons_spellbooks:fire_spell_power",
           "value": 0.2,
           "operation": "MULTIPLY_BASE"
         }
@@ -263,7 +273,7 @@
     "relics_rpgs:medium_frost_power": {
       "attributes": [
         {
-          "attribute": "spell_power:frost",
+          "attribute": "irons_spellbooks:ice_spell_power",
           "value": 0.2,
           "operation": "MULTIPLY_BASE"
         }
@@ -272,7 +282,7 @@
     "relics_rpgs:medium_healing_power": {
       "attributes": [
         {
-          "attribute": "spell_power:healing",
+          "attribute": "irons_spellbooks:holy_spell_power",
           "value": 0.2,
           "operation": "MULTIPLY_BASE"
         }
@@ -317,7 +327,12 @@
     "relics_rpgs:greater_spell_trance": {
       "attributes": [
         {
-          "attribute": "spell_power:haste",
+          "attribute": "irons_spellbooks:cooldown_reduction",
+          "value": 0.1,
+          "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "irons_spellbooks:cast_time_reduction",
           "value": 0.1,
           "operation": "MULTIPLY_BASE"
         }
@@ -359,27 +374,27 @@
     "relics_rpgs:superior_spell_power": {
       "attributes": [
         {
-          "attribute": "spell_power:arcane",
+          "attribute": "irons_spellbooks:ender_spell_power",
           "value": 0.2,
           "operation": "MULTIPLY_BASE"
         },
         {
-          "attribute": "spell_power:fire",
+          "attribute": "irons_spellbooks:fire_spell_power",
           "value": 0.2,
           "operation": "MULTIPLY_BASE"
         },
         {
-          "attribute": "spell_power:frost",
+          "attribute": "irons_spellbooks:ice_spell_power",
           "value": 0.2,
           "operation": "MULTIPLY_BASE"
         },
         {
-          "attribute": "spell_power:lightning",
+          "attribute": "irons_spellbooks:lightning_spell_power",
           "value": 0.2,
           "operation": "MULTIPLY_BASE"
         },
         {
-          "attribute": "spell_power:soul",
+          "attribute": "irons_spellbooks:blood_spell_power",
           "value": 0.2,
           "operation": "MULTIPLY_BASE"
         }
