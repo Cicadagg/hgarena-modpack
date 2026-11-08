@@ -82,10 +82,10 @@
     "relics_rpgs:lesser_roll": {
       "durability": 0,
       "conditional_attributes": {
-        "required_mod": "combat_roll",
+        "required_mod": "block_factorys_bosses",
         "attributes": [
           {
-            "attribute": "combat_roll:count",
+            "attribute": "block_factorys_bosses:roll_count",
             "value": 1.0,
             "operation": "ADDITION"
           }
