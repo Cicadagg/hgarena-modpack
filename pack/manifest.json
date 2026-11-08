@@ -212,10 +212,28 @@
    "url": "https://github.com/Cicadagg/hgarena-modpack/releases/download/files/6095a0968b-dreamshift-0.2.2-hotfix-forge.jar"
   },
   {
+   "path": "mods/embeddium-0.3.31+mc1.20.1.jar",
+   "sha1": "bb2fa8f3e493af16af9160d049f96c614a1faf2f",
+   "size": 1320675,
+   "url": "https://github.com/Cicadagg/hgarena-modpack/releases/download/files/bb2fa8f3e4-embeddium-0.3.31_mc1.20.1.jar"
+  },
+  {
    "path": "mods/endermanoverhaul-forge-1.20.1-1.0.4.jar",
    "sha1": "636a2b20a5973fcb80016370865cb4251e029b6a",
    "size": 1208062,
    "url": "https://github.com/Cicadagg/hgarena-modpack/releases/download/files/636a2b20a5-endermanoverhaul-forge-1.20.1-1.0.4.jar"
+  },
+  {
+   "path": "mods/entityculling-forge-1.11.3-mc1.20.1.jar",
+   "sha1": "d3c513e88ef9f5cdd7e27d17d923d4dca69c6d55",
+   "size": 1515076,
+   "url": "https://github.com/Cicadagg/hgarena-modpack/releases/download/files/d3c513e88e-entityculling-forge-1.11.3-mc1.20.1.jar"
+  },
+  {
+   "path": "mods/ferritecore-6.0.1-forge.jar",
+   "sha1": "417fb6ce8f52abf40bd9d0390371790f9576f8ba",
+   "size": 123034,
+   "url": "https://github.com/Cicadagg/hgarena-modpack/releases/download/files/417fb6ce8f-ferritecore-6.0.1-forge.jar"
   },
   {
    "path": "mods/fightsfrights_with_HIVE-2.3.0-forge-1.20.1.jar",
@@ -336,6 +354,12 @@
    "sha1": "9571aefe90a3d9690fc847848e41bdcc26be4dd4",
    "size": 122525,
    "url": "https://github.com/Cicadagg/hgarena-modpack/releases/download/files/9571aefe90-lionfishapi-2.8.jar"
+  },
+  {
+   "path": "mods/modernfix-forge-5.27.91+mc1.20.1.jar",
+   "sha1": "195d53d299a93c418c90b672c2640b4e41623f96",
+   "size": 1012942,
+   "url": "https://github.com/Cicadagg/hgarena-modpack/releases/download/files/195d53d299-modernfix-forge-5.27.91_mc1.20.1.jar"
   },
   {
    "path": "mods/moremobvariants-forge+1.20.1-1.3.0.1.jar",
@@ -487,14 +511,14 @@
    "path": "options.txt",
    "sha1": "30f09690421e0c2147fce2b724b2b6f719692678",
    "size": 7053,
-   "url": "https://raw.githubusercontent.com/Cicadagg/hgarena-modpack/9933cf788241909fd13623135954b943530a042a/pack/files/options.txt",
+   "url": "https://raw.githubusercontent.com/Cicadagg/hgarena-modpack/3fa6bbbeabb65e0fb8ca52ea9c6807cd818012df/pack/files/options.txt",
    "once": true
   },
   {
    "path": "servers.dat",
    "sha1": "68555b9f7c27c4641ddf38fd9bb72fc23a651c96",
    "size": 81,
-   "url": "https://raw.githubusercontent.com/Cicadagg/hgarena-modpack/9933cf788241909fd13623135954b943530a042a/pack/files/servers.dat"
+   "url": "https://raw.githubusercontent.com/Cicadagg/hgarena-modpack/3fa6bbbeabb65e0fb8ca52ea9c6807cd818012df/pack/files/servers.dat"
   }
  ]
 }
