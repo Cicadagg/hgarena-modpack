@@ -1,4 +1,8 @@
 {
+  "hgarena:radiance": {
+    "spawn": true,
+    "rarity": 4
+  },
   "ancient_remnants:monolith_codex": {
     "spawn": false
   },
