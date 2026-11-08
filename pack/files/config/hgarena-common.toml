@@ -29,6 +29,8 @@
 	#These mobs never spawn on their own (natural, spawners, structures), but other mobs, spells and items
 	#may still summon them (boss phases and minions, summoning spells and items). /summon and spawn eggs still work.
 	summonOnlyMobs = ["fightsfrights:imperial_illager_p_2", "fightsfrights:malicious_monarch_p_2", "dnmmod:darkspawn_observer", "iceandfire:dread_ghoul", "iceandfire:dread_scuttler", "iceandfire:stone_statue", "threateningly_mobs:corrupted_heroicsoul", "threateningly_mobs:mega_blastrock", "threateningly_mobs:nature_hamony", "threateningly_mobs:ice_weaver", "threateningly_mobs:hydra_cub", "threateningly_mobs:rock_cannon", "threateningly_mobs:slash_wave", "threateningly_mobs:saint_summon_magic", "threateningly_mobs:summon_magic", "soulsweapons:remnant", "soulsweapons:forlorn", "soulsweapons:dark_sorcerer", "soulsweapons:soul_reaper_ghost", "soulsweapons:soulmass", "cataclysm_spellbooks:extended_death_laser_beam", "cataclysm_spellbooks:extended_laser_beam", "cataclysm_spellbooks:summoned_coral_golem", "cataclysm_spellbooks:summoned_counterspell_watcher", "cataclysm_spellbooks:summoned_ignited_berserker", "cataclysm_spellbooks:summoned_ignited_revenant", "cataclysm_spellbooks:summoned_prowler", "cataclysm_spellbooks:summoned_watcher", "dnmmod:summoned_undead_spirit", "iceandfire:myrmex_swarmer", "threateningly_mobs:guardian_statue", "threateningly_mobs:mtr_1", "threateningly_mobs:skeleton_minion", "threateningly_mobs:forest_drake_tamed", "fightsfrights:effigy", "cataclysm:the_baby_leviathan"]
+	#Bosses picked for spawning on the arena (not used by the game yet).
+	arenaBosses = ["block_factorys_bosses:infernal_dragon", "block_factorys_bosses:underworld_knight", "block_factorys_bosses:yeti", "cataclysm:ancient_remnant", "cataclysm:clawdian", "cataclysm:kobolediator", "cataclysm:maledictus", "cataclysm:scylla", "cataclysm:wadjet", "craft_of_the_wild:stone_talus", "fightsfrights:imperial_illager_p_1", "fightsfrights:piglin_prosecutor", "iceandfire:fire_dragon", "iceandfire:lightning_dragon", "irons_spellbooks:archevoker", "irons_spellbooks:fire_boss", "minecraft:warden", "mowziesmobs:ferrous_wroughtnaut", "mowziesmobs:frostmaw", "mowziesmobs:sculptor", "mowziesmobs:umvuthi", "netherman:azazel", "netherman:azazel_human", "threateningly_mobs:hypocritical_saint", "threateningly_mobs:lich_re", "threateningly_mobs:lindworm", "threateningly_mobs:the_regalhart"]
 	#Mini bosses picked in the mob test zone (not used by the game yet).
 	miniBosses = ["cataclysm:amethyst_crab", "cataclysm:ancient_ancient_remnant", "cataclysm_spellbooks:summoned_amethyst_crab", "cataclysm_spellbooks:summoned_clawdian", "cataclysm_spellbooks:summoned_coralssus", "fightsfrights:supai", "hedges_bestiary:endgel", "threateningly_mobs:basalt_wyvern", "threateningly_mobs:moon_priest", "threateningly_mobs:plague_bird", "threateningly_mobs:re_rock_snail", "threateningly_mobs:scorch_golem", "threateningly_mobs:steelboar", "threateningly_mobs:titan_rabbit_re"]
 
@@ -218,15 +220,3 @@
 	#How long the other players stay visible on the map after paying.
 	#Range: 1 ~ 600
 	showSeconds = 20
-
-#Boss arena far from the arena island for admin tests (/hgarena bossarena builds it once and teleports there)
-[bossArena]
-	#Center X.
-	#Range: -29000000 ~ 29000000
-	x = 5240
-	#Center Z.
-	#Range: -29000000 ~ 29000000
-	z = 5000
-	#Height of the floor.
-	#Range: -60 ~ 300
-	y = 64
