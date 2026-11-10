@@ -63,7 +63,7 @@
   },
   "apprenticecodex:archivists_grimoire": {
     "spawn": true,
-    "rarity": 3
+    "rarity": 4
   },
   "apprenticecodex:artisan_smash_launcher": {
     "spawn": false
@@ -132,7 +132,7 @@
   },
   "apprenticecodex:circuit_heat_staff": {
     "spawn": true,
-    "rarity": 1
+    "rarity": 2
   },
   "apprenticecodex:comfort_berries": {
     "spawn": false
@@ -253,13 +253,13 @@
   },
   "apprenticecodex:ender_grimoire": {
     "spawn": true,
-    "rarity": 3
+    "rarity": 4
   },
   "apprenticecodex:essence_smoker": {
     "spawn": false
   },
   "apprenticecodex:explorers_cane": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 2
   },
   "apprenticecodex:explorers_codex": {
@@ -295,7 +295,7 @@
   },
   "apprenticecodex:grimoire_manifest": {
     "spawn": true,
-    "rarity": 1
+    "rarity": 4
   },
   "apprenticecodex:hoverride_broom": {
     "spawn": true,
@@ -303,7 +303,7 @@
   },
   "apprenticecodex:illuminate_stellar_staff": {
     "spawn": true,
-    "rarity": 5
+    "rarity": 4
   },
   "apprenticecodex:incomplete_spellcaster_round": {
     "spawn": false
@@ -440,7 +440,7 @@
   },
   "apprenticecodex:pastel_staff": {
     "spawn": true,
-    "rarity": 1
+    "rarity": 2
   },
   "apprenticecodex:photon_siphon": {
     "spawn": false,
@@ -504,8 +504,8 @@
     "rarity": 2
   },
   "apprenticecodex:silver_swingcast_staff": {
-    "spawn": false,
-    "rarity": 1
+    "spawn": true,
+    "rarity": 3
   },
   "apprenticecodex:sky_edge_sword": {
     "spawn": true,
@@ -577,7 +577,7 @@
     "spawn": false
   },
   "apprenticecodex:spell_reaper_scythe": {
-    "spawn": false,
+    "spawn": true,
     "rarity": 4
   },
   "apprenticecodex:spell_side_edge": {
@@ -687,7 +687,7 @@
   },
   "archers:composite_longbow": {
     "spawn": true,
-    "rarity": 2
+    "rarity": 3
   },
   "archers:diamond_spear": {
     "spawn": false,
@@ -1164,12 +1164,12 @@
     "spawn": false
   },
   "block_factorys_bosses:kraken_trident": {
-    "spawn": false,
+    "spawn": true,
     "rarity": 4
   },
   "block_factorys_bosses:large_sword": {
     "spawn": true,
-    "rarity": 3
+    "rarity": 4
   },
   "block_factorys_bosses:loot_table_stick": {
     "spawn": false
@@ -1185,7 +1185,7 @@
   },
   "block_factorys_bosses:pirate_saber": {
     "spawn": true,
-    "rarity": 1
+    "rarity": 5
   },
   "block_factorys_bosses:placeholder": {
     "spawn": false
@@ -1296,7 +1296,7 @@
     "spawn": false
   },
   "cataclysm:ancient_spear": {
-    "spawn": false,
+    "spawn": true,
     "rarity": 4
   },
   "cataclysm:aptrgangr_head": {
@@ -1304,7 +1304,7 @@
   },
   "cataclysm:astrape": {
     "spawn": true,
-    "rarity": 1
+    "rarity": 5
   },
   "cataclysm:athame": {
     "spawn": true,
@@ -1385,7 +1385,7 @@
   },
   "cataclysm:black_steel_axe": {
     "spawn": true,
-    "rarity": 1
+    "rarity": 2
   },
   "cataclysm:black_steel_block": {
     "spawn": false
@@ -1910,7 +1910,7 @@
   },
   "cataclysm:soul_render": {
     "spawn": true,
-    "rarity": 1
+    "rarity": 5
   },
   "cataclysm:sticky_gloves": {
     "spawn": false
@@ -1944,7 +1944,7 @@
     "spawn": false
   },
   "cataclysm:the_immolator": {
-    "spawn": false,
+    "spawn": true,
     "rarity": 4
   },
   "cataclysm:the_incinerator": {
@@ -1953,7 +1953,7 @@
   },
   "cataclysm:tidal_claws": {
     "spawn": true,
-    "rarity": 3
+    "rarity": 4
   },
   "cataclysm:urchin_spike": {
     "spawn": false
@@ -2075,7 +2075,7 @@
   },
   "cataclysm_spellbooks:codex_of_malice_spell_book": {
     "spawn": true,
-    "rarity": 1
+    "rarity": 4
   },
   "cataclysm_spellbooks:coral_staff": {
     "spawn": true,
@@ -2103,7 +2103,7 @@
   },
   "cataclysm_spellbooks:desert_spell_book": {
     "spawn": true,
-    "rarity": 1
+    "rarity": 4
   },
   "cataclysm_spellbooks:disc_driver": {
     "spawn": true,
@@ -3672,7 +3672,7 @@
     "spawn": false
   },
   "caverns_and_chasms:silver_sword": {
-    "spawn": false,
+    "spawn": true,
     "rarity": 1
   },
   "caverns_and_chasms:slaughter_rail": {
@@ -6028,7 +6028,7 @@
     "rarity": 5
   },
   "hazennstuff:fireblossom_rapier": {
-    "spawn": false,
+    "spawn": true,
     "rarity": 5
   },
   "hazennstuff:flesh_mass_boots": {
@@ -6153,7 +6153,7 @@
   },
   "hazennstuff:o_fortuna": {
     "spawn": true,
-    "rarity": 1
+    "rarity": 5
   },
   "hazennstuff:provocation": {
     "spawn": true,
@@ -6250,7 +6250,7 @@
     "rarity": 4
   },
   "hazennstuff:umbranova": {
-    "spawn": false,
+    "spawn": true,
     "rarity": 5
   },
   "hazennstuff:zenalite_block": {
@@ -6939,7 +6939,7 @@
   },
   "iceandfire:dragonbone_bow": {
     "spawn": true,
-    "rarity": 1
+    "rarity": 3
   },
   "iceandfire:dragonbone_hoe": {
     "spawn": false
@@ -6958,7 +6958,7 @@
     "rarity": 4
   },
   "iceandfire:dragonbone_sword_ice": {
-    "spawn": false,
+    "spawn": true,
     "rarity": 4
   },
   "iceandfire:dragonbone_sword_lightning": {
@@ -7901,7 +7901,7 @@
     "spawn": false
   },
   "iceandfire:tide_trident": {
-    "spawn": false,
+    "spawn": true,
     "rarity": 4
   },
   "iceandfire:tide_trident_inventory": {
@@ -8099,7 +8099,7 @@
     "spawn": false
   },
   "irons_spellbooks:amethyst_rapier": {
-    "spawn": false,
+    "spawn": true,
     "rarity": 4
   },
   "irons_spellbooks:amethyst_resonance_charm": {
@@ -8169,7 +8169,7 @@
   },
   "irons_spellbooks:blaze_spell_book": {
     "spawn": true,
-    "rarity": 1
+    "rarity": 4
   },
   "irons_spellbooks:blood_rune": {
     "spawn": false
@@ -8294,7 +8294,7 @@
   },
   "irons_spellbooks:cursed_doll_spell_book": {
     "spawn": true,
-    "rarity": 1
+    "rarity": 4
   },
   "irons_spellbooks:dead_king_phylactery": {
     "spawn": false
@@ -8382,7 +8382,7 @@
   },
   "irons_spellbooks:evoker_spell_book": {
     "spawn": true,
-    "rarity": 2
+    "rarity": 4
   },
   "irons_spellbooks:fire_ale": {
     "spawn": false
@@ -8432,7 +8432,7 @@
   },
   "irons_spellbooks:graybeard_staff": {
     "spawn": true,
-    "rarity": 1
+    "rarity": 2
   },
   "irons_spellbooks:greater_conjurers_talisman": {
     "spawn": true,
@@ -8459,7 +8459,7 @@
   },
   "irons_spellbooks:hellrazor": {
     "spawn": true,
-    "rarity": 1
+    "rarity": 5
   },
   "irons_spellbooks:hither_thither_wand": {
     "spawn": true,
@@ -8513,7 +8513,7 @@
   },
   "irons_spellbooks:iron_spell_book": {
     "spawn": true,
-    "rarity": 1
+    "rarity": 2
   },
   "irons_spellbooks:keeper_flamberge": {
     "spawn": true,
@@ -8565,7 +8565,7 @@
     "spawn": false
   },
   "irons_spellbooks:misery": {
-    "spawn": false,
+    "spawn": true,
     "rarity": 4
   },
   "irons_spellbooks:mithril_ingot": {
@@ -8597,7 +8597,7 @@
   },
   "irons_spellbooks:necronomicon_spell_book": {
     "spawn": true,
-    "rarity": 2
+    "rarity": 4
   },
   "irons_spellbooks:nether_brick_pillar": {
     "spawn": false
@@ -8800,7 +8800,7 @@
   },
   "irons_spellbooks:twilight_gale": {
     "spawn": true,
-    "rarity": 1
+    "rarity": 5
   },
   "irons_spellbooks:tyros_statue": {
     "spawn": false
@@ -9076,7 +9076,7 @@
     "spawn": false
   },
   "l2complements:sculkium_sword": {
-    "spawn": false,
+    "spawn": true,
     "rarity": 4
   },
   "l2complements:shulkerate_axe": {
@@ -13531,7 +13531,7 @@
   },
   "paladins:diamond_claymore": {
     "spawn": true,
-    "rarity": 2
+    "rarity": 4
   },
   "paladins:diamond_great_hammer": {
     "spawn": false,
@@ -13941,7 +13941,7 @@
   },
   "rogues:diamond_double_axe": {
     "spawn": true,
-    "rarity": 2
+    "rarity": 4
   },
   "rogues:diamond_glaive": {
     "spawn": true,
@@ -14232,14 +14232,14 @@
   },
   "soulsweapons:darkin_blade": {
     "spawn": true,
-    "rarity": 2
+    "rarity": 4
   },
   "soulsweapons:darkin_scythe": {
-    "spawn": false,
+    "spawn": true,
     "rarity": 4
   },
   "soulsweapons:darkin_scythe_pre": {
-    "spawn": false,
+    "spawn": true,
     "rarity": 4
   },
   "soulsweapons:darkmoon_longbow": {
@@ -14266,7 +14266,7 @@
   },
   "soulsweapons:dragonslayer_swordspear": {
     "spawn": true,
-    "rarity": 1
+    "rarity": 4
   },
   "soulsweapons:draugr": {
     "spawn": false
@@ -14275,7 +14275,7 @@
     "spawn": false
   },
   "soulsweapons:draupnir_spear": {
-    "spawn": false,
+    "spawn": true,
     "rarity": 4
   },
   "soulsweapons:empowered_dawnbreaker": {
@@ -14338,7 +14338,7 @@
     "spawn": false
   },
   "soulsweapons:glaive_of_hodir": {
-    "spawn": false,
+    "spawn": true,
     "rarity": 4
   },
   "soulsweapons:glass_vial": {
@@ -14346,7 +14346,7 @@
   },
   "soulsweapons:guts_sword": {
     "spawn": true,
-    "rarity": 3
+    "rarity": 4
   },
   "soulsweapons:holy_greatsword": {
     "spawn": true,
@@ -14437,7 +14437,7 @@
   },
   "soulsweapons:moonlight_greatsword": {
     "spawn": true,
-    "rarity": 2
+    "rarity": 4
   },
   "soulsweapons:moonlight_shortsword": {
     "spawn": true,
@@ -14516,7 +14516,7 @@
   },
   "soulsweapons:simons_bowblade": {
     "spawn": true,
-    "rarity": 1
+    "rarity": 3
   },
   "soulsweapons:skofnung": {
     "spawn": false
@@ -16473,7 +16473,7 @@
     "spawn": false
   },
   "valarian_conquest:caladrian_sword": {
-    "spawn": false,
+    "spawn": true,
     "rarity": 4
   },
   "valarian_conquest:caladrian_swordsman_item": {
@@ -16511,7 +16511,7 @@
     "rarity": 3
   },
   "valarian_conquest:common_spear": {
-    "spawn": false,
+    "spawn": true,
     "rarity": 3
   },
   "valarian_conquest:common_sword": {
@@ -16549,7 +16549,7 @@
     "spawn": false
   },
   "valarian_conquest:elven_spear": {
-    "spawn": false,
+    "spawn": true,
     "rarity": 3
   },
   "valarian_conquest:elven_sword": {
@@ -16755,7 +16755,7 @@
     "rarity": 2
   },
   "valarian_conquest:mercenary_sword": {
-    "spawn": false,
+    "spawn": true,
     "rarity": 4
   },
   "valarian_conquest:mercenary_vertical_banner": {
@@ -16916,7 +16916,7 @@
     "rarity": 3
   },
   "valarian_conquest:soldiers_spear": {
-    "spawn": false,
+    "spawn": true,
     "rarity": 3
   },
   "valarian_conquest:soldiers_sword": {
@@ -17064,7 +17064,7 @@
     "spawn": false
   },
   "valarian_conquest:valarian_sword": {
-    "spawn": false,
+    "spawn": true,
     "rarity": 4
   },
   "valarian_conquest:valarian_swordsman_item": {
