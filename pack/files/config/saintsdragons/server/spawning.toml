@@ -1,0 +1,85 @@
+
+[spawning]
+	#Entity spawn configuration - control how often Saint's Dragons creatures spawn
+	#Note: spawn weights are relative per biome/category roll.
+	#Final spawn frequency also depends on each entity's spawn predicate and placement checks.
+	#Natural wild dragon spawns are also filtered by shared density rules to stop creature-category dragons from piling up.
+	#With custom spawning enabled, Raevyx spawns are driven by thunderstorms.
+	#Disabling custom spawning restores vanilla biome spawning for Raevyx.
+	#Each species has an automatic spawning toggle. Disabling it does not remove existing entities or block spawn eggs, commands, or breeding.
+	#Disabling Ignivorus, Varasuchus, or Ivy also stops their structures in newly generated chunks. Existing structures are not modified.
+	#Restart the client for singleplayer, or the server for multiplayer, after changing a spawning toggle.
+	#Raevyx spawn settings
+	raevyxSpawningEnabled = false
+	raevyxCustomSpawningEnabled = true
+	#Range: 0 ~ 5000
+	raevyxSpawnWeight = 6
+	#Range: 1 ~ 10
+	raevyxMinGroupSize = 1
+	#Range: 1 ~ 10
+	raevyxMaxGroupSize = 2
+	#Stegonaut spawn settings
+	stegonautSpawningEnabled = false
+	stegonautCustomSpawningEnabled = true
+	#Range: 0 ~ 5000
+	stegonautSpawnWeight = 7
+	#Range: 1 ~ 10
+	stegonautMinGroupSize = 1
+	#Range: 1 ~ 10
+	stegonautMaxGroupSize = 4
+	#Cindervane spawn settings
+	cindervaneSpawningEnabled = false
+	#Range: 0 ~ 5000
+	cindervaneSpawnWeight = 8
+	#Range: 1 ~ 10
+	cindervaneMinGroupSize = 1
+	#Range: 1 ~ 10
+	cindervaneMaxGroupSize = 2
+	#Ignivorus structure spawn settings
+	ignivorusSpawningEnabled = false
+	#Varasuchus structure spawn settings
+	varasuchusSpawningEnabled = false
+	#Atroxiia spawn settings
+	atroxiiaSpawningEnabled = false
+	#Range: 0 ~ 5000
+	atroxiiaSpawnWeight = 6
+	#Range: 1 ~ 10
+	atroxiiaMinGroupSize = 1
+	#Range: 1 ~ 10
+	atroxiiaMaxGroupSize = 1
+	#Volitans spawn settings (custom underwater spawner for ocean/wetland habitats)
+	volitansSpawningEnabled = false
+	volitansCustomSpawningEnabled = true
+	#Range: 0 ~ 5000
+	volitansSpawnWeight = 6
+	#Range: 1 ~ 10
+	volitansMinGroupSize = 1
+	#Range: 1 ~ 10
+	volitansMaxGroupSize = 1
+	#Nulljaw spawn settings (End-floating dragon)
+	nulljawSpawningEnabled = false
+	#Range: 0 ~ 5000
+	nulljawSpawnWeight = 4
+	#Range: 1 ~ 10
+	nulljawMinGroupSize = 4
+	#Range: 1 ~ 10
+	nulljawMaxGroupSize = 4
+	#Moop spawn settings
+	moopSpawningEnabled = false
+	#Range: 0 ~ 5000
+	moopSpawnWeight = 4
+	#Range: 1 ~ 10
+	moopMinGroupSize = 1
+	#Range: 1 ~ 10
+	moopMaxGroupSize = 1
+	#Mossback spawn settings
+	mossbackSpawningEnabled = false
+	#Range: 0 ~ 5000
+	mossbackSpawnWeight = 10
+	#Range: 1 ~ 10
+	mossbackMinGroupSize = 1
+	#Range: 1 ~ 10
+	mossbackMaxGroupSize = 2
+	#Ivy structure spawn settings
+	ivySpawningEnabled = false
+
