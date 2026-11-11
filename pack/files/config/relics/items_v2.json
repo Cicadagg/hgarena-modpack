@@ -111,41 +111,31 @@
     },
     "relics_rpgs:lesser_melee_crit_chance": {
       "durability": 0,
-      "conditional_attributes": {
-        "required_mod": "critical_strike",
-        "attributes": [
-          {
-            "attribute": "critical_strike:chance",
-            "value": 0.05,
-            "operation": "MULTIPLY_BASE"
-          }
-        ]
-      },
       "attributes": [
         {
           "attribute": "minecraft:generic.attack_damage",
           "value": 0.05,
           "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "chilib:crit_chance",
+          "value": 0.05,
+          "operation": "ADDITION"
         }
       ]
     },
     "relics_rpgs:lesser_melee_crit_damage": {
       "durability": 0,
-      "conditional_attributes": {
-        "required_mod": "critical_strike",
-        "attributes": [
-          {
-            "attribute": "critical_strike:damage",
-            "value": 0.1,
-            "operation": "MULTIPLY_BASE"
-          }
-        ]
-      },
       "attributes": [
         {
           "attribute": "minecraft:generic.attack_damage",
           "value": 0.05,
           "operation": "MULTIPLY_BASE"
+        },
+        {
+          "attribute": "chilib:crit_damage",
+          "value": 0.1,
+          "operation": "ADDITION"
         }
       ]
     },

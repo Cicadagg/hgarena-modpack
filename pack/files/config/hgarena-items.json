@@ -155,7 +155,7 @@
     "rarity": 1
   },
   "apprenticecodex:craftsmans_delight": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 1
   },
   "apprenticecodex:creative_spell_dispenser": {
@@ -353,7 +353,7 @@
     "rarity": 3
   },
   "apprenticecodex:magi_compressor_gadget": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 3
   },
   "apprenticecodex:magnetic_stability_anchor": {
@@ -382,7 +382,7 @@
     "rarity": 3
   },
   "apprenticecodex:mana_soul_transducer": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 3
   },
   "apprenticecodex:mana_stabilizer_module": {
@@ -1918,7 +1918,7 @@
     "rarity": 5
   },
   "cataclysm:sticky_gloves": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 1
   },
   "cataclysm:stone_pillar": {
@@ -9453,7 +9453,7 @@
     "rarity": 5
   },
   "l2hostility:pocket_of_restoration": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 1
   },
   "l2hostility:poison": {
@@ -9501,7 +9501,7 @@
     "rarity": 4
   },
   "l2hostility:ring_of_ocean": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 1
   },
   "l2hostility:ring_of_reflection": {
