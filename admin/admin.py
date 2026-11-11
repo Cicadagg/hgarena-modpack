@@ -22,11 +22,11 @@ from urllib.parse import quote
 ROOT = r"C:\Minecraft-1.20.1-Forge"
 REPO = os.path.join(ROOT, "modpack-repo")
 MOD_SRC = os.path.join(ROOT, "hgarena-source")
-SERVER_DIR = os.path.join(ROOT, "server")
+SERVER_DIR = r"E:\Dev\hgarena-customtest"  # the test server
 GAME_DIR = r"C:\Games\Minecraft"
 MOD_JAR = "hgarena-1.0.0.jar"
 FORGE_ARGS = "@libraries/net/minecraftforge/forge/1.20.1-47.4.28/win_args.txt"
-LOCAL_PORT = 8765
+LOCAL_PORT = 18765  # 8765 is taken by an ssh tunnel on this PC
 SETTINGS = os.path.join(os.environ.get("APPDATA", os.path.expanduser("~")), "HGArenaAdmin", "settings.json")
 NO_WINDOW = 0x08000000 if os.name == "nt" else 0  # CREATE_NO_WINDOW: no black console windows
 
@@ -145,7 +145,7 @@ class App:
         self.root.after(100, self.pump_log)
 
     def update_status(self):
-        srv = "сервер запущен (localhost:25654)" if self.server and self.server.poll() is None else "сервер выключен"
+        srv = "сервер запущен (127.0.0.1:25777)" if self.server and self.server.poll() is None else "сервер выключен"
         launcher = self.settings.get("launcher") or find_launcher() or "не найден"
         self.status.set(f"{srv}   |   лаунчер: {launcher}")
 
@@ -251,7 +251,12 @@ class App:
         if self.server and self.server.poll() is None:
             self.write("Сервер уже запущен.")
             return True
-        self.write("Запуск локального сервера...")
+        import socket
+        with socket.socket() as s:
+            if s.connect_ex(("127.0.0.1", 25777)) == 0:
+                self.write("Тестовый сервер уже запущен в другом окне (run.bat): используем его.")
+                return True
+        self.write("Запуск тестового сервера...")
         self.server = subprocess.Popen(["java", "@user_jvm_args.txt", FORGE_ARGS, "nogui"], cwd=SERVER_DIR,
                                        stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.STDOUT,
                                        text=True, encoding="utf-8", errors="replace", creationflags=NO_WINDOW)
@@ -322,7 +327,7 @@ class App:
                             "url": f"http://127.0.0.1:{LOCAL_PORT}/mods/{quote(fn)}"})
             self.write(f"Локальная версия: {fn}")
         manifest["files"] = entries
-        manifest["server"] = "127.0.0.1:25654"  # the launcher joins the local server right away
+        manifest["server"] = "127.0.0.1:25777"  # the launcher joins the local server right away
         with open(os.path.join(serve, "manifest.json"), "w", encoding="utf-8") as f:
             json.dump(manifest, f, ensure_ascii=False, indent=1)
         self.local_files = local
@@ -353,7 +358,7 @@ class App:
     def step_launch(self, launcher):
         env = dict(os.environ, HGARENA_MANIFEST=f"http://127.0.0.1:{LOCAL_PORT}/manifest.json")
         subprocess.Popen([launcher], cwd=os.path.dirname(launcher), env=env)
-        self.write("Лаунчер запущен с локальным манифестом. В игре подключайтесь к localhost:25654.")
+        self.write("Лаунчер запущен с локальным манифестом. Лаунчер сам подключит игру к тестовому серверу 127.0.0.1:25777.")
         return True
 
     # ---------- exit ----------
