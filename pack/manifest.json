@@ -285,9 +285,9 @@
   },
   {
    "path": "mods/hgarena-1.0.0.jar",
-   "sha1": "fdda7e952495d50602ac5b77a432db9253ca51d7",
-   "size": 717381,
-   "url": "https://github.com/Cicadagg/hgarena-modpack/releases/download/files/fdda7e9524-hgarena-1.0.0.jar"
+   "sha1": "f6ac4c1962a74e71d79ff50f50815c18397d9fd7",
+   "size": 733102,
+   "url": "https://github.com/Cicadagg/hgarena-modpack/releases/download/files/f6ac4c1962-hgarena-1.0.0.jar"
   },
   {
    "path": "mods/i_wanna_travel-0.4-forge-1.20.1.jar",
@@ -464,12 +464,6 @@
    "url": "https://github.com/Cicadagg/hgarena-modpack/releases/download/files/058d29fcad-takesapillage-1.0.3-1.20.1.jar"
   },
   {
-   "path": "mods/tarotcards-1.20-1.7.0.jar",
-   "sha1": "00ee596546f6a975bde19976f5da58260e6ea95b",
-   "size": 115132,
-   "url": "https://github.com/Cicadagg/hgarena-modpack/releases/download/files/00ee596546-tarotcards-1.20-1.7.0.jar"
-  },
-  {
    "path": "mods/threateningly_mobs-1.1.1-forge-1.20.1.jar",
    "sha1": "b2f09dd8d11e5caa393b34f778c55f65a51eb965",
    "size": 10136081,
@@ -507,9 +501,9 @@
   },
   {
    "path": "config",
-   "sha1": "6b850fa912b337a80384354f35fb00386beba2c9",
-   "size": 457641,
-   "url": "https://github.com/Cicadagg/hgarena-modpack/releases/download/files/6b850fa912-configs.zip",
+   "sha1": "fc188ffd5b31ed1617c7ec5bb17e5842cb49364b",
+   "size": 457637,
+   "url": "https://github.com/Cicadagg/hgarena-modpack/releases/download/files/fc188ffd5b-configs.zip",
    "unzip": true,
    "merge": true
   },
@@ -517,14 +511,14 @@
    "path": "options.txt",
    "sha1": "30f09690421e0c2147fce2b724b2b6f719692678",
    "size": 7053,
-   "url": "https://raw.githubusercontent.com/Cicadagg/hgarena-modpack/bb7f09deeb6275a403a4923e03755d9bf15e553e/pack/files/options.txt",
+   "url": "https://raw.githubusercontent.com/Cicadagg/hgarena-modpack/20c3cd917f2e927555a7dda0ea0230a2e4cfeab2/pack/files/options.txt",
    "once": true
   },
   {
    "path": "servers.dat",
    "sha1": "ff8c782a68476746df7d7926b6dd45f7ce64e4f4",
    "size": 81,
-   "url": "https://raw.githubusercontent.com/Cicadagg/hgarena-modpack/bb7f09deeb6275a403a4923e03755d9bf15e553e/pack/files/servers.dat"
+   "url": "https://raw.githubusercontent.com/Cicadagg/hgarena-modpack/20c3cd917f2e927555a7dda0ea0230a2e4cfeab2/pack/files/servers.dat"
   }
  ]
 }
