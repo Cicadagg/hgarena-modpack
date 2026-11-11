@@ -9414,7 +9414,7 @@
     "rarity": 3
   },
   "l2hostility:infinity_glove": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 1
   },
   "l2hostility:invisible": {
@@ -9445,7 +9445,7 @@
     "spawn": false
   },
   "l2hostility:oddeyes_glasses": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 1
   },
   "l2hostility:platinum_star": {
@@ -9539,7 +9539,7 @@
     "spawn": false
   },
   "l2hostility:triple_strip_cape": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 1
   },
   "l2hostility:undying": {
