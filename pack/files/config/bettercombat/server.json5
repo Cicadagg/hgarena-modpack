@@ -75,7 +75,7 @@
 	   (The first relation to be found for the target will be applied.)
 	*/
 	"player_relations": {
-		"minecraft:player": "NEUTRAL",
+		"minecraft:player": "HOSTILE",
 		"minecraft:villager": "NEUTRAL",
 		"minecraft:iron_golem": "NEUTRAL",
 		"guardvillagers:guard": "NEUTRAL"

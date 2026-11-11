@@ -10,7 +10,7 @@
 	"isSweepingParticleEnabled": true,
 	"isTooltipAttackRangeEnabled": true,
 	"weaponSwingSoundVolume": 100,
-	"isDebugOBBEnabled": true,
+	"isDebugOBBEnabled": false,
 	"swingThruGrassBlacklist": "farmersdelight",
 	"mineWithWeaponBlacklist": "",
 	"firstPersonAnimations": "AUTO"

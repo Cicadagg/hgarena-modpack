@@ -4881,26 +4881,26 @@
     "spawn": false
   },
   "farmersdelight:apple_pie": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 2
   },
   "farmersdelight:apple_pie_slice": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 2
   },
   "farmersdelight:bacon": {
     "spawn": false
   },
   "farmersdelight:bacon_and_eggs": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 3
   },
   "farmersdelight:bacon_sandwich": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 3
   },
   "farmersdelight:baked_cod_stew": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 3
   },
   "farmersdelight:bamboo_basket": {
@@ -4910,15 +4910,15 @@
     "spawn": false
   },
   "farmersdelight:barbecue_stick": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 3
   },
   "farmersdelight:beef_patty": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 2
   },
   "farmersdelight:beef_stew": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 3
   },
   "farmersdelight:beetroot_crate": {
@@ -4940,7 +4940,7 @@
     "spawn": false
   },
   "farmersdelight:bone_broth": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 3
   },
   "farmersdelight:brown_canvas_sign": {
@@ -4962,7 +4962,7 @@
     "spawn": false
   },
   "farmersdelight:cabbage_rolls": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 2
   },
   "farmersdelight:cabbage_seeds": {
@@ -4990,45 +4990,45 @@
     "spawn": false
   },
   "farmersdelight:chicken_sandwich": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 3
   },
   "farmersdelight:chicken_soup": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 3
   },
   "farmersdelight:chocolate_pie": {
     "spawn": false
   },
   "farmersdelight:chocolate_pie_slice": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 2
   },
   "farmersdelight:cod_roll": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 2
   },
   "farmersdelight:cod_slice": {
     "spawn": false
   },
   "farmersdelight:cooked_bacon": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 2
   },
   "farmersdelight:cooked_chicken_cuts": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 1
   },
   "farmersdelight:cooked_cod_slice": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 1
   },
   "farmersdelight:cooked_mutton_chops": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 1
   },
   "farmersdelight:cooked_rice": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 3
   },
   "farmersdelight:cooked_salmon_slice": {
@@ -5060,19 +5060,19 @@
     "rarity": 1
   },
   "farmersdelight:dog_food": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 1
   },
   "farmersdelight:dumplings": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 3
   },
   "farmersdelight:egg_sandwich": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 3
   },
   "farmersdelight:fish_stew": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 3
   },
   "farmersdelight:flint_knife": {
@@ -5083,26 +5083,26 @@
     "spawn": false
   },
   "farmersdelight:fried_rice": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 3
   },
   "farmersdelight:fruit_salad": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 3
   },
   "farmersdelight:full_tatami_mat": {
     "spawn": false
   },
   "farmersdelight:gleaming_salad": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 3
   },
   "farmersdelight:gleaming_salad_block": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 2
   },
   "farmersdelight:glow_berry_custard": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 3
   },
   "farmersdelight:golden_knife": {
@@ -5121,7 +5121,7 @@
     "spawn": false
   },
   "farmersdelight:grilled_salmon": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 3
   },
   "farmersdelight:half_tatami_mat": {
@@ -5131,26 +5131,26 @@
     "spawn": false
   },
   "farmersdelight:hamburger": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 3
   },
   "farmersdelight:hanging_canvas_sign": {
     "spawn": false
   },
   "farmersdelight:honey_cookie": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 1
   },
   "farmersdelight:honey_glazed_ham": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 3
   },
   "farmersdelight:honey_glazed_ham_block": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 2
   },
   "farmersdelight:horse_feed": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 1
   },
   "farmersdelight:hot_cocoa": {
@@ -5164,11 +5164,11 @@
     "spawn": false
   },
   "farmersdelight:kelp_roll": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 3
   },
   "farmersdelight:kelp_roll_slice": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 2
   },
   "farmersdelight:light_blue_canvas_sign": {
@@ -5202,7 +5202,7 @@
     "spawn": false
   },
   "farmersdelight:melon_popsicle": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 1
   },
   "farmersdelight:milk_bottle": {
@@ -5212,22 +5212,22 @@
     "spawn": false
   },
   "farmersdelight:mixed_salad": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 3
   },
   "farmersdelight:mushroom_rice": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 3
   },
   "farmersdelight:mutton_chops": {
     "spawn": false
   },
   "farmersdelight:mutton_wrap": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 3
   },
   "farmersdelight:nether_salad": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 2
   },
   "farmersdelight:netherite_knife": {
@@ -5235,21 +5235,21 @@
     "rarity": 2
   },
   "farmersdelight:noodle_soup": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 3
   },
   "farmersdelight:oak_cabinet": {
     "spawn": false
   },
   "farmersdelight:onion": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 1
   },
   "farmersdelight:onion_crate": {
     "spawn": false
   },
   "farmersdelight:onion_soup": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 3
   },
   "farmersdelight:orange_canvas_sign": {
@@ -5262,11 +5262,11 @@
     "spawn": false
   },
   "farmersdelight:pasta_with_meatballs": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 3
   },
   "farmersdelight:pasta_with_mutton_chop": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 3
   },
   "farmersdelight:pie_crust": {
@@ -5282,14 +5282,14 @@
     "spawn": false
   },
   "farmersdelight:pumpkin_pie_slice": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 2
   },
   "farmersdelight:pumpkin_slice": {
     "spawn": false
   },
   "farmersdelight:pumpkin_soup": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 3
   },
   "farmersdelight:purple_canvas_sign": {
@@ -5299,7 +5299,7 @@
     "spawn": false
   },
   "farmersdelight:ratatouille": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 3
   },
   "farmersdelight:raw_pasta": {
@@ -5324,11 +5324,11 @@
     "spawn": false
   },
   "farmersdelight:rice_panicle": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 1
   },
   "farmersdelight:rice_roll_medley_block": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 2
   },
   "farmersdelight:rich_soil": {
@@ -5338,15 +5338,15 @@
     "spawn": false
   },
   "farmersdelight:roast_chicken": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 3
   },
   "farmersdelight:roast_chicken_block": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 2
   },
   "farmersdelight:roasted_mutton_chops": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 3
   },
   "farmersdelight:rope": {
@@ -5365,22 +5365,22 @@
     "spawn": false
   },
   "farmersdelight:salmon_roll": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 2
   },
   "farmersdelight:salmon_slice": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 1
   },
   "farmersdelight:sandy_shrub": {
     "spawn": false
   },
   "farmersdelight:shepherds_pie": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 3
   },
   "farmersdelight:shepherds_pie_block": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 2
   },
   "farmersdelight:skillet": {
@@ -5388,18 +5388,18 @@
     "rarity": 2
   },
   "farmersdelight:smoked_ham": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 3
   },
   "farmersdelight:spruce_cabinet": {
     "spawn": false
   },
   "farmersdelight:squid_ink_pasta": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 3
   },
   "farmersdelight:steak_and_potatoes": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 3
   },
   "farmersdelight:stove": {
@@ -5412,33 +5412,33 @@
     "spawn": false
   },
   "farmersdelight:stuffed_potato": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 3
   },
   "farmersdelight:stuffed_pumpkin": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 3
   },
   "farmersdelight:stuffed_pumpkin_block": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 2
   },
   "farmersdelight:sweet_berry_cheesecake": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 2
   },
   "farmersdelight:sweet_berry_cheesecake_slice": {
     "spawn": false
   },
   "farmersdelight:sweet_berry_cookie": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 1
   },
   "farmersdelight:tatami": {
     "spawn": false
   },
   "farmersdelight:tomato": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 1
   },
   "farmersdelight:tomato_crate": {
@@ -5454,11 +5454,11 @@
     "spawn": false
   },
   "farmersdelight:vegetable_noodles": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 3
   },
   "farmersdelight:vegetable_soup": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 3
   },
   "farmersdelight:warped_cabinet": {
@@ -7970,7 +7970,7 @@
     "rarity": 2
   },
   "minecraft:apple": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 1
   },
   "minecraft:archer_pottery_sherd": {
@@ -8288,7 +8288,7 @@
   },
   "minecraft:bread": {
     "spawn": true,
-    "rarity": 2
+    "rarity": 1
   },
   "minecraft:brewer_pottery_sherd": {
     "spawn": false
@@ -8385,7 +8385,7 @@
     "spawn": false
   },
   "minecraft:cake": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 2
   },
   "minecraft:calcite": {
@@ -8401,7 +8401,7 @@
     "spawn": false
   },
   "minecraft:carrot": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 1
   },
   "minecraft:carrot_on_a_stick": {
@@ -8611,30 +8611,30 @@
   },
   "minecraft:cooked_beef": {
     "spawn": true,
-    "rarity": 3
+    "rarity": 2
   },
   "minecraft:cooked_chicken": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 2
   },
   "minecraft:cooked_cod": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 2
   },
   "minecraft:cooked_mutton": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 2
   },
   "minecraft:cooked_porkchop": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 3
   },
   "minecraft:cooked_rabbit": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 2
   },
   "minecraft:cooked_salmon": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 2
   },
   "minecraft:cookie": {
@@ -10516,7 +10516,7 @@
     "spawn": false
   },
   "minecraft:pumpkin_pie": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 2
   },
   "minecraft:pumpkin_seeds": {
