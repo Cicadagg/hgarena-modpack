@@ -14,12 +14,6 @@
    "url": "https://github.com/Cicadagg/hgarena-modpack/releases/download/files/76d6b2d0f2-AttributeFix-Forge-1.20.1-21.0.5.jar"
   },
   {
-   "path": "mods/BetterThirdPerson-Forge-1.20-1.9.0.jar",
-   "sha1": "0b0a3ff3b244fa191b3f9580547071dee46f7276",
-   "size": 61525,
-   "url": "https://github.com/Cicadagg/hgarena-modpack/releases/download/files/0b0a3ff3b2-BetterThirdPerson-Forge-1.20-1.9.0.jar"
-  },
-  {
    "path": "mods/CustomSkinLoader_Universal-15.1.jar",
    "sha1": "324e6921ecd576e44875981466e7f22170b6541a",
    "size": 222917,
@@ -48,6 +42,12 @@
    "sha1": "d4614507d6e4c7cb464bba5eca891978272062ef",
    "size": 642732,
    "url": "https://github.com/Cicadagg/hgarena-modpack/releases/download/files/d4614507d6-Patchouli-1.20.1-85-FORGE.jar"
+  },
+  {
+   "path": "mods/ShoulderSurfing-Forge-1.20.1-5.3.1.jar",
+   "sha1": "5fe11417cc720235a1206f57a883722743b352a5",
+   "size": 436450,
+   "url": "https://github.com/Cicadagg/hgarena-modpack/releases/download/files/5fe11417cc-ShoulderSurfing-Forge-1.20.1-5.3.1.jar"
   },
   {
    "path": "mods/SmartBrainLib-forge-1.20.1-1.15.jar",
@@ -285,21 +285,15 @@
   },
   {
    "path": "mods/hgarena-1.0.0.jar",
-   "sha1": "ce69668597b74246a8269962830fa8449dec6d4b",
-   "size": 748919,
-   "url": "https://github.com/Cicadagg/hgarena-modpack/releases/download/files/ce69668597-hgarena-1.0.0.jar"
+   "sha1": "d7ab34ca27971f9f01aa0f78fae61620819e22c8",
+   "size": 754985,
+   "url": "https://github.com/Cicadagg/hgarena-modpack/releases/download/files/d7ab34ca27-hgarena-1.0.0.jar"
   },
   {
    "path": "mods/i_wanna_travel-0.4-forge-1.20.1.jar",
    "sha1": "eeb5b7a03c390b8d0a094545120ee1ae15ce0c2e",
    "size": 350288,
    "url": "https://github.com/Cicadagg/hgarena-modpack/releases/download/files/eeb5b7a03c-i_wanna_travel-0.4-forge-1.20.1.jar"
-  },
-  {
-   "path": "mods/iceandfire-2.1.13-1.20.1-beta-5.jar",
-   "sha1": "7e828cbb046ca3d622e92c68f956bd1c0155dc6f",
-   "size": 21854126,
-   "url": "https://github.com/Cicadagg/hgarena-modpack/releases/download/files/7e828cbb04-iceandfire-2.1.13-1.20.1-beta-5.jar"
   },
   {
    "path": "mods/immersive_aircraft-1.5.0+1.20.1-forge.jar",
@@ -416,6 +410,12 @@
    "url": "https://github.com/Cicadagg/hgarena-modpack/releases/download/files/c97ab6f673-rogues-forge-3.1.3_1.20.1.jar"
   },
   {
+   "path": "mods/saintsdragons-0.9.88+forge-1.20.1.jar",
+   "sha1": "b77b6c44a7e836d3837aa0ab5d485f666b7648d3",
+   "size": 29546843,
+   "url": "https://github.com/Cicadagg/hgarena-modpack/releases/download/files/b77b6c44a7-saintsdragons-0.9.88_forge-1.20.1.jar"
+  },
+  {
    "path": "mods/savage_and_ravage-1.20.1-6.0.1.jar",
    "sha1": "e58730ba8e1858dfd8db5853e05c16d7803514cf",
    "size": 1316206,
@@ -507,9 +507,9 @@
   },
   {
    "path": "config",
-   "sha1": "9ee0c596859e5cd69d32dce5212e9cf757effc8b",
-   "size": 457628,
-   "url": "https://github.com/Cicadagg/hgarena-modpack/releases/download/files/9ee0c59685-configs.zip",
+   "sha1": "9192550358ea2785e4d392746dc9ded32c0aa9eb",
+   "size": 444563,
+   "url": "https://github.com/Cicadagg/hgarena-modpack/releases/download/files/9192550358-configs.zip",
    "unzip": true,
    "merge": true
   },
@@ -517,14 +517,14 @@
    "path": "options.txt",
    "sha1": "30f09690421e0c2147fce2b724b2b6f719692678",
    "size": 7053,
-   "url": "https://raw.githubusercontent.com/Cicadagg/hgarena-modpack/2599803b547171969b75224c616244f2a3408ec2/pack/files/options.txt",
+   "url": "https://raw.githubusercontent.com/Cicadagg/hgarena-modpack/bc15076b73d050368be6c47f2361e9c703272487/pack/files/options.txt",
    "once": true
   },
   {
    "path": "servers.dat",
    "sha1": "ff8c782a68476746df7d7926b6dd45f7ce64e4f4",
    "size": 81,
-   "url": "https://raw.githubusercontent.com/Cicadagg/hgarena-modpack/2599803b547171969b75224c616244f2a3408ec2/pack/files/servers.dat"
+   "url": "https://raw.githubusercontent.com/Cicadagg/hgarena-modpack/bc15076b73d050368be6c47f2361e9c703272487/pack/files/servers.dat"
   }
  ]
 }
