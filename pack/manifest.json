@@ -507,9 +507,9 @@
   },
   {
    "path": "config",
-   "sha1": "ab2970dd33c8df049a69ce5ce2d0ba38346da149",
-   "size": 475842,
-   "url": "https://github.com/Cicadagg/hgarena-modpack/releases/download/files/ab2970dd33-configs.zip",
+   "sha1": "2a6b3643dccdfa21324cfdf4d3a20745a959ffd7",
+   "size": 444797,
+   "url": "https://github.com/Cicadagg/hgarena-modpack/releases/download/files/2a6b3643dc-configs.zip",
    "unzip": true,
    "merge": true
   },
@@ -517,14 +517,14 @@
    "path": "options.txt",
    "sha1": "30f09690421e0c2147fce2b724b2b6f719692678",
    "size": 7053,
-   "url": "https://raw.githubusercontent.com/Cicadagg/hgarena-modpack/35143e4987f739a10f028b195ebbb5da91946550/pack/files/options.txt",
+   "url": "https://raw.githubusercontent.com/Cicadagg/hgarena-modpack/2cf9335110c4bddb37bff471f38366a0e611e48c/pack/files/options.txt",
    "once": true
   },
   {
    "path": "servers.dat",
    "sha1": "ff8c782a68476746df7d7926b6dd45f7ce64e4f4",
    "size": 81,
-   "url": "https://raw.githubusercontent.com/Cicadagg/hgarena-modpack/35143e4987f739a10f028b195ebbb5da91946550/pack/files/servers.dat"
+   "url": "https://raw.githubusercontent.com/Cicadagg/hgarena-modpack/2cf9335110c4bddb37bff471f38366a0e611e48c/pack/files/servers.dat"
   }
  ]
 }
