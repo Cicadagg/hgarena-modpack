@@ -6342,7 +6342,23 @@
   "hedges_bestiary:zappet_egg": {
     "spawn": false
   },
+  "hgarena:blade_mail": {
+    "spawn": true,
+    "rarity": 4
+  },
+  "hgarena:great_brother_cloak": {
+    "spawn": true,
+    "rarity": 4
+  },
+  "hgarena:laevateinn": {
+    "spawn": true,
+    "rarity": 5
+  },
   "hgarena:radiance": {
+    "spawn": true,
+    "rarity": 4
+  },
+  "hgarena:satanic": {
     "spawn": true,
     "rarity": 4
   },
