@@ -86,8 +86,8 @@
     "spawn": false
   },
   "apprenticecodex:bound_bow": {
-    "spawn": false,
-    "rarity": 3
+    "spawn": true,
+    "rarity": 1
   },
   "apprenticecodex:bound_sword": {
     "spawn": false,
@@ -112,19 +112,19 @@
     "rarity": 5
   },
   "apprenticecodex:chromatic_magia_dress_boots": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 2
   },
   "apprenticecodex:chromatic_magia_dress_coat": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 2
   },
   "apprenticecodex:chromatic_magia_dress_hat": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 2
   },
   "apprenticecodex:chromatic_magia_dress_leggings": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 2
   },
   "apprenticecodex:circuit_heat_staff": {
@@ -165,7 +165,7 @@
     "spawn": false
   },
   "apprenticecodex:crystal_bladed_staff": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 3
   },
   "apprenticecodex:crystalline_arcane_shard": {
@@ -250,7 +250,7 @@
     "rarity": 1
   },
   "apprenticecodex:ender_grimoire": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 4
   },
   "apprenticecodex:essence_smoker": {
@@ -293,7 +293,7 @@
     "rarity": 3
   },
   "apprenticecodex:grimoire_manifest": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 4
   },
   "apprenticecodex:hoverride_broom": {
@@ -440,7 +440,7 @@
     "spawn": false
   },
   "apprenticecodex:pastel_staff": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 2
   },
   "apprenticecodex:photon_siphon": {
@@ -452,7 +452,8 @@
     "rarity": 3
   },
   "apprenticecodex:psychic_drive_gauntlets": {
-    "spawn": false
+    "spawn": false,
+    "rarity": 1
   },
   "apprenticecodex:quick_arms_handgun": {
     "spawn": false
@@ -514,7 +515,7 @@
     "rarity": 2
   },
   "apprenticecodex:smashcast_scepter": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 1
   },
   "apprenticecodex:soul_augmented_weave": {
@@ -697,7 +698,7 @@
     "rarity": 2
   },
   "archers:flint_spear": {
-    "spawn": false,
+    "spawn": true,
     "rarity": 1
   },
   "archers:golden_spear": {
@@ -717,7 +718,7 @@
     "rarity": 2
   },
   "archers:mechanic_shortbow": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 3
   },
   "archers:medium_quiver": {
@@ -753,11 +754,11 @@
     "rarity": 4
   },
   "archers:netherite_shortbow": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 3
   },
   "archers:netherite_spear": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 5
   },
   "archers:ranger_armor_chest": {
@@ -777,11 +778,11 @@
     "rarity": 3
   },
   "archers:rapid_crossbow": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 3
   },
   "archers:royal_longbow": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 4
   },
   "archers:small_quiver": {
@@ -805,11 +806,11 @@
     "rarity": 4
   },
   "arsenal:unique_dagger_2": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 4
   },
   "arsenal:unique_dagger_sw": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 4
   },
   "arsenal:unique_double_axe_1": {
@@ -817,11 +818,11 @@
     "rarity": 4
   },
   "arsenal:unique_double_axe_2": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 4
   },
   "arsenal:unique_double_axe_sw": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 4
   },
   "arsenal:unique_glaive_1": {
@@ -853,11 +854,11 @@
     "rarity": 5
   },
   "arsenal:unique_heavy_crossbow_2": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 5
   },
   "arsenal:unique_heavy_crossbow_sw": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 5
   },
   "arsenal:unique_longbow_1": {
@@ -865,15 +866,15 @@
     "rarity": 5
   },
   "arsenal:unique_longbow_2": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 5
   },
   "arsenal:unique_longbow_sw": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 5
   },
   "arsenal:unique_longsword_sw": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 4
   },
   "arsenal:unique_mace_1": {
@@ -885,7 +886,7 @@
     "rarity": 4
   },
   "arsenal:unique_mace_sw": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 4
   },
   "arsenal:unique_shield_1": {
@@ -893,11 +894,11 @@
     "rarity": 4
   },
   "arsenal:unique_shield_2": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 4
   },
   "arsenal:unique_shield_sw": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 4
   },
   "arsenal:unique_sickle_1": {
@@ -905,47 +906,47 @@
     "rarity": 4
   },
   "arsenal:unique_sickle_2": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 4
   },
   "arsenal:unique_sickle_sw": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 4
   },
   "arsenal:unique_spear_1": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 4
   },
   "arsenal:unique_spear_2": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 4
   },
   "arsenal:unique_spear_sw": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 4
   },
   "arsenal:unique_staff_damage_1": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 2
   },
   "arsenal:unique_staff_damage_2": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 2
   },
   "arsenal:unique_staff_damage_3": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 2
   },
   "arsenal:unique_staff_damage_4": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 2
   },
   "arsenal:unique_staff_damage_5": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 2
   },
   "arsenal:unique_staff_damage_6": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 2
   },
   "arsenal:unique_staff_damage_sw": {
@@ -957,7 +958,7 @@
     "rarity": 2
   },
   "arsenal:unique_staff_heal_2": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 2
   },
   "arsenal:unique_staff_heal_sw": {
@@ -1098,15 +1099,15 @@
     "spawn": false
   },
   "block_factorys_bosses:dragon_bones_boots": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 3
   },
   "block_factorys_bosses:dragon_bones_chestplate": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 3
   },
   "block_factorys_bosses:dragon_bones_leggings": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 3
   },
   "block_factorys_bosses:dragon_guard_shield": {
@@ -1117,11 +1118,11 @@
     "spawn": false
   },
   "block_factorys_bosses:dragon_skull": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 3
   },
   "block_factorys_bosses:enhanced_shield": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 1
   },
   "block_factorys_bosses:guardrail": {
@@ -1134,7 +1135,7 @@
     "spawn": false
   },
   "block_factorys_bosses:ice_gauntlet": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 1
   },
   "block_factorys_bosses:knight_boots": {
@@ -1299,7 +1300,7 @@
     "spawn": false
   },
   "cataclysm:ancient_spear": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 4
   },
   "cataclysm:aptrgangr_head": {
@@ -1307,15 +1308,15 @@
     "rarity": 1
   },
   "cataclysm:astrape": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 5
   },
   "cataclysm:athame": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 1
   },
   "cataclysm:azure_sea_shield": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 3
   },
   "cataclysm:azure_seastone": {
@@ -1418,7 +1419,7 @@
     "rarity": 2
   },
   "cataclysm:black_steel_targe": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 3
   },
   "cataclysm:black_steel_wall": {
@@ -1445,18 +1446,18 @@
     "rarity": 3
   },
   "cataclysm:bone_reptile_chestplate": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 4
   },
   "cataclysm:bone_reptile_helmet": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 4
   },
   "cataclysm:boss_respawner": {
     "spawn": false
   },
   "cataclysm:bulwark_of_the_flame": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 4
   },
   "cataclysm:burning_ashes": {
@@ -1530,7 +1531,7 @@
     "spawn": false
   },
   "cataclysm:cursed_bow": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 4
   },
   "cataclysm:cursed_eye": {
@@ -1680,7 +1681,7 @@
     "spawn": false
   },
   "cataclysm:gauntlet_of_bulwark": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 5
   },
   "cataclysm:gauntlet_of_guard": {
@@ -1766,7 +1767,7 @@
     "spawn": false
   },
   "cataclysm:monstrous_helm": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 4
   },
   "cataclysm:monstrous_horn": {
@@ -1914,7 +1915,7 @@
     "rarity": 4
   },
   "cataclysm:soul_render": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 5
   },
   "cataclysm:sticky_gloves": {
@@ -1958,7 +1959,7 @@
     "rarity": 5
   },
   "cataclysm:tidal_claws": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 4
   },
   "cataclysm:urchin_spike": {
@@ -2108,7 +2109,7 @@
     "rarity": 5
   },
   "cataclysm_spellbooks:desert_spell_book": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 4
   },
   "cataclysm_spellbooks:disc_driver": {
@@ -2169,7 +2170,7 @@
     "spawn": false
   },
   "cataclysm_spellbooks:fake_wudjets_staff": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 4
   },
   "cataclysm_spellbooks:frozen_knowledge_fragment": {
@@ -2226,7 +2227,7 @@
     "spawn": false
   },
   "cataclysm_spellbooks:monstrous_wizard_hat": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 2
   },
   "cataclysm_spellbooks:murasama_blade": {
@@ -2276,7 +2277,7 @@
     "spawn": false
   },
   "cataclysm_spellbooks:void_staff": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 4
   },
   "caverns_and_chasms:abnormals_banner_pattern": {
@@ -2615,13 +2616,13 @@
   },
   "caverns_and_chasms:copper_axe": {
     "spawn": false,
-    "rarity": 2
+    "rarity": 1
   },
   "caverns_and_chasms:copper_bars": {
     "spawn": false
   },
   "caverns_and_chasms:copper_boots": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 2
   },
   "caverns_and_chasms:copper_brick_slab": {
@@ -2646,7 +2647,7 @@
     "spawn": false
   },
   "caverns_and_chasms:copper_chestplate": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 2
   },
   "caverns_and_chasms:copper_door": {
@@ -2656,7 +2657,7 @@
     "spawn": false
   },
   "caverns_and_chasms:copper_helmet": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 2
   },
   "caverns_and_chasms:copper_hoe": {
@@ -2675,7 +2676,7 @@
     "spawn": false
   },
   "caverns_and_chasms:copper_leggings": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 2
   },
   "caverns_and_chasms:copper_nugget": {
@@ -2692,7 +2693,7 @@
     "spawn": false
   },
   "caverns_and_chasms:copper_sword": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 1
   },
   "caverns_and_chasms:copper_trapdoor": {
@@ -3231,15 +3232,15 @@
     "spawn": false
   },
   "caverns_and_chasms:necromium_boots": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 2
   },
   "caverns_and_chasms:necromium_chestplate": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 2
   },
   "caverns_and_chasms:necromium_helmet": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 2
   },
   "caverns_and_chasms:necromium_hoe": {
@@ -3256,7 +3257,7 @@
     "spawn": false
   },
   "caverns_and_chasms:necromium_leggings": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 2
   },
   "caverns_and_chasms:necromium_nugget": {
@@ -3307,7 +3308,8 @@
     "spawn": false
   },
   "caverns_and_chasms:oxidized_copper_boots": {
-    "spawn": false
+    "spawn": true,
+    "rarity": 3
   },
   "caverns_and_chasms:oxidized_copper_brick_slab": {
     "spawn": false
@@ -3331,7 +3333,8 @@
     "spawn": false
   },
   "caverns_and_chasms:oxidized_copper_chestplate": {
-    "spawn": false
+    "spawn": true,
+    "rarity": 3
   },
   "caverns_and_chasms:oxidized_copper_door": {
     "spawn": false
@@ -3343,7 +3346,8 @@
     "spawn": false
   },
   "caverns_and_chasms:oxidized_copper_helmet": {
-    "spawn": false
+    "spawn": true,
+    "rarity": 3
   },
   "caverns_and_chasms:oxidized_copper_hoe": {
     "spawn": false
@@ -3361,7 +3365,8 @@
     "spawn": false
   },
   "caverns_and_chasms:oxidized_copper_leggings": {
-    "spawn": false
+    "spawn": true,
+    "rarity": 3
   },
   "caverns_and_chasms:oxidized_copper_pickaxe": {
     "spawn": false
@@ -3584,19 +3589,19 @@
     "spawn": false
   },
   "caverns_and_chasms:sanguine_boots": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 3
   },
   "caverns_and_chasms:sanguine_chestplate": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 3
   },
   "caverns_and_chasms:sanguine_helmet": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 3
   },
   "caverns_and_chasms:sanguine_leggings": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 3
   },
   "caverns_and_chasms:sanguine_tile_slab": {
@@ -3942,7 +3947,8 @@
     "spawn": false
   },
   "caverns_and_chasms:waxed_copper_boots": {
-    "spawn": false
+    "spawn": false,
+    "rarity": 2
   },
   "caverns_and_chasms:waxed_copper_brick_slab": {
     "spawn": false
@@ -3966,7 +3972,8 @@
     "spawn": false
   },
   "caverns_and_chasms:waxed_copper_chestplate": {
-    "spawn": false
+    "spawn": false,
+    "rarity": 2
   },
   "caverns_and_chasms:waxed_copper_door": {
     "spawn": false
@@ -3975,7 +3982,8 @@
     "spawn": false
   },
   "caverns_and_chasms:waxed_copper_helmet": {
-    "spawn": false
+    "spawn": false,
+    "rarity": 2
   },
   "caverns_and_chasms:waxed_copper_hoe": {
     "spawn": false
@@ -3993,7 +4001,8 @@
     "spawn": false
   },
   "caverns_and_chasms:waxed_copper_leggings": {
-    "spawn": false
+    "spawn": false,
+    "rarity": 2
   },
   "caverns_and_chasms:waxed_copper_pickaxe": {
     "spawn": false
@@ -4119,7 +4128,8 @@
     "spawn": false
   },
   "caverns_and_chasms:waxed_oxidized_copper_boots": {
-    "spawn": false
+    "spawn": true,
+    "rarity": 3
   },
   "caverns_and_chasms:waxed_oxidized_copper_brick_slab": {
     "spawn": false
@@ -4143,7 +4153,8 @@
     "spawn": false
   },
   "caverns_and_chasms:waxed_oxidized_copper_chestplate": {
-    "spawn": false
+    "spawn": true,
+    "rarity": 3
   },
   "caverns_and_chasms:waxed_oxidized_copper_door": {
     "spawn": false
@@ -4155,7 +4166,8 @@
     "spawn": false
   },
   "caverns_and_chasms:waxed_oxidized_copper_helmet": {
-    "spawn": false
+    "spawn": true,
+    "rarity": 3
   },
   "caverns_and_chasms:waxed_oxidized_copper_hoe": {
     "spawn": false
@@ -4173,7 +4185,8 @@
     "spawn": false
   },
   "caverns_and_chasms:waxed_oxidized_copper_leggings": {
-    "spawn": false
+    "spawn": true,
+    "rarity": 3
   },
   "caverns_and_chasms:waxed_oxidized_copper_pickaxe": {
     "spawn": false
@@ -4465,19 +4478,19 @@
     "spawn": false
   },
   "dnmmod:bladesinger_boots": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 3
   },
   "dnmmod:bladesinger_chestplate": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 3
   },
   "dnmmod:bladesinger_helmet": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 3
   },
   "dnmmod:bladesinger_leggings": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 3
   },
   "dnmmod:bladesinger_sword": {
@@ -4488,8 +4501,8 @@
     "spawn": false
   },
   "dnmmod:blood_wand": {
-    "spawn": false,
-    "rarity": 1
+    "spawn": true,
+    "rarity": 2
   },
   "dnmmod:blood_wand_core": {
     "spawn": false
@@ -4545,7 +4558,7 @@
     "spawn": false
   },
   "dnmmod:evoker_wand": {
-    "spawn": false,
+    "spawn": true,
     "rarity": 2
   },
   "dnmmod:evoker_wand_core": {
@@ -4599,11 +4612,11 @@
     "rarity": 3
   },
   "dnmmod:maid_cap": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 1
   },
   "dnmmod:maid_dress": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 1
   },
   "dnmmod:medium_component_bag": {
@@ -4686,7 +4699,7 @@
     "rarity": 4
   },
   "dnmmod:tainted_staff": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 4
   },
   "dnmmod:the_hag_disc": {
@@ -4712,26 +4725,26 @@
     "rarity": 4
   },
   "dnmmod:voile_of_death": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 1
   },
   "dnmmod:wand_core": {
     "spawn": false
   },
   "dnmmod:waning_moon_boots": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 3
   },
   "dnmmod:waning_moon_chestplate": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 3
   },
   "dnmmod:waning_moon_helmet": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 3
   },
   "dnmmod:waning_moon_leggings": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 3
   },
   "dnmmod:warrior_statue": {
@@ -4828,21 +4841,21 @@
     "spawn": false
   },
   "endermanoverhaul:badlands_hood": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 1
   },
   "endermanoverhaul:bubble_pearl": {
     "spawn": false
   },
   "endermanoverhaul:corrupted_blade": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 2
   },
   "endermanoverhaul:corrupted_pearl": {
     "spawn": false
   },
   "endermanoverhaul:corrupted_shield": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 1
   },
   "endermanoverhaul:crimson_pearl": {
@@ -4855,11 +4868,11 @@
     "spawn": false
   },
   "endermanoverhaul:savanna_hood": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 1
   },
   "endermanoverhaul:snowy_hood": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 1
   },
   "endermanoverhaul:soul_pearl": {
@@ -5384,7 +5397,7 @@
     "rarity": 2
   },
   "farmersdelight:skillet": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 2
   },
   "farmersdelight:smoked_ham": {
@@ -5612,7 +5625,7 @@
     "spawn": false
   },
   "fightsfrights:deadsteel_scimitar": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 3
   },
   "fightsfrights:dreamcatcher": {
@@ -5706,16 +5719,20 @@
     "spawn": false
   },
   "fightsfrights:monstrous_armor_boots": {
-    "spawn": false
+    "spawn": true,
+    "rarity": 2
   },
   "fightsfrights:monstrous_armor_chestplate": {
-    "spawn": false
+    "spawn": true,
+    "rarity": 2
   },
   "fightsfrights:monstrous_armor_helmet": {
-    "spawn": false
+    "spawn": true,
+    "rarity": 2
   },
   "fightsfrights:monstrous_armor_leggings": {
-    "spawn": false
+    "spawn": true,
+    "rarity": 2
   },
   "fightsfrights:monstrous_plate_block": {
     "spawn": false
@@ -5998,19 +6015,19 @@
     "spawn": false
   },
   "hazennstuff:ender_dragon_chestplate": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 4
   },
   "hazennstuff:ender_dragon_helmet": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 4
   },
   "hazennstuff:ender_dragon_leggings": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 4
   },
   "hazennstuff:enderconic_scepter": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 2
   },
   "hazennstuff:excalibur": {
@@ -6018,27 +6035,27 @@
     "rarity": 5
   },
   "hazennstuff:fireblossom_battlemage_boots": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 5
   },
   "hazennstuff:fireblossom_battlemage_chestplate": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 5
   },
   "hazennstuff:fireblossom_battlemage_crown": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 4
   },
   "hazennstuff:fireblossom_battlemage_helmet": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 4
   },
   "hazennstuff:fireblossom_battlemage_leggings": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 5
   },
   "hazennstuff:fireblossom_rapier": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 5
   },
   "hazennstuff:flesh_mass_boots": {
@@ -6058,7 +6075,7 @@
     "rarity": 4
   },
   "hazennstuff:grimoire_staff": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 2
   },
   "hazennstuff:hazel_boots": {
@@ -6082,7 +6099,7 @@
     "rarity": 5
   },
   "hazennstuff:ice_pike": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 5
   },
   "hazennstuff:infestation_boots": {
@@ -6102,7 +6119,7 @@
     "rarity": 3
   },
   "hazennstuff:insania_aeternus": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 3
   },
   "hazennstuff:ionic_splitter": {
@@ -6142,31 +6159,31 @@
     "rarity": 5
   },
   "hazennstuff:legionnaire_warlock_axe": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 5
   },
   "hazennstuff:mithril_battlemage_boots": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 5
   },
   "hazennstuff:mithril_battlemage_chestplate": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 5
   },
   "hazennstuff:mithril_battlemage_helmet": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 5
   },
   "hazennstuff:mithril_battlemage_leggings": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 5
   },
   "hazennstuff:o_fortuna": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 5
   },
   "hazennstuff:provocation": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 5
   },
   "hazennstuff:pyrium_battlemage_boots": {
@@ -6205,7 +6222,7 @@
     "spawn": false
   },
   "hazennstuff:ravens_bane": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 5
   },
   "hazennstuff:raw_zenalite": {
@@ -6283,7 +6300,7 @@
   },
   "hedges_bestiary:endgelic_judgement": {
     "spawn": false,
-    "rarity": 3
+    "rarity": 1
   },
   "hedges_bestiary:gild_glider_bucket": {
     "spawn": false
@@ -6326,6 +6343,214 @@
     "spawn": false
   },
   "hgarena:radiance": {
+    "spawn": true,
+    "rarity": 4
+  },
+  "iceandfire:amphithere_macuahuitl": {
+    "spawn": true,
+    "rarity": 1
+  },
+  "iceandfire:armor_amythest_boots": {
+    "spawn": true,
+    "rarity": 4
+  },
+  "iceandfire:armor_amythest_chestplate": {
+    "spawn": true,
+    "rarity": 4
+  },
+  "iceandfire:armor_amythest_helmet": {
+    "spawn": true,
+    "rarity": 4
+  },
+  "iceandfire:armor_amythest_leggings": {
+    "spawn": true,
+    "rarity": 4
+  },
+  "iceandfire:armor_copper_boots": {
+    "spawn": true,
+    "rarity": 4
+  },
+  "iceandfire:armor_copper_chestplate": {
+    "spawn": true,
+    "rarity": 4
+  },
+  "iceandfire:armor_copper_helmet": {
+    "spawn": true,
+    "rarity": 4
+  },
+  "iceandfire:armor_copper_leggings": {
+    "spawn": true,
+    "rarity": 4
+  },
+  "iceandfire:armor_copper_metal_boots": {
+    "spawn": true,
+    "rarity": 1
+  },
+  "iceandfire:armor_copper_metal_chestplate": {
+    "spawn": true,
+    "rarity": 1
+  },
+  "iceandfire:armor_copper_metal_helmet": {
+    "spawn": true,
+    "rarity": 1
+  },
+  "iceandfire:armor_copper_metal_leggings": {
+    "spawn": true,
+    "rarity": 1
+  },
+  "iceandfire:armor_red_boots": {
+    "spawn": true,
+    "rarity": 4
+  },
+  "iceandfire:armor_red_chestplate": {
+    "spawn": true,
+    "rarity": 4
+  },
+  "iceandfire:armor_red_helmet": {
+    "spawn": true,
+    "rarity": 4
+  },
+  "iceandfire:armor_red_leggings": {
+    "spawn": true,
+    "rarity": 4
+  },
+  "iceandfire:armor_silver_metal_boots": {
+    "spawn": true,
+    "rarity": 1
+  },
+  "iceandfire:armor_silver_metal_chestplate": {
+    "spawn": true,
+    "rarity": 1
+  },
+  "iceandfire:armor_silver_metal_helmet": {
+    "spawn": true,
+    "rarity": 1
+  },
+  "iceandfire:armor_silver_metal_leggings": {
+    "spawn": true,
+    "rarity": 1
+  },
+  "iceandfire:blindfold": {
+    "spawn": true,
+    "rarity": 1
+  },
+  "iceandfire:dragonsteel_fire_boots": {
+    "spawn": true,
+    "rarity": 5
+  },
+  "iceandfire:dragonsteel_fire_chestplate": {
+    "spawn": true,
+    "rarity": 5
+  },
+  "iceandfire:dragonsteel_fire_helmet": {
+    "spawn": true,
+    "rarity": 5
+  },
+  "iceandfire:dragonsteel_fire_leggings": {
+    "spawn": true,
+    "rarity": 5
+  },
+  "iceandfire:dragonsteel_ice_boots": {
+    "spawn": true,
+    "rarity": 5
+  },
+  "iceandfire:dragonsteel_ice_chestplate": {
+    "spawn": true,
+    "rarity": 5
+  },
+  "iceandfire:dragonsteel_ice_helmet": {
+    "spawn": true,
+    "rarity": 5
+  },
+  "iceandfire:dragonsteel_ice_leggings": {
+    "spawn": true,
+    "rarity": 5
+  },
+  "iceandfire:dragonsteel_lightning_boots": {
+    "spawn": true,
+    "rarity": 5
+  },
+  "iceandfire:dragonsteel_lightning_chestplate": {
+    "spawn": true,
+    "rarity": 5
+  },
+  "iceandfire:dragonsteel_lightning_helmet": {
+    "spawn": true,
+    "rarity": 5
+  },
+  "iceandfire:dragonsteel_lightning_leggings": {
+    "spawn": true,
+    "rarity": 5
+  },
+  "iceandfire:earplugs": {
+    "spawn": true,
+    "rarity": 1
+  },
+  "iceandfire:sheep_boots": {
+    "spawn": true,
+    "rarity": 1
+  },
+  "iceandfire:sheep_chestplate": {
+    "spawn": true,
+    "rarity": 1
+  },
+  "iceandfire:sheep_helmet": {
+    "spawn": true,
+    "rarity": 1
+  },
+  "iceandfire:sheep_leggings": {
+    "spawn": true,
+    "rarity": 1
+  },
+  "iceandfire:stymphalian_bird_dagger": {
+    "spawn": true,
+    "rarity": 3
+  },
+  "iceandfire:tide_blue_boots": {
+    "spawn": true,
+    "rarity": 4
+  },
+  "iceandfire:tide_blue_chestplate": {
+    "spawn": true,
+    "rarity": 4
+  },
+  "iceandfire:tide_blue_helmet": {
+    "spawn": true,
+    "rarity": 4
+  },
+  "iceandfire:tide_blue_leggings": {
+    "spawn": true,
+    "rarity": 4
+  },
+  "iceandfire:tide_bronze_boots": {
+    "spawn": true,
+    "rarity": 4
+  },
+  "iceandfire:tide_bronze_chestplate": {
+    "spawn": true,
+    "rarity": 4
+  },
+  "iceandfire:tide_bronze_helmet": {
+    "spawn": true,
+    "rarity": 4
+  },
+  "iceandfire:tide_bronze_leggings": {
+    "spawn": true,
+    "rarity": 4
+  },
+  "iceandfire:tide_deepblue_boots": {
+    "spawn": true,
+    "rarity": 4
+  },
+  "iceandfire:tide_deepblue_chestplate": {
+    "spawn": true,
+    "rarity": 4
+  },
+  "iceandfire:tide_deepblue_helmet": {
+    "spawn": true,
+    "rarity": 4
+  },
+  "iceandfire:tide_deepblue_leggings": {
     "spawn": true,
     "rarity": 4
   },
@@ -6523,7 +6748,7 @@
     "spawn": false
   },
   "irons_spellbooks:artificer_cane": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 3
   },
   "irons_spellbooks:autoloader_crossbow": {
@@ -6538,14 +6763,14 @@
     "spawn": false
   },
   "irons_spellbooks:blaze_spell_book": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 4
   },
   "irons_spellbooks:blood_rune": {
     "spawn": false
   },
   "irons_spellbooks:blood_staff": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 4
   },
   "irons_spellbooks:blood_upgrade_orb": {
@@ -6567,7 +6792,7 @@
     "spawn": false
   },
   "irons_spellbooks:boreal_blade": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 5
   },
   "irons_spellbooks:brazier": {
@@ -6631,19 +6856,19 @@
     "rarity": 1
   },
   "irons_spellbooks:cryomancer_boots": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 3
   },
   "irons_spellbooks:cryomancer_chestplate": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 3
   },
   "irons_spellbooks:cryomancer_helmet": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 3
   },
   "irons_spellbooks:cryomancer_leggings": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 3
   },
   "irons_spellbooks:cultist_boots": {
@@ -6663,7 +6888,7 @@
     "rarity": 2
   },
   "irons_spellbooks:cursed_doll_spell_book": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 4
   },
   "irons_spellbooks:dead_king_phylactery": {
@@ -6676,14 +6901,14 @@
     "spawn": false
   },
   "irons_spellbooks:decrepit_scythe": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 4
   },
   "irons_spellbooks:deepslate_mithril_ore": {
     "spawn": false
   },
   "irons_spellbooks:diamond_spell_book": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 4
   },
   "irons_spellbooks:disc_fragment_flame_still_burns": {
@@ -6752,7 +6977,7 @@
     "spawn": false
   },
   "irons_spellbooks:evoker_spell_book": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 4
   },
   "irons_spellbooks:fire_ale": {
@@ -6794,7 +7019,7 @@
     "spawn": false
   },
   "irons_spellbooks:gold_crown": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 3
   },
   "irons_spellbooks:gold_spell_book": {
@@ -6802,7 +7027,7 @@
     "rarity": 3
   },
   "irons_spellbooks:graybeard_staff": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 2
   },
   "irons_spellbooks:greater_conjurers_talisman": {
@@ -6849,14 +7074,14 @@
     "spawn": false
   },
   "irons_spellbooks:ice_spell_book": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 4
   },
   "irons_spellbooks:ice_spider_egg": {
     "spawn": false
   },
   "irons_spellbooks:ice_staff": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 4
   },
   "irons_spellbooks:ice_upgrade_orb": {
@@ -6869,7 +7094,7 @@
     "spawn": false
   },
   "irons_spellbooks:infernal_sorcerer_chestplate": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 3
   },
   "irons_spellbooks:inscription_table": {
@@ -6887,18 +7112,18 @@
     "rarity": 2
   },
   "irons_spellbooks:keeper_flamberge": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 4
   },
   "irons_spellbooks:legendary_ink": {
     "spawn": false
   },
   "irons_spellbooks:legendary_spell_book": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 5
   },
   "irons_spellbooks:legionnaire_flamberge": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 5
   },
   "irons_spellbooks:lesser_spell_slot_upgrade": {
@@ -6908,7 +7133,7 @@
     "spawn": false
   },
   "irons_spellbooks:lightning_rod": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 3
   },
   "irons_spellbooks:lightning_rune": {
@@ -6936,7 +7161,7 @@
     "spawn": false
   },
   "irons_spellbooks:misery": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 4
   },
   "irons_spellbooks:mithril_ingot": {
@@ -6967,7 +7192,7 @@
     "spawn": false
   },
   "irons_spellbooks:necronomicon_spell_book": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 4
   },
   "irons_spellbooks:nether_brick_pillar": {
@@ -6990,7 +7215,7 @@
     "rarity": 3
   },
   "irons_spellbooks:netherite_spell_book": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 5
   },
   "irons_spellbooks:netherward_tincture": {
@@ -7003,7 +7228,7 @@
     "spawn": false
   },
   "irons_spellbooks:paladin_chestplate": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 3
   },
   "irons_spellbooks:pedestal": {
@@ -7142,7 +7367,7 @@
     "rarity": 2
   },
   "irons_spellbooks:speed_boots": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 2
   },
   "irons_spellbooks:spellbreaker": {
@@ -7153,7 +7378,7 @@
     "spawn": false
   },
   "irons_spellbooks:tarnished_helmet": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 1
   },
   "irons_spellbooks:teleportation_amulet": {
@@ -7170,7 +7395,7 @@
     "spawn": false
   },
   "irons_spellbooks:twilight_gale": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 5
   },
   "irons_spellbooks:tyros_statue": {
@@ -7197,19 +7422,19 @@
     "rarity": 1
   },
   "irons_spellbooks:wandering_magician_boots": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 1
   },
   "irons_spellbooks:wandering_magician_chestplate": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 1
   },
   "irons_spellbooks:wandering_magician_helmet": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 1
   },
   "irons_spellbooks:wandering_magician_leggings": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 1
   },
   "irons_spellbooks:wayward_compass": {
@@ -7399,7 +7624,7 @@
     "spawn": false
   },
   "l2complements:poseidite_sword": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 3
   },
   "l2complements:reinforced_warp_stone": {
@@ -7453,7 +7678,7 @@
     "spawn": false
   },
   "l2complements:sculkium_sword": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 4
   },
   "l2complements:shulkerate_axe": {
@@ -7531,13 +7756,16 @@
     "spawn": false
   },
   "l2complements:totemic_gold_boots": {
-    "spawn": false
+    "spawn": true,
+    "rarity": 2
   },
   "l2complements:totemic_gold_chestplate": {
-    "spawn": false
+    "spawn": true,
+    "rarity": 2
   },
   "l2complements:totemic_gold_helmet": {
-    "spawn": false
+    "spawn": true,
+    "rarity": 2
   },
   "l2complements:totemic_gold_hoe": {
     "spawn": false
@@ -7546,7 +7774,8 @@
     "spawn": false
   },
   "l2complements:totemic_gold_leggings": {
-    "spawn": false
+    "spawn": true,
+    "rarity": 2
   },
   "l2complements:totemic_gold_nugget": {
     "spawn": false
@@ -8423,16 +8652,20 @@
     "spawn": false
   },
   "minecraft:chainmail_boots": {
-    "spawn": false
+    "spawn": true,
+    "rarity": 2
   },
   "minecraft:chainmail_chestplate": {
-    "spawn": false
+    "spawn": true,
+    "rarity": 2
   },
   "minecraft:chainmail_helmet": {
-    "spawn": false
+    "spawn": true,
+    "rarity": 2
   },
   "minecraft:chainmail_leggings": {
-    "spawn": false
+    "spawn": true,
+    "rarity": 2
   },
   "minecraft:charcoal": {
     "spawn": false
@@ -8726,7 +8959,7 @@
     "spawn": false
   },
   "minecraft:crossbow": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 3
   },
   "minecraft:crying_obsidian": {
@@ -8977,7 +9210,7 @@
     "rarity": 2
   },
   "minecraft:diamond_axe": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 4
   },
   "minecraft:diamond_block": {
@@ -9017,7 +9250,7 @@
     "spawn": false
   },
   "minecraft:diamond_sword": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 4
   },
   "minecraft:diorite": {
@@ -9291,17 +9524,20 @@
     "spawn": false
   },
   "minecraft:golden_boots": {
-    "spawn": false
+    "spawn": false,
+    "rarity": 2
   },
   "minecraft:golden_carrot": {
     "spawn": true,
     "rarity": 3
   },
   "minecraft:golden_chestplate": {
-    "spawn": false
+    "spawn": false,
+    "rarity": 2
   },
   "minecraft:golden_helmet": {
-    "spawn": false
+    "spawn": false,
+    "rarity": 2
   },
   "minecraft:golden_hoe": {
     "spawn": false
@@ -9311,7 +9547,8 @@
     "rarity": 1
   },
   "minecraft:golden_leggings": {
-    "spawn": false
+    "spawn": false,
+    "rarity": 2
   },
   "minecraft:golden_pickaxe": {
     "spawn": false
@@ -9503,7 +9740,7 @@
     "spawn": false
   },
   "minecraft:iron_axe": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 2
   },
   "minecraft:iron_bars": {
@@ -9513,18 +9750,18 @@
     "spawn": false
   },
   "minecraft:iron_boots": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 2
   },
   "minecraft:iron_chestplate": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 2
   },
   "minecraft:iron_door": {
     "spawn": false
   },
   "minecraft:iron_helmet": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 2
   },
   "minecraft:iron_hoe": {
@@ -9539,7 +9776,7 @@
     "rarity": 1
   },
   "minecraft:iron_leggings": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 2
   },
   "minecraft:iron_nugget": {
@@ -9556,7 +9793,7 @@
     "spawn": false
   },
   "minecraft:iron_sword": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 2
   },
   "minecraft:iron_trapdoor": {
@@ -9664,22 +9901,22 @@
     "spawn": false
   },
   "minecraft:leather_boots": {
-    "spawn": false,
+    "spawn": true,
     "rarity": 1
   },
   "minecraft:leather_chestplate": {
-    "spawn": false,
+    "spawn": true,
     "rarity": 1
   },
   "minecraft:leather_helmet": {
-    "spawn": false,
+    "spawn": true,
     "rarity": 1
   },
   "minecraft:leather_horse_armor": {
     "spawn": false
   },
   "minecraft:leather_leggings": {
-    "spawn": false,
+    "spawn": true,
     "rarity": 1
   },
   "minecraft:lectern": {
@@ -10114,7 +10351,7 @@
     "spawn": false
   },
   "minecraft:netherite_axe": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 5
   },
   "minecraft:netherite_block": {
@@ -11195,7 +11432,7 @@
     "spawn": false
   },
   "minecraft:trident": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 3
   },
   "minecraft:tripwire_hook": {
@@ -11223,7 +11460,8 @@
     "spawn": false
   },
   "minecraft:turtle_helmet": {
-    "spawn": false
+    "spawn": true,
+    "rarity": 1
   },
   "minecraft:twisting_vines": {
     "spawn": false
@@ -11626,7 +11864,7 @@
     "spawn": false
   },
   "mowziesmobs:wrought_helmet": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 1
   },
   "netherman:a_puzzle": {
@@ -11915,7 +12153,8 @@
     "spawn": false
   },
   "paladins:acolyte_wand": {
-    "spawn": false
+    "spawn": true,
+    "rarity": 1
   },
   "paladins:crusader_armor_chest": {
     "spawn": true,
@@ -11934,7 +12173,7 @@
     "rarity": 2
   },
   "paladins:diamond_claymore": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 4
   },
   "paladins:diamond_great_hammer": {
@@ -11946,11 +12185,11 @@
     "rarity": 4
   },
   "paladins:diamond_holy_wand": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 4
   },
   "paladins:diamond_kite_shield": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 4
   },
   "paladins:diamond_mace": {
@@ -11967,14 +12206,16 @@
     "spawn": false
   },
   "paladins:golden_mace": {
-    "spawn": false
+    "spawn": true,
+    "rarity": 3
   },
   "paladins:holy_staff": {
     "spawn": true,
     "rarity": 1
   },
   "paladins:holy_wand": {
-    "spawn": false
+    "spawn": true,
+    "rarity": 1
   },
   "paladins:iron_claymore": {
     "spawn": true,
@@ -11989,14 +12230,14 @@
     "rarity": 2
   },
   "paladins:iron_mace": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 2
   },
   "paladins:monk_workbench": {
     "spawn": false
   },
   "paladins:netherite_claymore": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 5
   },
   "paladins:netherite_crusader_armor_chest": {
@@ -12016,7 +12257,7 @@
     "rarity": 3
   },
   "paladins:netherite_great_hammer": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 5
   },
   "paladins:netherite_holy_staff": {
@@ -12032,7 +12273,7 @@
     "rarity": 5
   },
   "paladins:netherite_mace": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 5
   },
   "paladins:netherite_prior_robe_chest": {
@@ -12100,10 +12341,12 @@
     "rarity": 1
   },
   "paladins:stone_claymore": {
-    "spawn": false
+    "spawn": true,
+    "rarity": 1
   },
   "paladins:stone_great_hammer": {
-    "spawn": false
+    "spawn": true,
+    "rarity": 1
   },
   "paladins:wooden_great_hammer": {
     "spawn": false
@@ -12340,15 +12583,15 @@
     "rarity": 3
   },
   "rogues:diamond_dagger": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 4
   },
   "rogues:diamond_double_axe": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 4
   },
   "rogues:diamond_glaive": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 4
   },
   "rogues:diamond_sickle": {
@@ -12367,11 +12610,12 @@
     "spawn": false
   },
   "rogues:golden_glaive": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 3
   },
   "rogues:golden_sickle": {
-    "spawn": false
+    "spawn": true,
+    "rarity": 3
   },
   "rogues:iron_dagger": {
     "spawn": true,
@@ -12426,11 +12670,11 @@
     "rarity": 5
   },
   "rogues:netherite_double_axe": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 5
   },
   "rogues:netherite_glaive": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 5
   },
   "rogues:netherite_sickle": {
@@ -12454,7 +12698,8 @@
     "rarity": 2
   },
   "rogues:stone_double_axe": {
-    "spawn": false
+    "spawn": true,
+    "rarity": 1
   },
   "rogues:warrior_armor_chest": {
     "spawn": true,
@@ -12577,7 +12822,7 @@
     "spawn": false
   },
   "soulsweapons:arkenplate": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 4
   },
   "soulsweapons:arkenstone": {
@@ -12604,7 +12849,7 @@
     "rarity": 3
   },
   "soulsweapons:bluemoon_shortsword": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 3
   },
   "soulsweapons:blunderbuss": {
@@ -12614,18 +12859,18 @@
     "spawn": false
   },
   "soulsweapons:chaos_crown": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 1
   },
   "soulsweapons:chaos_helmet": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 4
   },
   "soulsweapons:chaos_orb": {
     "spawn": false
   },
   "soulsweapons:chaos_robes": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 1
   },
   "soulsweapons:chungus_disc": {
@@ -12646,7 +12891,7 @@
   },
   "soulsweapons:comet_spear": {
     "spawn": false,
-    "rarity": 4
+    "rarity": 3
   },
   "soulsweapons:cracked_infused_blackstone": {
     "spawn": false
@@ -12662,7 +12907,7 @@
     "rarity": 4
   },
   "soulsweapons:dark_moon_greatsword": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 4
   },
   "soulsweapons:darkin_blade": {
@@ -12678,7 +12923,7 @@
     "rarity": 4
   },
   "soulsweapons:darkmoon_longbow": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 4
   },
   "soulsweapons:dawnbreaker": {
@@ -12696,7 +12941,7 @@
     "rarity": 3
   },
   "soulsweapons:dragonbane": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 4
   },
   "soulsweapons:dragonslayer_swordspear": {
@@ -12718,11 +12963,11 @@
     "spawn": false
   },
   "soulsweapons:enhanced_arkenplate": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 4
   },
   "soulsweapons:enhanced_withered_chest": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 4
   },
   "soulsweapons:essence_of_eventide": {
@@ -12757,7 +13002,7 @@
     "rarity": 3
   },
   "soulsweapons:forlorn_scythe": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 3
   },
   "soulsweapons:freyr_sword": {
@@ -12782,15 +13027,15 @@
     "spawn": false
   },
   "soulsweapons:guts_sword": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 4
   },
   "soulsweapons:holy_greatsword": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 3
   },
   "soulsweapons:holy_moonlight_greatsword": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 3
   },
   "soulsweapons:holy_moonlight_sword": {
@@ -12818,8 +13063,8 @@
     "rarity": 3
   },
   "soulsweapons:kraken_slayer": {
-    "spawn": false,
-    "rarity": 4
+    "spawn": true,
+    "rarity": 2
   },
   "soulsweapons:kraken_slayer_crossbow": {
     "spawn": false
@@ -12873,7 +13118,7 @@
     "spawn": false
   },
   "soulsweapons:moonlight_greatsword": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 4
   },
   "soulsweapons:moonlight_shortsword": {
@@ -12908,7 +13153,7 @@
     "spawn": false
   },
   "soulsweapons:moonveil": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 4
   },
   "soulsweapons:nightfall": {
@@ -12925,7 +13170,7 @@
     "spawn": false
   },
   "soulsweapons:pure_moonlight_greatsword": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 4
   },
   "soulsweapons:purified_blood_bucket": {
@@ -12984,7 +13229,8 @@
     "spawn": false
   },
   "soulsweapons:soul_reaper": {
-    "spawn": false
+    "spawn": false,
+    "rarity": 3
   },
   "soulsweapons:soul_robes_boots": {
     "spawn": false,
@@ -13040,14 +13286,14 @@
     "spawn": false
   },
   "soulsweapons:whirligig_sawblade": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 3
   },
   "soulsweapons:withered_berry_bush": {
     "spawn": false
   },
   "soulsweapons:withered_chest": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 4
   },
   "soulsweapons:withered_demon_heart": {
@@ -13072,7 +13318,7 @@
     "spawn": false
   },
   "soulsweapons:withered_wabbajack": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 3
   },
   "spell_engine:spell_binding": {
@@ -13340,19 +13586,19 @@
     "spawn": false
   },
   "threateningly_mobs:desert_armor_boots": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 4
   },
   "threateningly_mobs:desert_armor_chestplate": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 4
   },
   "threateningly_mobs:desert_armor_helmet": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 4
   },
   "threateningly_mobs:desert_armor_leggings": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 4
   },
   "threateningly_mobs:desert_armor_shard": {
@@ -13414,7 +13660,7 @@
     "rarity": 5
   },
   "threateningly_mobs:ebonlord_blade": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 5
   },
   "threateningly_mobs:ebonlord_block": {
@@ -13424,7 +13670,7 @@
     "spawn": false
   },
   "threateningly_mobs:ebonlord_shield": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 1
   },
   "threateningly_mobs:emperor_blade": {
@@ -13665,7 +13911,7 @@
     "spawn": false
   },
   "threateningly_mobs:magma_shell_shield": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 1
   },
   "threateningly_mobs:medicinal_powder": {
@@ -13772,7 +14018,7 @@
     "spawn": false
   },
   "threateningly_mobs:riptooth_sword": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 2
   },
   "threateningly_mobs:riptooth_teeth": {
@@ -13951,7 +14197,7 @@
     "spawn": false
   },
   "undergarden:cloggrum_battleaxe": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 3
   },
   "undergarden:cloggrum_block": {
@@ -13985,7 +14231,7 @@
     "spawn": false
   },
   "undergarden:cloggrum_shield": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 2
   },
   "undergarden:cloggrum_shovel": {
@@ -14298,7 +14544,8 @@
     "spawn": false
   },
   "undergarden:masticated_chestplate": {
-    "spawn": false
+    "spawn": false,
+    "rarity": 4
   },
   "undergarden:masticator_scales": {
     "spawn": false
@@ -14686,11 +14933,11 @@
     "spawn": false
   },
   "valarian_conquest:bandit_mask_gray_helmet": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 2
   },
   "valarian_conquest:bandit_mask_helmet": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 2
   },
   "valarian_conquest:bandit_swordsman_item": {
@@ -14718,7 +14965,7 @@
     "spawn": false
   },
   "valarian_conquest:barathian_shield": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 2
   },
   "valarian_conquest:barathian_spearman_item": {
@@ -14734,19 +14981,19 @@
     "spawn": false
   },
   "valarian_conquest:barathians_armor_1_boots": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 3
   },
   "valarian_conquest:barathians_armor_1_chestplate": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 3
   },
   "valarian_conquest:barathians_armor_1_helmet": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 3
   },
   "valarian_conquest:barathians_armor_1_leggings": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 3
   },
   "valarian_conquest:barathians_armor_2_chestplate": {
@@ -14769,11 +15016,11 @@
     "spawn": false
   },
   "valarian_conquest:barbute_helm_helmet": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 2
   },
   "valarian_conquest:bascinet_helm_helmet": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 2
   },
   "valarian_conquest:black_wool": {
@@ -14851,13 +15098,16 @@
     "spawn": false
   },
   "valarian_conquest:burgundian_armor_1_boots": {
-    "spawn": false
+    "spawn": true,
+    "rarity": 4
   },
   "valarian_conquest:burgundian_armor_1_chestplate": {
-    "spawn": false
+    "spawn": true,
+    "rarity": 4
   },
   "valarian_conquest:burgundian_armor_1_leggings": {
-    "spawn": false
+    "spawn": true,
+    "rarity": 4
   },
   "valarian_conquest:burgundian_armor_2_chestplate": {
     "spawn": false
@@ -14890,7 +15140,7 @@
     "spawn": false
   },
   "valarian_conquest:burgundian_sword": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 3
   },
   "valarian_conquest:burgundian_swordsman_item": {
@@ -14928,7 +15178,7 @@
     "spawn": false
   },
   "valarian_conquest:caladrian_sword": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 4
   },
   "valarian_conquest:caladrian_swordsman_item": {
@@ -14947,13 +15197,16 @@
     "spawn": false
   },
   "valarian_conquest:chainmail_armor_boots": {
-    "spawn": false
+    "spawn": false,
+    "rarity": 4
   },
   "valarian_conquest:chainmail_armor_chestplate": {
-    "spawn": false
+    "spawn": false,
+    "rarity": 4
   },
   "valarian_conquest:chainmail_armor_leggings": {
-    "spawn": false
+    "spawn": false,
+    "rarity": 4
   },
   "valarian_conquest:chainmail_helm_helmet": {
     "spawn": false
@@ -14966,7 +15219,7 @@
     "rarity": 3
   },
   "valarian_conquest:common_spear": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 3
   },
   "valarian_conquest:common_sword": {
@@ -15005,11 +15258,11 @@
     "spawn": false
   },
   "valarian_conquest:elven_spear": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 3
   },
   "valarian_conquest:elven_sword": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 3
   },
   "valarian_conquest:elven_vertical_banner": {
@@ -15073,19 +15326,19 @@
     "spawn": false
   },
   "valarian_conquest:hospitaller_armor_1_boots": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 3
   },
   "valarian_conquest:hospitaller_armor_1_chestplate": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 3
   },
   "valarian_conquest:hospitaller_armor_1_helmet": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 3
   },
   "valarian_conquest:hospitaller_armor_1_leggings": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 3
   },
   "valarian_conquest:hospitaller_armor_2_chestplate": {
@@ -15097,11 +15350,11 @@
     "rarity": 3
   },
   "valarian_conquest:hospitaller_armor_3_chestplate": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 3
   },
   "valarian_conquest:hospitaller_armor_3_leggings": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 3
   },
   "valarian_conquest:hospitaller_banner": {
@@ -15177,19 +15430,19 @@
     "spawn": false
   },
   "valarian_conquest:leather_armor_boots": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 3
   },
   "valarian_conquest:leather_armor_chestplate": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 3
   },
   "valarian_conquest:leather_armor_leggings": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 3
   },
   "valarian_conquest:light_axe": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 2
   },
   "valarian_conquest:light_blue_wool": {
@@ -15212,18 +15465,18 @@
     "rarity": 2
   },
   "valarian_conquest:mercenary_sword": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 4
   },
   "valarian_conquest:mercenary_vertical_banner": {
     "spawn": false
   },
   "valarian_conquest:nasal_helm_2_helmet": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 2
   },
   "valarian_conquest:nasal_helm_helmet": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 2
   },
   "valarian_conquest:neutral_archer_item": {
@@ -15242,11 +15495,11 @@
     "rarity": 4
   },
   "valarian_conquest:neutral_armor_2_chestplate": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 4
   },
   "valarian_conquest:neutral_armor_2_leggings": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 4
   },
   "valarian_conquest:neutral_shield": {
@@ -15364,7 +15617,8 @@
     "spawn": false
   },
   "valarian_conquest:quiver_chestplate": {
-    "spawn": false
+    "spawn": true,
+    "rarity": 1
   },
   "valarian_conquest:red_wool": {
     "spawn": false
@@ -15376,11 +15630,11 @@
     "spawn": false
   },
   "valarian_conquest:soldiers_halberd": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 2
   },
   "valarian_conquest:soldiers_spear": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 3
   },
   "valarian_conquest:soldiers_sword": {
@@ -15397,27 +15651,27 @@
     "spawn": false
   },
   "valarian_conquest:templar_armor_1_boots": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 3
   },
   "valarian_conquest:templar_armor_1_chestplate": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 3
   },
   "valarian_conquest:templar_armor_1_helmet": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 3
   },
   "valarian_conquest:templar_armor_1_leggings": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 3
   },
   "valarian_conquest:templar_armor_2_chestplate": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 3
   },
   "valarian_conquest:templar_armor_2_leggings": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 3
   },
   "valarian_conquest:templar_armor_3_chestplate": {
@@ -15429,11 +15683,11 @@
     "rarity": 3
   },
   "valarian_conquest:templar_armor_4_chestplate": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 3
   },
   "valarian_conquest:templar_armor_4_leggings": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 3
   },
   "valarian_conquest:templar_banner": {
@@ -15449,7 +15703,7 @@
     "spawn": false
   },
   "valarian_conquest:templar_shield": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 2
   },
   "valarian_conquest:templar_spearman_item": {
@@ -15466,7 +15720,7 @@
     "spawn": false
   },
   "valarian_conquest:undead_axe": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 2
   },
   "valarian_conquest:undead_spear": {
@@ -15482,31 +15736,31 @@
     "spawn": false
   },
   "valarian_conquest:valarian_armor_1_boots": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 3
   },
   "valarian_conquest:valarian_armor_1_chestplate": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 3
   },
   "valarian_conquest:valarian_armor_1_leggings": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 3
   },
   "valarian_conquest:valarian_armor_2_chestplate": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 3
   },
   "valarian_conquest:valarian_armor_2_leggings": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 3
   },
   "valarian_conquest:valarian_armor_3_chestplate": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 3
   },
   "valarian_conquest:valarian_armor_3_leggings": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 3
   },
   "valarian_conquest:valarian_banner": {
@@ -15529,7 +15783,7 @@
     "spawn": false
   },
   "valarian_conquest:valarian_sword": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 4
   },
   "valarian_conquest:valarian_swordsman_item": {
@@ -15642,7 +15896,7 @@
     "spawn": false
   },
   "wind_spellbooks:wind_spell_book": {
-    "spawn": true,
+    "spawn": false,
     "rarity": 4
   },
   "wind_spellbooks:wind_staff": {
